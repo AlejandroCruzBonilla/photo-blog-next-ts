@@ -10,6 +10,8 @@ const Galerias = () => {
 	return (
 		<MainLayout seo={seo}>
 			<h1>Galerias</h1>
+			<h1>Galerias</h1>
+			<h1>Galerias</h1>
 		</MainLayout>
 	)
 }

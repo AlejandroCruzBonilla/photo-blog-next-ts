@@ -4,6 +4,7 @@ import NextLink from 'next/link';
 import {
 	Box,
 	Drawer,
+	Grid,
 	Link,
 	List,
 	ListItem,
@@ -34,7 +35,6 @@ export const MainMenu = () => {
 
 	const { sidemenuOpen, closeSideMenu } = useContext(UIContext);
 	const { pathname } = useRouter();
-	console.log(useRouter());
 	return (
 		<Drawer
 			anchor="right"
@@ -44,27 +44,31 @@ export const MainMenu = () => {
 
 			{/* <Box sx={{width: '100vw'}}> */}
 			{/* <Box sx={{ px: 3, pt: 4, height: 1 }} display={"flex"} flexDirection={"column"} justifyContent={"center"}> */}
-			<Box sx={{ mr: 3, px: 3, pt: 4 }}>
-				<Box>
-					<Typography variant="h4">Menú</Typography>
+			<Box px={3} pt={4} width={"100vw"}>
+				<Box px={3}>
+					<Typography textAlign={"center"} variant="h4">Menú</Typography>
 				</Box>
-				<List>
+				<List sx={{ px: "15vw", mt: "15vh" }} >
 					{
 						menuItems.map(({ route, text, Icon }, index) => (
 							<ListItemButton
 								key={text}
-								sx={{ padding: 0}}
+								sx={{ width: 1, padding: 0 }}
 								disabled={pathname === route}
 								selected={pathname === route}
 								divider={pathname === route}
 							>
 								<NextLink href={route} passHref legacyBehavior>
-									<Link onClick={closeSideMenu} underline="none" padding={1} m={1}>
-										<ListItem>
-											<ListItemIcon>
-												<Icon />
-											</ListItemIcon>
-											<ListItemText primary={text} />
+									<Link onClick={closeSideMenu} underline="none" m={1} width={1}>
+										<ListItem alignItems='center' sx={{ justifyContent: "center" }}>
+											<Grid item width={1 / 2}>
+												<ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
+													<Icon />
+												</ListItemIcon>
+											</Grid>
+											<Grid item width={1 / 2}>
+												<ListItemText primary={text} />
+											</Grid>
 										</ListItem>
 									</Link>
 								</NextLink>

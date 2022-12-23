@@ -16,37 +16,7 @@ export default function Home() {
 
 		<MainLayout seo={seo}>
 
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
-			<h1>Hola</h1>
+			<h1>Hola1</h1>
 			<h1>Hola</h1>
 			<h1>Hola</h1>
 			<h1>Hola</h1>

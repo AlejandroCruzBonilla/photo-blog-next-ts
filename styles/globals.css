@@ -1,3 +1,8 @@
-html{
-  position: relative;
+html, body{
+  /* position: relative; */
+  /* height: 100%; */
+}
+img{
+  width: auto;
+  height: auto;
 }

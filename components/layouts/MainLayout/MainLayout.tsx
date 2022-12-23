@@ -30,16 +30,21 @@ export const MainLayout: FC<Props> = ({
 				<meta name="description" content={description} />
 				<link rel="icon" href="/home.ico" />
 			</Head>
-		
-			<Grid component={"header"}>
-				<Navbar />
-				<MainMenu />
+			<Grid container direction={"column"}>
+				<Grid component={"header"} mb={5}>
+					<Navbar />
+					<MainMenu />
+				</Grid>
+
+				<Grid item component={"main"} pt={4} minHeight={'65vh'} width={1}>
+					{children}
+				</Grid>
+
+				<Grid item component={"footer"}>
+					<Footer />
+				</Grid>
 			</Grid>
 
-			<Grid component={"main"} mb={"30vh"} pb={3}>
-				{children}
-			</Grid>
-			<Footer />
 		</>
 
 
