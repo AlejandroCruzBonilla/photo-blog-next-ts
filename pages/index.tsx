@@ -13,10 +13,62 @@ const seo = {
 
 export default function Home() {
 	return (
-		<>
-			<MainLayout seo={seo}>
-				<h1>Hola</h1>
-			</MainLayout>
-		</>
+
+		<MainLayout seo={seo}>
+
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+			<h1>Hola</h1>
+
+
+		</MainLayout>
+
 	)
 }

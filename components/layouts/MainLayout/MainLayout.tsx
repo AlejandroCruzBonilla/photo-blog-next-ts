@@ -1,12 +1,12 @@
 import { FC, ReactElement } from 'react';
 import Head from 'next/head';
 
-import { Box } from '@mui/material';
-import { Navbar, Sidebar } from '../../ui';
+import { Box, Grid } from '@mui/material';
+import { Navbar, MainMenu, Footer } from '../../ui';
 
 
 interface Props {
-	children: ReactElement,
+	children: ReactElement | ReactElement[],
 	seo: SeoProps
 }
 
@@ -23,21 +23,28 @@ export const MainLayout: FC<Props> = ({
 	}
 }) => {
 	return (
-		<Box sx={{ flexFlow: 1 }}>
+		<>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>Site Name - {title}</title>
+				<title>{`Site Name - ${title}`}</title>
 				<meta name="description" content={description} />
 				<link rel="icon" href="/home.ico" />
 			</Head>
+		
+			<Grid component={"header"}>
+				<Navbar />
+				<MainMenu />
+			</Grid>
 
-			<Navbar />
-			<Sidebar />
-
-			<Box>
+			<Grid component={"main"} mb={"30vh"} pb={3}>
 				{children}
-			</Box>
+			</Grid>
+			<Footer />
+		</>
 
-		</Box>
+
+
+
+
 	)
 };

@@ -1,6 +1,16 @@
+import { MainLayout } from "../../components/layouts";
+
+const seo = {
+	title: "Home",
+	description: "Pagina principal"
+}
+
+
 const Articulos = () => {
 	return (
-		<h1>Articulos</h1>
+		<MainLayout seo={seo}>
+			<h1>Articulos</h1>
+		</MainLayout>
 	)
 }
 
