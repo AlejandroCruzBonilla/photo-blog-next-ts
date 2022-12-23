@@ -12,13 +12,15 @@ import {
 	ListItemIcon,
 	ListItemText,
 	Typography,
+	IconButton
 } from '@mui/material';
 
 import {
 	ArticleOutlined,
 	EmailOutlined,
 	PhotoCameraOutlined,
-	RoofingOutlined
+	RoofingOutlined,
+	ClearOutlined
 } from '@mui/icons-material'
 
 
@@ -41,42 +43,46 @@ export const MainMenu = () => {
 			open={sidemenuOpen}
 			onClose={closeSideMenu}
 		>
-
-			{/* <Box sx={{width: '100vw'}}> */}
-			{/* <Box sx={{ px: 3, pt: 4, height: 1 }} display={"flex"} flexDirection={"column"} justifyContent={"center"}> */}
-			<Box px={3} pt={4} width={"100vw"}>
-				<Box px={3}>
+			<Grid pt={4} width={"100vw"}>
+				<Grid container justifyContent={"center"} pt={4}>
 					<Typography textAlign={"center"} variant="h4">Menú</Typography>
-				</Box>
-				<List sx={{ px: "15vw", mt: "15vh" }} >
-					{
-						menuItems.map(({ route, text, Icon }, index) => (
-							<ListItemButton
-								key={text}
-								sx={{ width: 1, padding: 0 }}
-								disabled={pathname === route}
-								selected={pathname === route}
-								divider={pathname === route}
-							>
-								<NextLink href={route} passHref legacyBehavior>
-									<Link onClick={closeSideMenu} underline="none" m={1} width={1}>
-										<ListItem alignItems='center' sx={{ justifyContent: "center" }}>
-											<Grid item width={1 / 2}>
-												<ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
-													<Icon />
-												</ListItemIcon>
-											</Grid>
-											<Grid item width={1 / 2}>
-												<ListItemText primary={text} />
-											</Grid>
-										</ListItem>
-									</Link>
-								</NextLink>
-							</ListItemButton>
-						))
-					}
-				</List>
-			</Box>
+				</Grid>
+				<Grid px={"15vw"} mt={"15vh"}>
+					<List>
+						{
+							menuItems.map(({ route, text, Icon }, index) => (
+								<ListItemButton
+									key={text}
+									sx={{ width: 1, padding: 0 }}
+									disabled={pathname === route}
+									selected={pathname === route}
+									divider={pathname === route}
+								>
+									<NextLink href={route} passHref legacyBehavior>
+										<Link onClick={closeSideMenu} underline="none" m={1} width={1}>
+											<ListItem alignItems='center' sx={{ justifyContent: "center" }}>
+												<Grid item width={1 / 2}>
+													<ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
+														<Icon />
+													</ListItemIcon>
+												</Grid>
+												<Grid item width={1 / 2}>
+													<ListItemText primary={text} />
+												</Grid>
+											</ListItem>
+										</Link>
+									</NextLink>
+								</ListItemButton>
+							))
+						}
+					</List>
+				</Grid>
+				<Grid container justifyContent={"center"} mt={3}>
+					<IconButton>
+						<ClearOutlined onClick={closeSideMenu} fontSize={'large'} />
+					</IconButton>
+				</Grid>
+			</Grid>
 
 		</Drawer>
 	)
