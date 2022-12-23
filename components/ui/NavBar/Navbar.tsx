@@ -1,7 +1,8 @@
 import { useContext } from 'react';
 import Image from 'next/image';
+import NextLink from 'next/link';
 
-import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar, Typography, Box, Link } from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { UIContext } from '../../../context/ui';
@@ -26,10 +27,17 @@ export const Navbar = () => {
 			<HideOnScroll>
 				<AppBar>
 					<Toolbar>
-						<Box m={0} p={1}>
-							<Image src={"https://via.placeholder.com/75x75.jpeg"} alt="logo" width={75} height={75} />
+						<Box m={0} p={0} sx={{ flexGrow: 1 }}>
+							<NextLink href="/" legacyBehavior>
+								<Link underline="none" >
+									<Grid container direction={"row"}>
+										<Image src={"https://via.placeholder.com/60x60.jpeg"} alt="logo" width={60} height={60} priority />
+										<Typography component='div' alignSelf={"center"} ml={3} color={"#fff"}>Site Name</Typography>
+									</Grid>
+								</Link>
+							</NextLink>
 						</Box>
-						<Typography sx={{ flexGrow: 1 }} component='div'>Site Name</Typography>
+
 						<IconButton
 							size='large'
 							edge="start"

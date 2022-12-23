@@ -78,8 +78,8 @@ export const MainMenu = () => {
 					</List>
 				</Grid>
 				<Grid container justifyContent={"center"} mt={3}>
-					<IconButton>
-						<ClearOutlined onClick={closeSideMenu} fontSize={'large'} />
+					<IconButton onClick={closeSideMenu}>
+						<ClearOutlined fontSize={'large'} />
 					</IconButton>
 				</Grid>
 			</Grid>
