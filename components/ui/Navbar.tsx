@@ -7,22 +7,22 @@ import { UIContext } from '../../context/ui';
 
 export const Navbar = () => {
 
-  const { openSideMenu } = useContext( UIContext );
+	const { openSideMenu } = useContext(UIContext);
 
 
-  return (
-      <AppBar position='sticky'>
-          <Toolbar>
-              <IconButton 
-                size='large'
-                edge="start"
-                onClick={ openSideMenu }
-              >
-                  <MenuOutlinedIcon />
-              </IconButton>
+	return (
+		<AppBar position='sticky'>
+			<Toolbar>
+				<IconButton
+					size='large'
+					edge="start"
+					onClick={openSideMenu}
+				>
+					<MenuOutlinedIcon />
+				</IconButton>
 
-              <Typography variant='h6'>OpenJira</Typography>
-          </Toolbar>
-      </AppBar>
-  )
+				<Typography variant='subtitle1'>Site Name</Typography>
+			</Toolbar>
+		</AppBar>
+	)
 };

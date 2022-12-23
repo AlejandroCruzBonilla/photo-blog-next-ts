@@ -6,24 +6,38 @@ import { Navbar, Sidebar } from '../../ui';
 
 
 interface Props {
-    title?: string;
-    children: ReactElement
+	children: ReactElement,
+	seo: SeoProps
 }
 
-export const Layout: FC<Props> = ({ title = 'OpenJira', children }) => {
-    return (
-        <Box sx={{ flexFlow: 1 }}>
-            <Head>
-                <title>{title}</title>
-            </Head>
+interface SeoProps {
+	title: string,
+	description: string,
+}
 
-            <Navbar />
-            <Sidebar />
+export const MainLayout: FC<Props> = ({
+	children,
+	seo: {
+		title,
+		description
+	}
+}) => {
+	return (
+		<Box sx={{ flexFlow: 1 }}>
+			<Head>
+				<meta name="viewport" content="width=device-width, initial-scale=1" />
+				<title>Site Name - {title}</title>
+				<meta name="description" content={description} />
+				<link rel="icon" href="/home.ico" />
+			</Head>
 
-            <Box sx={{ padding: '10px 20px' }}>
-                {children}
-            </Box>
+			<Navbar />
+			<Sidebar />
 
-        </Box>
-    )
+			<Box>
+				{children}
+			</Box>
+
+		</Box>
+	)
 };

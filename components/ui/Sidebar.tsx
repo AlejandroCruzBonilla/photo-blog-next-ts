@@ -7,56 +7,56 @@ import MailOutlineOutlinedIcon from '@mui/icons-material/MailOutlineOutlined';
 
 import { UIContext } from '../../context/ui';
 
-const menuItems: string[] = ['Inbox','Starred','Send Email','Drafts']
+const menuItems: string[] = ['Inbox', 'Starred', 'Send Email', 'Drafts']
 
 
 export const Sidebar = () => {
 
-    const { sidemenuOpen, closeSideMenu  } = useContext( UIContext );
+	const { sidemenuOpen, closeSideMenu } = useContext(UIContext);
 
 
-    return (
-        <Drawer
-            anchor="left"
-            open={ sidemenuOpen }
-            onClose={ closeSideMenu }
-        >
-            <Box sx={{ width: 250 }}>
+	return (
+		<Drawer
+			anchor="left"
+			open={sidemenuOpen}
+			onClose={closeSideMenu}
+		>
+			{/* <Box sx={{ width: 250 }}> */}
+			<Box>
+				<Box>
+					<Typography variant="h4">Menú</Typography>
+				</Box>
 
-                <Box sx={{ padding:'5px 10px' }}>
-                    <Typography variant="h4">Menú</Typography>
-                </Box>
+				<List>
+					{
+						menuItems.map((text, index) => (
+							<ListItem button key={text}>
+								<ListItemIcon>
+									{index % 2 ? <InboxOutlinedIcon /> : <MailOutlineOutlinedIcon />}
+								</ListItemIcon>
+								<ListItemText primary={text} />
+							</ListItem>
+						))
+					}
+				</List>
 
-                <List>
-                    {
-                        menuItems.map( (text, index) => (
-                            <ListItem button key={ text }>
-                                <ListItemIcon>
-                                    { index % 2 ? <InboxOutlinedIcon />: <MailOutlineOutlinedIcon />  }
-                                </ListItemIcon>
-                                <ListItemText primary={ text } />
-                            </ListItem>
-                        ))
-                    }
-                </List>
+				<Divider />
 
-                <Divider />
+				<List>
+					{
+						menuItems.map((text, index) => (
+							<ListItem button key={text}>
+								<ListItemIcon>
+									{index % 2 ? <InboxOutlinedIcon /> : <MailOutlineOutlinedIcon />}
+								</ListItemIcon>
+								<ListItemText primary={text} />
+							</ListItem>
+						))
+					}
+				</List>
 
-                <List>
-                    {
-                        menuItems.map( (text, index) => (
-                            <ListItem button key={ text }>
-                                <ListItemIcon>
-                                    { index % 2 ? <InboxOutlinedIcon />: <MailOutlineOutlinedIcon />  }
-                                </ListItemIcon>
-                                <ListItemText primary={ text } />
-                            </ListItem>
-                        ))
-                    }
-                </List>
+			</Box>
 
-            </Box>
-            
-        </Drawer>
-    )
+		</Drawer>
+	)
 };
