@@ -1,5 +1,7 @@
-export const index = () => {
+const Galerias = () => {
   return (
-    <div>index</div>
+    <h1>Galerias</h1>
   )
 }
+
+export default Galerias;

@@ -1,5 +1,7 @@
-export const index = () => {
+const Articulos = () => {
   return (
-    <div>index</div>
+    <h1>Articulos</h1>
   )
 }
+
+export default Articulos;

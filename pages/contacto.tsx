@@ -1,5 +1,6 @@
-export const Contacto = () => {
+const Contacto = () => {
   return (
-    <div>Contacto</div>
+    <h1>Contacto</h1>
   )
 }
+export default Contacto;
