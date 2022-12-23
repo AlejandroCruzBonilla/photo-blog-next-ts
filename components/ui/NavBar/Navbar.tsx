@@ -1,10 +1,10 @@
 import { useContext } from 'react';
+import Image from 'next/image';
 
-import { AppBar, Grid, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from '@mui/material';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { UIContext } from '../../../context/ui';
-
 import { HideOnScroll } from '../';
 
 // const StyledToolbar = styled(Toolbar)(({ theme }) => ({
@@ -26,6 +26,9 @@ export const Navbar = () => {
 			<HideOnScroll>
 				<AppBar>
 					<Toolbar>
+						<Box m={0} p={1}>
+							<Image src={"https://via.placeholder.com/75x75.jpeg"} alt="logo" width={75} height={75} />
+						</Box>
 						<Typography sx={{ flexGrow: 1 }} component='div'>Site Name</Typography>
 						<IconButton
 							size='large'
