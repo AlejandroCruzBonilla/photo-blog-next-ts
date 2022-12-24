@@ -50,7 +50,7 @@ export const MainMenu = () => {
 				<Grid px={"15vw"} mt={"15vh"}>
 					<List>
 						{
-							menuItems.map(({ route, text, Icon }, index) => (
+							menuItems.map(({ route, text, Icon }) => (
 								<ListItemButton
 									key={text}
 									sx={{ width: 1, padding: 0 }}

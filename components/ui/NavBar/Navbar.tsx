@@ -27,9 +27,9 @@ export const Navbar = () => {
 			<HideOnScroll>
 				<AppBar>
 					<Toolbar>
-						<Box m={0} p={0} sx={{ flexGrow: 1 }}>
+						<Box m={0} p={0} display={"flex"} sx={{ flexGrow: 1 }} >
 							<NextLink href="/" legacyBehavior>
-								<Link underline="none" >
+								<Link underline="none" sx={{cursor:"pointer"}} display={"inline-block"}>
 									<Grid container direction={"row"}>
 										<Image src={"https://via.placeholder.com/60x60.jpeg"} alt="logo" width={60} height={60} priority />
 										<Typography component='div' alignSelf={"center"} ml={3} color={"#fff"}>Site Name</Typography>

@@ -36,7 +36,7 @@ export const MainLayout: FC<Props> = ({
 					<MainMenu />
 				</Grid>
 
-				<Grid item component={"main"} pt={4} minHeight={'65vh'} width={1}>
+				<Grid item component={"main"} pt={4} px={3} minHeight={'65vh'} width={1}>
 					{children}
 				</Grid>
 
