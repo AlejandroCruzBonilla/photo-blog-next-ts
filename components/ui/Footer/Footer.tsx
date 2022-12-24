@@ -4,7 +4,7 @@ import { Box, Grid } from '@mui/material'
 import { SocialItem } from '../';
 
 import {
-	EmailOutlined,
+  EmailOutlined,
 } from '@mui/icons-material'
 
 export const Footer = () => {
@@ -21,19 +21,19 @@ export const Footer = () => {
           <Image src={"https://via.placeholder.com/75x75.jpeg"} alt="logo" width={75} height={75} priority />
         </Grid>
       </Grid>
-      <Grid container height={4 / 6} px={2}>
+      <Grid container height={4 / 6}>
         <Grid container justifyContent={"center"} alignItems={"center"} >
           <Grid container item xs={3} md={2} justifyContent={"center"} alignItems={"center"} >
-            <SocialItem {...{title: "social Network", link:"https:google.com", Icon:EmailOutlined}}/>
+            <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
           </Grid>
           <Grid container item xs={3} md={2} justifyContent={"center"} alignItems={"center"} >
-            <SocialItem {...{title: "social Network", link:"https:google.com", Icon:EmailOutlined}}/>
+            <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
           </Grid>
           <Grid container item xs={3} md={2} justifyContent={"center"} alignItems={"center"} >
-            <SocialItem {...{title: "social Network", link:"https:google.com", Icon:EmailOutlined}}/>
+            <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
           </Grid>
           <Grid container item xs={3} md={2} justifyContent={"center"} alignItems={"center"} >
-            <SocialItem {...{title: "social Network", link:"https:google.com", Icon:EmailOutlined}}/>
+            <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
           </Grid>
         </Grid>
       </Grid>

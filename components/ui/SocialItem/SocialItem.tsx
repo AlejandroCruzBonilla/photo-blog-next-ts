@@ -12,12 +12,13 @@ interface Props {
 
 export const SocialItem: FC<Props> = ({ Icon, title, link }) => {
   return (
-    <Grid>
+    <Grid item>
       <Link
         href={link}
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
+        color="inherit"
       >
         <Grid container direction={"column"}>
           <Icon sx={{ mx: "auto" }} fontSize={"large"}/>
