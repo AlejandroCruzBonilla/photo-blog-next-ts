@@ -1,6 +1,6 @@
 import { ReactElement, JSXElementConstructor, FC, SyntheticEvent } from 'react';
 
-import { Grid, Tab, Tabs } from "@mui/material"
+import { SvgIcon, Icon, Grid, Tab, Tabs, Typography } from '@mui/material';
 
 
 interface Props {
@@ -9,33 +9,40 @@ interface Props {
   handleChange: (event: SyntheticEvent, newValue: number) => void
 }
 type Tab = {
-  Icon?: string | ReactElement<any, string | JSXElementConstructor<any>> | undefined,
+  icon?: string | undefined,
   label: string
   value: number
 }
 export const TabBar: FC<Props> = ({ value, tabs, handleChange }) => {
-
   return (
     <Grid >
       <Tabs
-        // variant="fullWidth"
+        variant="fullWidth"
         value={value}
         onChange={handleChange}
         textColor="secondary"
-        variant="scrollable"
-        scrollButtons="auto"
-        allowScrollButtonsMobile
-        // centered
+        centered
       >
         {
-          tabs.map(({ label, value, Icon }, index) =>
+          tabs.map(({ label, value, icon }, index) =>
           (
             <Tab
-              icon={Icon}
               key={`simple-tab-${index}`}
-              label={label}
-              value={value}
               {...allProps(index)}
+              value={value}
+              iconPosition="start"
+              icon={
+                // <Icon baseClassName="material-icons-outlined">{icon}</Icon>
+                <Icon baseClassName="material-symbols-outlined">{icon}</Icon>
+              }
+              label={
+                <Typography
+                  component={"h2"}
+                  display={{ xs: 'none', sm: 'block' }}
+                >
+                  {label}
+                </Typography>
+              }
             />
           ))
         }

@@ -11,7 +11,7 @@ const seo = {
 
 const Galleries = [
 	{
-		category: { Icon: <LocalSeeOutlined />, label: "Portafolio", value: 0 },
+		category: { icon: "work", label: "Portafolio", value: 0 },
 		galleries: [
 			{ title: "Galerias 0", body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },
 			{ title: "Galerias 0", body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },
@@ -19,7 +19,7 @@ const Galleries = [
 		]
 	},
 	{
-		category: { Icon: <LocalSeeOutlined />, label: "Periodismo", value: 1 },
+		category: { icon: "newspaper", label: "Periodismo", value: 1 },
 		galleries: [
 			{ title: "Galerias 1", body: "Soy una Galeria", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },
 			{ title: "Galerias 1", body: "Soy una Galeria", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },
@@ -27,7 +27,7 @@ const Galleries = [
 		]
 	},
 	{
-		category: { Icon: <LocalSeeOutlined />, label: "Proyectos personales", value: 2 },
+		category: { icon: "contacts", label: "Proyectos personales", value: 2 },
 		galleries: [
 			{ title: "Galerias 2", body: "Soy una Galeria", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },
 			{ title: "Galerias 2", body: "Soy una Galeria", image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" } },

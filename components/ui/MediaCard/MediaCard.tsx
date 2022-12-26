@@ -17,7 +17,7 @@ interface Props {
 export const MediaCard: FC<Props> = ({ image, title, body, justifyContent }) => {
 	return (
 		<Grid container justifyContent={justifyContent}>
-			<Grid item xs={12} sm={9} my={4}>
+			<Grid item xs={12} sm={9}  my={4}>
 				<Card variant="outlined">
 					<CardActionArea>
 						{/* <CardMedia
