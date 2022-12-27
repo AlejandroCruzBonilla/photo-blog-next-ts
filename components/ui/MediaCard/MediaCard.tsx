@@ -1,8 +1,10 @@
 import { FC } from 'react';
 import { Card, CardHeader, CardActionArea, CardContent, CardMedia, Typography, Grid, Divider } from '@mui/material';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 interface Props {
+	url: string;
 	title: string
 	body?: string
 	date?: string
@@ -10,21 +12,31 @@ interface Props {
 		src: string
 		alt: string
 	}
-	xs?:number
-	sm?:number
-	md?:number
-	lg?:number
+	xs?: number
+	sm?: number
+	md?: number
+	lg?: number
 }
 
 export const MediaCard: FC<Props> = ({
 	image,
 	title,
-	body, date,
+	body, 
+	date,
+	url,
 	...rest
 }) => {
+
+	const router = useRouter()
+
+	const onClick = () => {
+		router.push(url)
+	}
+
 	return (
 
 		<Grid
+			onClick={onClick}
 			item
 			p={1}
 			{...rest}
