@@ -19,7 +19,10 @@ const Articles = () => {
 		<MainLayout
 			seo={seo}
 		>
-			<Grid container >
+			<Grid
+				container
+				my={"2%"}
+			>
 				<Grid
 					item
 					xs={12}
@@ -36,17 +39,18 @@ const Articles = () => {
 					</Typography>
 				</Grid>
 			</Grid>
-			<Grid>
+			<Grid container>
 				{
 					allArticles.map(({ title, body, image }, index) =>
-						<Grid my={2}>
-							<MediaCard
-								key={`media-card-${index}`}
-								justifyContent={"center"}
-								// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
-								{...{ title, body, image }}
-							/>
-						</Grid>
+
+						<MediaCard
+							key={`media-card-${index}`}
+							xs={12}
+							sm={6}
+							md={4}
+							{...{ title, body, image }}
+						/>
+
 					)
 				}
 			</Grid>

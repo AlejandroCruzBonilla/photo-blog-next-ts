@@ -97,14 +97,14 @@ const Galerias = () => {
 											>
 												{
 													galleries.map(({ title, body, image }, index) =>
-														<Grid my={2}>
-															<MediaCard
-																key={`media-card-${index}`}
-																justifyContent={"center"}
-																// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
-																{...{ title, body, image }}
-															/>
-														</Grid>
+
+														<MediaCard
+															key={`media-card-${index}`}
+															xs={12}
+															sm={6}
+															md={4}
+															{...{ title, body, image }}
+														/>
 													)
 												}
 											</TabContent>
