@@ -12,13 +12,21 @@ interface Props {
 		src: string
 		alt: string
 	}
-	sm?: number
+	md?: number
 }
 
-export const MediaCard: FC<Props> = ({ image, title, body, date, justifyContent, sm=10 }) => {
+export const MediaCard: FC<Props> = ({ image, title, body, date, justifyContent, md = 12 }) => {
 	return (
-		<Grid container justifyContent={justifyContent} my={4}>
-			<Grid item xs={12} sm={sm}>
+		<Grid
+			container
+			justifyContent={justifyContent}
+			my={4}
+		>
+			<Grid
+				item
+				xs={12}
+				md={md}
+			>
 				<Card
 					variant="outlined"
 					sx={{

@@ -1,3 +1,4 @@
+import { Grid, Typography } from '@mui/material';
 import { SyntheticEvent, useState } from 'react';
 import { MainLayout } from "../../components/layouts";
 import { MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
@@ -50,22 +51,62 @@ const Galerias = () => {
 	};
 
 	return (
-		<MainLayout seo={seo}>
-			<h1>Galerias</h1>
-			<TabBar value={value} tabs={categories} handleChange={handleChange} />
-			<TabsContent value={value}>
-				{
-					galleries.map((galleries, index) => (
-						<TabContent key={`tab-content-${index}`}>
-							{
-								galleries.map(({ title, body, image }, index) =>
-									<MediaCard key={`media-card-${index}`} justifyContent={`${index % 2 ? "end" : "start"}`} {...{ title, body, image }}></MediaCard>
-								)
-							}
-						</TabContent>
-					))
-				}
-			</TabsContent>
+		<MainLayout
+			seo={seo}
+		>
+			<Grid container >
+				<Grid
+					item
+					xs={12}
+				>
+					<Typography
+						variant="h1"
+						fontSize={"3rem"}
+						textAlign={{
+							xs: "center",
+							md: "start"
+						}}
+					>
+						Galerias
+					</Typography>
+				</Grid>
+			</Grid>
+			<Grid
+				container
+				justifyContent={"center"}
+			>
+				<Grid
+					item
+				>
+					<TabBar
+						value={value}
+						tabs={categories}
+						handleChange={handleChange}
+					/>
+					<TabsContent
+						value={value}
+					>
+						{
+							galleries.map((galleries, index) => (
+								<TabContent
+									key={`tab-content-${index}`}
+								>
+									{
+										galleries.map(({ title, body, image }, index) =>
+											<MediaCard
+												key={`media-card-${index}`}
+												justifyContent={"center"}
+												// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
+												{...{ title, body, image }}
+											/>
+										)
+									}
+								</TabContent>
+							))
+						}
+					</TabsContent>
+				</Grid>
+			</Grid>
 		</MainLayout>
 	)
 }

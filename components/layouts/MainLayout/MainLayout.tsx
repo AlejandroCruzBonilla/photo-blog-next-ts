@@ -3,6 +3,7 @@ import Head from 'next/head';
 
 import { Box, Grid, Toolbar } from '@mui/material';
 import { Navbar, MainMenu, Footer } from '../../ui';
+import { width } from '@mui/system';
 
 
 interface Props {
@@ -29,41 +30,43 @@ export const MainLayout: FC<Props> = ({
 				<title>{`Site Name - ${title}`}</title>
 				<meta name="description" content={description} />
 			</Head>
-			<Grid
+
+			<Grid component={"header"} >
+				<Navbar />
+				<Toolbar
+					disableGutters
+					sx={{
+						mb: {
+							xs: "6%",
+							sm: "3%",
+						}
+					}}
+				/>
+				<MainMenu />
+			</Grid>
+
+			<Grid component={"main"}
 				container
-				direction={"column"}
+				justifyContent={"center"}
+				minHeight={'65vh'}
 				px={{
 					xs: 2
 				}}
 			>
 				<Grid
-					container
-					component={"header"}
-				>
-					<Navbar />
-					<Toolbar
-						disableGutters
-						sx={{ height: "5%" }}
-					/>
-					<MainMenu />
-				</Grid>
-
-				<Grid
 					item
-					component={"main"}
-					minHeight={'65vh'}
-					width={1}
+					xs={12}
+					md={10}
 				>
 					{children}
 				</Grid>
-
-				<Grid
-					item
-					component={"footer"}
-				>
-					<Footer />
-				</Grid>
 			</Grid>
+
+			<Grid component={"footer"} >
+				<Footer />
+			</Grid>
+
+
 		</>
 	)
 };

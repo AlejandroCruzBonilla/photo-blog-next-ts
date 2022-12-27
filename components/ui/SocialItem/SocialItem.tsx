@@ -1,16 +1,14 @@
 import { FC } from "react";
-import { Grid, Link, SvgIconTypeMap, Typography } from "@mui/material"
-import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { Grid, Link, Icon, Typography } from "@mui/material"
+import styles from "./SocialItem.module.css"
 
 interface Props {
-  Icon: OverridableComponent<SvgIconTypeMap<{}, "svg">> & {
-    muiName: string;
-  }
-  link: string;
-  title?: string;
+  icon: string
+  link: string
+  title?: string
 }
 
-export const SocialItem: FC<Props> = ({ Icon, title, link }) => {
+export const SocialItem: FC<Props> = ({ icon, title, link }) => {
   return (
     <Grid item>
       <Link
@@ -20,9 +18,29 @@ export const SocialItem: FC<Props> = ({ Icon, title, link }) => {
         underline="none"
         color="inherit"
       >
-        <Grid container direction={"column"}>
-          <Icon sx={{ mx: "auto" }} fontSize={"large"}/>
-          {title ? <Grid ><Typography textAlign={"center"}>{title}</Typography></Grid> : null}
+        <Grid
+          container
+          direction={"column"}
+        >
+          <Icon
+            baseClassName="material-symbols-outlined"
+            className={styles['social-item-xxx-font-size']}
+          >
+            {icon}
+          </Icon>
+          {
+            title
+              ? (
+                <Grid >
+                  <Typography
+                    textAlign={"center"}
+                  >
+                    {title}
+                  </Typography>
+                </Grid>
+              )
+              : null
+          }
         </Grid>
       </Link>
     </Grid>

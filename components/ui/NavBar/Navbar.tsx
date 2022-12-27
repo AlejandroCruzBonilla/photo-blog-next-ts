@@ -14,77 +14,69 @@ export const Navbar = () => {
 	const { openSideMenu } = useContext(UIContext);
 
 	return (
+
 		<HideOnScroll>
-			<AppBar
-				component={"nav"}
-				sx={{
-					px: {
-						xs: 2
-					},
-				}}
+			<AppBar component={"nav"}
+				sx={{ px: 2 }}
 			>
 				<Toolbar
 					disableGutters
-					sx={{
-						height: "5%",
-						justifyContent: "center"
-					}}
 				>
 					<Grid
-						container direction={"row"} justifyContent={"center"}
-						item xs={12}
-						sm={10}
+						container
+						justifyContent={"center"}
 					>
 						<Grid
 							container
-							justifyContent={"start"}
+							justifyContent={"space-between"}
 							item
-							xs={10}
+							xs={12}
+							md={10}
 						>
-							<NextLink
-								href="/"
-								legacyBehavior
-							>
-								<Link
-									underline="none"
-									sx={{ cursor: "pointer" }}
+							<Grid item>
+								<NextLink
+									href="/"
+									legacyBehavior
 								>
-									<Grid container direction={"row"}>
-										<Image
-											src={"https://via.placeholder.com/100x100.jpeg"}
-											alt="logo"
-											width={60}
-											height={60}
-											priority
-										/>
-										<Typography
-											component='div'
-											alignSelf={"center"}
-											color={"#fff"}
-										>
-											Site Name
-										</Typography>
-									</Grid>
-								</Link>
-							</NextLink>
-						</Grid>
-						<Grid
-							container
-							justifyContent={"end"}
-							item
-							xs={2}
-						>
-							<IconButton
-								size='large'
-								edge="start"
-								onClick={openSideMenu}
-							>
-								<MenuOutlinedIcon />
-							</IconButton>
+									<Link
+										underline="none"
+										sx={{ cursor: "pointer" }}
+									>
+										<Grid container direction={"row"}>
+											<Image
+												src={"https://via.placeholder.com/100x100.jpeg"}
+												alt="logo"
+												width={60}
+												height={60}
+												priority
+											/>
+											<Typography
+												component='div'
+												alignSelf={"center"}
+												color={"#fff"}
+												ml={4}
+											>
+												Site Name
+											</Typography>
+										</Grid>
+									</Link>
+								</NextLink>
+							</Grid>
+
+							<Grid item>
+								<IconButton
+									size='large'
+									edge="start"
+									onClick={openSideMenu}
+								>
+									<MenuOutlinedIcon />
+								</IconButton>
+							</Grid>
 						</Grid>
 					</Grid>
 				</Toolbar>
 			</AppBar>
 		</HideOnScroll>
+
 	)
 };

@@ -1,6 +1,6 @@
-import { Grid } from '@mui/material';
+import { Grid, Typography } from '@mui/material';
 import { MainLayout } from "../../components/layouts";
-import { MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
+import { MediaCard } from '../../components/ui';
 
 const seo = {
 	title: "Articulos",
@@ -16,12 +16,35 @@ const allArticles = [
 const Articles = () => {
 
 	return (
-		<MainLayout seo={seo}>
-			<h1>Articulos</h1>
+		<MainLayout
+			seo={seo}
+		>
+			<Grid container >
+				<Grid
+					item
+					xs={12}
+				>
+					<Typography
+						variant="h1"
+						fontSize={"3rem"}
+						textAlign={{
+							xs: "center",
+							md: "start"
+						}}
+					>
+						Articulos
+					</Typography>
+				</Grid>
+			</Grid>
 			<Grid>
 				{
 					allArticles.map(({ title, body, image }, index) =>
-						<MediaCard key={`media-card-${index}`} justifyContent={"center"}  {...{ title, body, image }}></MediaCard>
+						<MediaCard
+							key={`media-card-${index}`}
+							justifyContent={"center"}
+							// justifyContent={`${index % 2 ? "end" : "start"}`}
+							{...{ title, body, image }}
+						/>
 					)
 				}
 			</Grid>

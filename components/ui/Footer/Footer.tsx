@@ -10,31 +10,86 @@ import {
 export const Footer = () => {
   return (
     <Grid
-      p={2}
-      height={'30vh'}
+      py={4}
       sx={{
         background: "#fff"
       }}
     >
-      <Grid container height={2 / 6}>
-        <Grid container justifyContent={"center"} alignItems={"center"} >
-          <Image src={"https://via.placeholder.com/100x100.jpeg"} alt="logo" width={100} height={100} priority />
+      <Grid
+        container
+        height={2 / 6}
+        mb={{
+          xs: 4,
+          md: 8
+        }}
+      >
+        <Grid
+          container
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <Image
+            src={"https://via.placeholder.com/100x100.jpeg"}
+            alt="logo"
+            width={100}
+            height={100}
+            priority
+          />
         </Grid>
       </Grid>
-      <Grid container height={4 / 6}>
-        <Grid container justifyContent={"center"} >
-          <Grid container alignItems={"center"} item xs={9}>
-            <Grid container item xs={3} justifyContent={"center"} alignItems={"center"} >
-              <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
+      <Grid
+        container
+        height={4 / 6}
+        mb={{
+          xs: 4,
+          md: 8
+        }}
+      >
+        <Grid
+          container
+          justifyContent={"center"}
+        >
+          <Grid
+            container
+            alignItems={"center"}
+            justifyContent={"center"}
+            item xs={8}
+          >
+            <Grid
+              container
+              alignItems={"center"}
+              justifyContent={"center"}
+              item
+              xs={3}
+            >
+              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
             </Grid>
-            <Grid container item xs={3} justifyContent={"center"} alignItems={"center"} >
-              <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
+            <Grid
+              container
+              alignItems={"center"}
+              justifyContent={"center"}
+              item
+              xs={3}
+            >
+              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
             </Grid>
-            <Grid container item xs={3} justifyContent={"center"} alignItems={"center"} >
-              <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
+            <Grid
+              container
+              alignItems={"center"}
+              justifyContent={"center"}
+              item
+              xs={3}
+            >
+              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
             </Grid>
-            <Grid container item xs={3} justifyContent={"center"} alignItems={"center"} >
-              <SocialItem {...{ link: "https:google.com", Icon: EmailOutlined }} />
+            <Grid
+              container
+              alignItems={"center"}
+              justifyContent={"center"}
+              item
+              xs={3}
+            >
+              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
             </Grid>
           </Grid>
         </Grid>
