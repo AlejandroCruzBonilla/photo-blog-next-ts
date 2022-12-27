@@ -5,9 +5,9 @@ import { height, textAlign, width } from '@mui/system';
 
 interface Props {
 	className?: string
-	justifyContent?: "start" | "center" | "end"| undefined 
+	justifyContent?: "start" | "center" | "end" | undefined
 	title: string
-	body: string,
+	body?: string,
 	image: {
 		src: string
 		alt: string
@@ -17,7 +17,7 @@ interface Props {
 export const MediaCard: FC<Props> = ({ image, title, body, justifyContent }) => {
 	return (
 		<Grid container justifyContent={justifyContent}>
-			<Grid item xs={12} sm={9}  my={4}>
+			<Grid item xs={12} sm={9} my={4}>
 				<Card variant="outlined">
 					<CardActionArea>
 						{/* <CardMedia
@@ -41,9 +41,25 @@ export const MediaCard: FC<Props> = ({ image, title, body, justifyContent }) => 
 							<Typography gutterBottom variant="h5" component="div">
 								{title}
 							</Typography>
-							<Typography pb={2} variant="body2" color="text.secondary">
-								{body}
-							</Typography>
+
+							{
+								body
+									? (
+										<Typography
+											variant="body2"
+											color="text.secondary"
+											overflow="hidden"
+											display="-webkit-box"
+											sx={{
+												WebkitLineClamp: 3,
+												WebkitBoxOrient: " vertical",
+											}}
+										>
+											{body}
+										</Typography>
+									)
+									: null
+							}
 						</CardContent>
 					</CardActionArea>
 				</Card>

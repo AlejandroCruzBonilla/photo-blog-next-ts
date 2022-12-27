@@ -7,6 +7,7 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { UIContext } from '../../../context/ui';
 import { HideOnScroll } from '../';
+import { height } from '@mui/system';
 
 // const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 //   alignItems: 'flex-start',
@@ -23,31 +24,35 @@ export const Navbar = () => {
 	const { openSideMenu } = useContext(UIContext);
 
 	return (
-		<Grid component={"nav"}>
-			<HideOnScroll>
-				<AppBar>
-					<Toolbar>
-						<Box m={0} p={0} display={"flex"} sx={{ flexGrow: 1 }} >
-							<NextLink href="/" legacyBehavior>
-								<Link underline="none" sx={{cursor:"pointer"}} display={"inline-block"}>
-									<Grid container direction={"row"}>
-										<Image src={"https://via.placeholder.com/60x60.jpeg"} alt="logo" width={60} height={60} priority />
-										<Typography component='div' alignSelf={"center"} ml={3} color={"#fff"}>Site Name</Typography>
-									</Grid>
-								</Link>
-							</NextLink>
-						</Box>
+		<HideOnScroll>
+			<AppBar component={"nav"} sx={{ p: 1 }}>
+				<Toolbar>
+					<Grid container sx={{ flexGrow: 1 }}>
+						<NextLink href="/" legacyBehavior>
+							<Link underline="none" sx={{ cursor: "pointer" }} display={"inline-block"}>
+								<Grid container direction={"row"}>
+									<Image
+										src={"https://via.placeholder.com/100x100.jpeg"}
+										alt="logo"
+										width={60}
+										height={60}
+										priority
+									/>
+									<Typography component='div' alignSelf={"center"} ml={3} color={"#fff"}>Site Name</Typography>
+								</Grid>
+							</Link>
+						</NextLink>
+					</Grid>
 
-						<IconButton
-							size='large'
-							edge="start"
-							onClick={openSideMenu}
-						>
-							<MenuOutlinedIcon />
-						</IconButton>
-					</Toolbar>
-				</AppBar>
-			</HideOnScroll>
-		</Grid>
+					<IconButton
+						size='large'
+						edge="start"
+						onClick={openSideMenu}
+					>
+						<MenuOutlinedIcon />
+					</IconButton>
+				</Toolbar>
+			</AppBar>
+		</HideOnScroll>
 	)
 };

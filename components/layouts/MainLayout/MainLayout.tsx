@@ -31,12 +31,22 @@ export const MainLayout: FC<Props> = ({
 
 			</Head>
 			<Grid container direction={"column"}>
-				<Grid component={"header"} mb={5}>
+				<Grid
+					component={"header"}
+					mb={5}
+				>
 					<Navbar />
 					<MainMenu />
 				</Grid>
 
-				<Grid item component={"main"} pt={4} px={3} minHeight={'65vh'} width={1}>
+				<Grid
+					component={"main"}
+					item
+					// pt={4}
+					px={3}
+					my={5}
+					minHeight={'65vh'}
+					width={1}>
 					{children}
 				</Grid>
 
