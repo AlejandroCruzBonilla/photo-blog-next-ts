@@ -16,6 +16,7 @@ export const TabContent: FC<Props> = ({ children, title }) => {
             <Grid
               container
               py={2}
+              my={2}
               display={{
                 sm: "none"
               }}

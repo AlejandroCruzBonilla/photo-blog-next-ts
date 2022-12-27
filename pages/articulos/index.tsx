@@ -39,12 +39,14 @@ const Articles = () => {
 			<Grid>
 				{
 					allArticles.map(({ title, body, image }, index) =>
-						<MediaCard
-							key={`media-card-${index}`}
-							justifyContent={"center"}
-							// justifyContent={`${index % 2 ? "end" : "start"}`}
-							{...{ title, body, image }}
-						/>
+						<Grid my={2}>
+							<MediaCard
+								key={`media-card-${index}`}
+								justifyContent={"center"}
+								// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
+								{...{ title, body, image }}
+							/>
+						</Grid>
 					)
 				}
 			</Grid>

@@ -54,7 +54,7 @@ const Galerias = () => {
 		<MainLayout
 			seo={seo}
 		>
-			<Grid container >
+			<Grid container my={"2%"}>
 				<Grid
 					item
 					xs={12}
@@ -71,44 +71,49 @@ const Galerias = () => {
 					</Typography>
 				</Grid>
 			</Grid>
+
 			<Grid
 				container
 				justifyContent={"center"}
 			>
-				<Grid
-					item
-				>
-					<TabBar
-						value={value}
-						tabs={categories}
-						handleChange={handleChange}
-					/>
-					<TabsContent
-						value={value}
-					>
-						{
-							galleries.map((galleries, index) => {
-								const { label } = categories[index]
-								return (
-									<TabContent
-										key={`tab-content-${index}`}
-										title={label}
-									>
-										{
-											galleries.map(({ title, body, image }, index) =>
-												<MediaCard
-													key={`media-card-${index}`}
-													justifyContent={"center"}
-													// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
-													{...{ title, body, image }}
-												/>
-											)
-										}
-									</TabContent>
-								)
-							})
-						}
-					</TabsContent>
+				<Grid item>
+					<Grid my={"2%"} >
+						<TabBar
+							value={value}
+							tabs={categories}
+							handleChange={handleChange}
+						/>
+					</Grid>
+					<Grid>
+						<TabsContent value={value}>
+							{
+								galleries.map((galleries, index) => {
+									const { label } = categories[index]
+									return (
+										<Grid>
+											<TabContent
+												key={`tab-content-${index}`}
+												title={label}
+											>
+												{
+													galleries.map(({ title, body, image }, index) =>
+														<Grid my={2}>
+															<MediaCard
+																key={`media-card-${index}`}
+																justifyContent={"center"}
+																// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
+																{...{ title, body, image }}
+															/>
+														</Grid>
+													)
+												}
+											</TabContent>
+										</Grid>
+									)
+								})
+							}
+						</TabsContent>
+					</Grid>
 				</Grid>
 			</Grid>
 		</MainLayout>

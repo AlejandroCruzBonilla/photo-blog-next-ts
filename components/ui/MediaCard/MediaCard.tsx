@@ -20,7 +20,6 @@ export const MediaCard: FC<Props> = ({ image, title, body, date, justifyContent,
 		<Grid
 			container
 			justifyContent={justifyContent}
-			my={4}
 		>
 			<Grid
 				item

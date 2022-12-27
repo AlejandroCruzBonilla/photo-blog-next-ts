@@ -9,7 +9,7 @@ interface Props {
 
 export const TabsContent: FC<Props> = ({ value, children }) => {
   return (
-    <Grid>
+    <>
       {
         (Array.isArray(children))
           ? (
@@ -25,7 +25,7 @@ export const TabsContent: FC<Props> = ({ value, children }) => {
             </TabPanel>
           )
       }
-    </Grid>
+    </>
   )
 }
 
