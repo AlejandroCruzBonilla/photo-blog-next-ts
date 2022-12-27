@@ -12,7 +12,7 @@ const seo = {
 const Contacto = () => {
 	return (
 		<MainLayout seo={seo}>
-			<Grid container >
+			<Grid container my={"2%"}>
 				<Grid
 					item
 					xs={12}
@@ -33,64 +33,81 @@ const Contacto = () => {
 			<Grid
 				container
 				alignItems={"center"}
+				my={"2%"}
 			>
 				<Grid
 					container
 					justifyContent={"center"}
 				>
 					<Grid
-						container
-						alignContent={"center"}
-						md={4}
-						mb={5}
+						item
+						xs={12}
+						md={10}
+						lg={8}
+						my={"2%"}
 					>
 						<Grid
-							item
-							xs={8}
-							mx={"auto"}
+							container
+							justifyContent={"center"}
+							alignContent={"center"}
 						>
-							<Avatar
-								src="https://via.placeholder.com/500x500.jpeg"
-								alt="Remy Sharp"
-								sx={{ width: "auto", height: "auto" }}
-							/>
+							<Grid item
+								xs={8}
+								sm={6}
+								lg={4}
+							>
+								<Avatar
+									src="https://via.placeholder.com/500x500.jpeg"
+									alt="Remy Sharp"
+									sx={{ width: "auto", height: "auto" }}
+								/>
+							</Grid>
 						</Grid>
 					</Grid>
 					<Grid
-						container
-						alignItems={"center"}
 						item
 						xs={12}
-						md={6}
+						md={10}
+						lg={8}
+						my={"2%"}
 					>
-						<Grid>
-							<Typography
-								paragraph
-								textAlign={"justify"}
-							>
-								Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus hac tempor nascetur aptent. Quis facilisis lobortis orci laoreet hendrerit proin rutrum ullamcorper vehicula lacinia tempus mi ornare sollicitudin conubia viverra nec lobortis.
-							</Typography>
-							<Typography
-								paragraph
-								textAlign={"justify"}
-							>
-								Volutpat convallis blandit facilisis primis adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus duis phasellus auctor congue fames, penatibus dapibus sociis id urna vulputate per inceptos, hendrerit egestas porttitor risus hac tempor nascetur aptent.
-							</Typography>
+						<Grid
+							container
+							alignContent={"center"}
+						>
+							<Grid item >
+								<Typography
+									paragraph
+									textAlign={"justify"}
+								>
+									Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus hac tempor nascetur aptent. Quis facilisis lobortis orci laoreet hendrerit proin rutrum ullamcorper vehicula lacinia tempus mi ornare sollicitudin conubia viverra nec lobortis.
+								</Typography>
+								<Typography
+									paragraph
+									textAlign={"justify"}
+								>
+									Volutpat convallis blandit facilisis primis adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus duis phasellus auctor congue fames, penatibus dapibus sociis id urna vulputate per inceptos, hendrerit egestas porttitor risus hac tempor nascetur aptent.
+								</Typography>
+							</Grid>
 						</Grid>
 					</Grid>
+
 				</Grid>
 
 				<Grid
 					container
-					direction={"column"}
-					mt={6}
+					justifyContent={"center"}
 				>
 					<Grid
-						container
-						mb={6}
+						item
+						xs={12}
+						md={10}
+						lg={6}
+						xl={5}
 					>
 						<ContactForm />
 					</Grid>
+
 				</Grid>
 			</Grid>
 		</MainLayout>

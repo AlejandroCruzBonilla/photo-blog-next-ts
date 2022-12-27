@@ -12,7 +12,30 @@ export const TabContent: FC<Props> = ({ children, title }) => {
     <>
       {
         title
-          ? (<Typography>{title}</Typography>)
+          ? (
+            <Grid
+              container
+              py={2}
+              display={{
+                sm: "none"
+              }}
+            >
+              <Grid
+                item
+                xs={12}
+              >
+                <Typography
+                  variant="h3"
+                  fontSize={"2rem"}
+                  textAlign={{
+                    xs: "center",
+                  }}
+                >
+                  {title}
+                </Typography>
+              </Grid>
+            </Grid>
+          )
           : null
       }
       <Grid container>

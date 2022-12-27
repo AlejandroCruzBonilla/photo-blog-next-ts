@@ -6,12 +6,7 @@ import { AnimateContainer } from "../../ui";
 export const ContactForm = () => {
 
   return (
-    <Grid component={"form"} mx={"auto"}
-      sx={{
-        xs: { width: "100vw" },
-        md: { width: "60vw" },
-      }}
-    >
+    <Grid component={"form"}>
       {/* <AnimateContainer direction="right" timeout={500}> */}
       <TextField sx={{ my: 1 }} fullWidth name="name" label="name" id="name" />
       {/* </AnimateContainer> */}
