@@ -87,22 +87,26 @@ const Galerias = () => {
 						value={value}
 					>
 						{
-							galleries.map((galleries, index) => (
-								<TabContent
-									key={`tab-content-${index}`}
-								>
-									{
-										galleries.map(({ title, body, image }, index) =>
-											<MediaCard
-												key={`media-card-${index}`}
-												justifyContent={"center"}
-												// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
-												{...{ title, body, image }}
-											/>
-										)
-									}
-								</TabContent>
-							))
+							galleries.map((galleries, index) => {
+								const { label } = categories[index]
+								return (
+									<TabContent
+										key={`tab-content-${index}`}
+										title={label}
+									>
+										{
+											galleries.map(({ title, body, image }, index) =>
+												<MediaCard
+													key={`media-card-${index}`}
+													justifyContent={"center"}
+													// justifyContent={`${index % 2 ? "end" : "start"}`} md={10}
+													{...{ title, body, image }}
+												/>
+											)
+										}
+									</TabContent>
+								)
+							})
 						}
 					</TabsContent>
 				</Grid>
