@@ -1,6 +1,4 @@
-import { JSXElementConstructor, ReactElement, SyntheticEvent, useState } from 'react';
-import { Tab, Tabs, Grid } from '@mui/material';
-import { LocalSeeOutlined } from "@mui/icons-material";
+import { SyntheticEvent, useState } from 'react';
 import { MainLayout } from "../../components/layouts";
 import { MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
 
@@ -61,7 +59,7 @@ const Galerias = () => {
 						<TabContent key={`tab-content-${index}`}>
 							{
 								galleries.map(({ title, body, image }, index) =>
-									<MediaCard  key={`media-card-${index}`} justifyContent={`${index%2?"end":"start"}`} {...{ title, body, image }}></MediaCard>
+									<MediaCard key={`media-card-${index}`} justifyContent={`${index % 2 ? "end" : "start"}`} {...{ title, body, image }}></MediaCard>
 								)
 							}
 						</TabContent>

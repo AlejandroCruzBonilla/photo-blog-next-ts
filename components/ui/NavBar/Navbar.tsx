@@ -7,17 +7,7 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 
 import { UIContext } from '../../../context/ui';
 import { HideOnScroll } from '../';
-import { height } from '@mui/system';
 
-// const StyledToolbar = styled(Toolbar)(({ theme }) => ({
-//   alignItems: 'flex-start',
-//   paddingTop: theme.spacing(1),
-//   paddingBottom: theme.spacing(2),
-//   // Override media queries injected by theme.mixins.toolbar
-//   '@media all': {
-//     minHeight: 128,
-//   },
-// }));
 
 export const Navbar = () => {
 
@@ -25,32 +15,74 @@ export const Navbar = () => {
 
 	return (
 		<HideOnScroll>
-			<AppBar component={"nav"} sx={{ p: 1 }}>
-				<Toolbar>
-					<Grid container sx={{ flexGrow: 1 }}>
-						<NextLink href="/" legacyBehavior>
-							<Link underline="none" sx={{ cursor: "pointer" }} display={"inline-block"}>
-								<Grid container direction={"row"}>
-									<Image
-										src={"https://via.placeholder.com/100x100.jpeg"}
-										alt="logo"
-										width={60}
-										height={60}
-										priority
-									/>
-									<Typography component='div' alignSelf={"center"} ml={3} color={"#fff"}>Site Name</Typography>
-								</Grid>
-							</Link>
-						</NextLink>
-					</Grid>
-
-					<IconButton
-						size='large'
-						edge="start"
-						onClick={openSideMenu}
+			<AppBar
+				component={"nav"}
+				sx={{
+					px: {
+						xs: 2
+					},
+				}}
+			>
+				<Toolbar
+					disableGutters
+					sx={{
+						height: "5%",
+						justifyContent: "center"
+					}}
+				>
+					<Grid
+						container direction={"row"} justifyContent={"center"}
+						item xs={12}
+						sm={10}
 					>
-						<MenuOutlinedIcon />
-					</IconButton>
+						<Grid
+							container
+							justifyContent={"start"}
+							item
+							xs={10}
+						>
+							<NextLink
+								href="/"
+								legacyBehavior
+							>
+								<Link
+									underline="none"
+									sx={{ cursor: "pointer" }}
+								>
+									<Grid container direction={"row"}>
+										<Image
+											src={"https://via.placeholder.com/100x100.jpeg"}
+											alt="logo"
+											width={60}
+											height={60}
+											priority
+										/>
+										<Typography
+											component='div'
+											alignSelf={"center"}
+											color={"#fff"}
+										>
+											Site Name
+										</Typography>
+									</Grid>
+								</Link>
+							</NextLink>
+						</Grid>
+						<Grid
+							container
+							justifyContent={"end"}
+							item
+							xs={2}
+						>
+							<IconButton
+								size='large'
+								edge="start"
+								onClick={openSideMenu}
+							>
+								<MenuOutlinedIcon />
+							</IconButton>
+						</Grid>
+					</Grid>
 				</Toolbar>
 			</AppBar>
 		</HideOnScroll>

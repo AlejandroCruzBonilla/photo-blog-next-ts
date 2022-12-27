@@ -1,7 +1,7 @@
 import { FC, ReactElement } from 'react';
 import Head from 'next/head';
 
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Toolbar } from '@mui/material';
 import { Navbar, MainMenu, Footer } from '../../ui';
 
 
@@ -28,38 +28,42 @@ export const MainLayout: FC<Props> = ({
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<title>{`Site Name - ${title}`}</title>
 				<meta name="description" content={description} />
-
 			</Head>
-			<Grid container direction={"column"}>
+			<Grid
+				container
+				direction={"column"}
+				px={{
+					xs: 2
+				}}
+			>
 				<Grid
+					container
 					component={"header"}
-					mb={5}
 				>
 					<Navbar />
+					<Toolbar
+						disableGutters
+						sx={{ height: "5%" }}
+					/>
 					<MainMenu />
 				</Grid>
 
 				<Grid
-					component={"main"}
 					item
-					// pt={4}
-					px={3}
-					my={5}
+					component={"main"}
 					minHeight={'65vh'}
-					width={1}>
+					width={1}
+				>
 					{children}
 				</Grid>
 
-				<Grid item component={"footer"}>
+				<Grid
+					item
+					component={"footer"}
+				>
 					<Footer />
 				</Grid>
 			</Grid>
-
 		</>
-
-
-
-
-
 	)
 };
