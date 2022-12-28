@@ -1,11 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { Box, Grid } from '@mui/material'
+import { Grid } from '@mui/material'
 import { SocialItem } from '../';
-
-import {
-  EmailOutlined,
-} from '@mui/icons-material'
 
 export const Footer = () => {
   return (

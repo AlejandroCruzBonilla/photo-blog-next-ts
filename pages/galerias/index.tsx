@@ -8,7 +8,7 @@ const seo = {
 	description: "Pagina de Galerias"
 }
 
-const Galleries = [
+export const Galleries = [
 	{
 		category: { icon: "work", label: "Portafolio", value: 0 },
 		galleries: [
