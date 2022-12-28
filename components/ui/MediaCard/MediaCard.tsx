@@ -21,7 +21,7 @@ interface Props {
 export const MediaCard: FC<Props> = ({
 	image,
 	title,
-	body, 
+	body,
 	date,
 	url,
 	...rest
@@ -57,19 +57,28 @@ export const MediaCard: FC<Props> = ({
 								height="auto"
 							/> 
 						*/}
-					<Image
-						priority
-						src={image.src}
-						alt={image.alt}
-						width={1920}
-						height={1080}
-						style={{
-							width: '100%',
-							height: 'auto',
-						}}
-					/>
-					<CardContent>
-						<Typography gutterBottom variant="h5" component="div">
+					<Grid container alignItems="center" justifyContent="center">
+						<Grid item >
+							<Image
+								src={image.src}
+								alt={image.alt}
+								width={1920}
+								height={1080}
+								style={{
+									width: "100%",
+									height: "100%",
+									objectFit: "cover",
+									objectPosition: "center"
+								}}
+							/>
+						</Grid>
+					</Grid>
+					<CardContent sx={{p:1.5}}>
+						<Typography
+							gutterBottom
+							variant="h5"
+							component="div"
+						>
 							{title}
 						</Typography>
 						{
