@@ -16,18 +16,36 @@ export const Galleries = [
 				title: "Galeria 1",
 				body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-1"
 			},
 			{
 				title: "Galeria 2",
 				body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-2"
 			},
 			{
 				title: "Galeria 3",
 				body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-3"
 			},
 		]
@@ -39,18 +57,36 @@ export const Galleries = [
 				title: "Galeria 4",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-4"
 			},
 			{
 				title: "Galeria 5",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-5"
 			},
 			{
 				title: "Galeria 6",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-6"
 			},
 		]
@@ -62,18 +98,36 @@ export const Galleries = [
 				title: "Galeria 7",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-7"
 			},
 			{
 				title: "Galeria 8",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-8"
 			},
 			{
 				title: "Galeria 9",
 				body: "Soy una Galeria",
 				image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				images:[
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+					{ src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
+				],
 				url: "galeria-9"
 			},
 		]

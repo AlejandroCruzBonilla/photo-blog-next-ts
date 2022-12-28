@@ -12,10 +12,13 @@ interface Gallery {
 	title: string
 	body: string
 	date?: string
-	image: {
-		src: string
-		alt: string
-	}
+	image: Image
+	images: Image[]
+}
+
+type Image = {
+	src: string
+	alt: string
 }
 
 const seo = {
@@ -29,10 +32,10 @@ const Gallery: NextPage<Props> = ({
 		body,
 		date,
 		image,
+		images,
 	}
 }) => {
 	const router = useRouter();
-	// console.log(router.query);
 	return (
 		<MainLayout
 			seo={seo}
@@ -75,10 +78,35 @@ const Gallery: NextPage<Props> = ({
 				</Grid>
 			</Grid>
 			<Grid container alignItems="center">
-				<Grid item mb={"6%"}>
+				<Grid item >
 					<Typography textAlign="justify">
 						{body}
 					</Typography>
+				</Grid>
+			</Grid>
+
+			<Grid container alignItems="center">
+				<Grid item >
+					{
+						images.map(({ src, alt }, index) => (
+							<Grid key={`gallery-image-${index}`} container alignItems="center" justifyContent="center">
+								<Grid item >
+									<Image
+										src={src}
+										alt={alt}
+										width={1920}
+										height={800}
+										style={{
+											width: "100%",
+											height: "100%",
+											objectFit: "none",
+											objectPosition: "center"
+										}}
+									/>
+								</Grid>
+							</Grid>
+						))
+					}
 				</Grid>
 			</Grid>
 
@@ -92,7 +120,7 @@ import { Galleries } from './'
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
 	// const { data } = await  // your fetch function here 
-	const galleries = Galleries.map(({galleries})=>galleries);
+	const galleries = Galleries.map(({ galleries }) => galleries);
 	const flatGalleries = galleries.flat()
 	return {
 		paths: flatGalleries.map(({ url }) => ({
@@ -110,9 +138,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	// const { data } = await  // your fetch function here 
 
-	const galleries = Galleries.map(({galleries})=>galleries);
+	const galleries = Galleries.map(({ galleries }) => galleries);
 	const flatGalleries = galleries.flat()
-
 	const gallery = flatGalleries.find(({ url }) => url === gallery_url)
 
 	return {
