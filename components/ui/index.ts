@@ -11,3 +11,5 @@ export * from './TabContent';
 export * from './MediaCard';
 export * from './HeadingPage';
 export * from './ImageContainer';
+export * from './ThemeSwitch';
+export * from './ThemeManager';

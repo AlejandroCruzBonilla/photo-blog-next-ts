@@ -47,8 +47,11 @@ export const MainMenu = () => {
 							<Grid container justifyContent={"center"}>
 								<Grid item>
 									{
-										menuItems.map(({ route, text, icon }) => (
-											<Grid item>
+										menuItems.map(({ route, text, icon },index) => (
+											<Grid
+												key={`main-menu-Item-${index}`}
+												item
+											>
 												<ListItemButton
 													key={text}
 													disabled={pathname === route}

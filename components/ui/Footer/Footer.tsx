@@ -44,8 +44,9 @@ export const Footer = () => {
             item xs={8}
           >
             {
-              socialItems.map(({link,icon}) => (
+              socialItems.map(({link,icon},index) => (
                 <Grid
+                  key={`footer-social-item-${index}`}
                   container
                   alignItems={"center"}
                   justifyContent={"center"}

@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { ChangeEvent, useContext } from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
@@ -6,14 +6,20 @@ import { AppBar, Grid, IconButton, Toolbar, Typography, Link } from '@mui/materi
 import { MenuOutlined } from '@mui/icons-material';
 
 import { UIContext } from '../../../context/ui';
-import { HideOnScroll } from '../';
+import { HideOnScroll, ThemeSwitch } from '../';
 import { NavBarData } from '../../../_fakeData';
 
 
 export const Navbar = () => {
 
 	const { data: { title, logo } } = NavBarData;
-	const { openSideMenu } = useContext(UIContext);
+	const { openSideMenu, setDarkTheme, setLightTheme } = useContext(UIContext);
+
+
+	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+		if (event.target.checked) setDarkTheme();
+		else setLightTheme();
+	}
 
 	return (
 
@@ -64,15 +70,19 @@ export const Navbar = () => {
 									</Link>
 								</NextLink>
 							</Grid>
-
 							<Grid item>
-								<IconButton
-									size='large'
-									edge="start"
-									onClick={openSideMenu}
-								>
-									<MenuOutlined />
-								</IconButton>
+								<Grid container>
+									<Grid item>
+										<ThemeSwitch handleChange={handleChange} />
+									</Grid>
+									<IconButton
+										size='large'
+										edge="start"
+										onClick={openSideMenu}
+									>
+										<MenuOutlined />
+									</IconButton>
+								</Grid>
 							</Grid>
 						</Grid>
 					</Grid>
