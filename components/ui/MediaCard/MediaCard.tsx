@@ -1,7 +1,7 @@
 import { FC } from 'react';
-import { Card, CardHeader, CardActionArea, CardContent, CardMedia, Typography, Grid, Divider } from '@mui/material';
-import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { Card, CardHeader, CardActionArea, CardContent, CardMedia, Typography, Grid, Divider } from '@mui/material';
+import { ImageContainer } from '../';
 import { MediaCardProps } from './model';
 
 export const MediaCard: FC<MediaCardProps> = ({
@@ -43,23 +43,11 @@ export const MediaCard: FC<MediaCardProps> = ({
 								height="auto"
 							/> 
 						*/}
-					<Grid container alignItems="center" justifyContent="center">
-						<Grid item >
-							<Image
-								src={image.src}
-								alt={image.alt}
-								width={image.width}
-								height={image.height}
-								style={{
-									width: "100%",
-									height: "100%",
-									objectFit: "cover",
-									objectPosition: "center"
-								}}
-							/>
-						</Grid>
-					</Grid>
-					<CardContent sx={{p:1.5}}>
+					<ImageContainer
+						image={image}
+						objectFit="cover"
+					/>
+					<CardContent sx={{ p: 1.5 }}>
 						<Typography
 							gutterBottom
 							variant="h5"
