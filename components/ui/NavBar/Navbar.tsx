@@ -13,7 +13,7 @@ import { NavBarData } from '../../../_fakeData';
 export const Navbar = () => {
 
 	const { data: { title, logo } } = NavBarData;
-	const { openSideMenu, setDarkTheme, setLightTheme } = useContext(UIContext);
+	const { openSideMenu, setDarkTheme, setLightTheme, currentTheme } = useContext(UIContext);
 
 
 	const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -73,7 +73,7 @@ export const Navbar = () => {
 							<Grid item>
 								<Grid container>
 									<Grid item>
-										<ThemeSwitch handleChange={handleChange} />
+										<ThemeSwitch currentTheme={currentTheme} handleChange={handleChange} />
 									</Grid>
 									<IconButton
 										size='large'

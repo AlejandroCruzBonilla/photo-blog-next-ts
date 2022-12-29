@@ -11,7 +11,6 @@ export const ThemeManager: FC<Props> = ({ children }) => {
   const { currentTheme } = useContext(UIContext);
   const [theme, setTheme] = useState(lightTheme)
   useEffect(() => {
-    console.log("🚀 ~ file: ThemeManager.tsx:11 ~ currentTheme", currentTheme)
     switch (currentTheme) {
       case "lightTheme":
         setTheme(lightTheme)

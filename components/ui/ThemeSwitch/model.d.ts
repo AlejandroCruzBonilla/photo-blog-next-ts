@@ -1,6 +1,5 @@
+import { ChangeEvent } from 'react';
 export interface ThemeSwitchProps {
-  handleChange: (
-    event: SyntheticEvent,
-    // newValue: string
-  ) => void
+  currentTheme: string
+  handleChange: (event: ChangeEvent<HTMLInputElement>) => void
 }
