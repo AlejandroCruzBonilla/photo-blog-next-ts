@@ -8,6 +8,7 @@ import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import { UIContext } from '../../../context/ui';
 import { HideOnScroll } from '../';
 
+const siteName = "Site Name";
 
 export const Navbar = () => {
 
@@ -56,7 +57,7 @@ export const Navbar = () => {
 												color={"#fff"}
 												ml={4}
 											>
-												Site Name
+												{siteName}
 											</Typography>
 										</Grid>
 									</Link>

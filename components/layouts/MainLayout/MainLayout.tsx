@@ -1,22 +1,11 @@
-import { FC, ReactElement } from 'react';
+import { FC } from 'react';
 import Head from 'next/head';
-
-import { Box, Grid, Toolbar } from '@mui/material';
+import { Grid, Toolbar } from '@mui/material';
 import { Navbar, MainMenu, Footer } from '../../ui';
-import { width } from '@mui/system';
+import { MainLayoutProps } from './model';
 
 
-interface Props {
-	children: ReactElement | ReactElement[],
-	seo: SeoProps
-}
-
-interface SeoProps {
-	title: string,
-	description: string,
-}
-
-export const MainLayout: FC<Props> = ({
+export const MainLayout: FC<MainLayoutProps> = ({
 	children,
 	seo: {
 		title,

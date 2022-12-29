@@ -1,7 +1,14 @@
 import React from 'react'
 import Image from 'next/image'
 import { Grid } from '@mui/material'
-import { SocialItem } from '../';
+import { ImageContainer, SocialItem } from '../';
+
+const logo = {
+  src: "https://via.placeholder.com/100x100.jpeg",
+  alt: "Logo",
+  width: 100,
+  height: 100,
+}
 
 export const Footer = () => {
   return (
@@ -19,19 +26,7 @@ export const Footer = () => {
           md: 8
         }}
       >
-        <Grid
-          container
-          justifyContent={"center"}
-          alignItems={"center"}
-        >
-          <Image
-            src={"https://via.placeholder.com/100x100.jpeg"}
-            alt="logo"
-            width={100}
-            height={100}
-            priority
-          />
-        </Grid>
+        <ImageContainer image={logo} />
       </Grid>
       <Grid
         container

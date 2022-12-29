@@ -1,8 +1,9 @@
 import { useContext } from 'react';
 import { useRouter } from 'next/router';
 import NextLink from 'next/link';
+import { UIContext } from '../../../context/ui';
+
 import {
-	Box,
 	Drawer,
 	Grid,
 	Link,
@@ -25,22 +26,21 @@ import {
 
 
 const menuItems = [
-	{ route: '/', text: "inicio", Icon: RoofingOutlined },
+	{ "route": '/', "text": "inicio", "Icon": RoofingOutlined },
 	{ route: '/galerias', text: "Galerias", Icon: PhotoCameraOutlined },
 	{ route: '/articulos', text: "Articulos", Icon: ArticleOutlined },
 	{ route: '/contacto', text: "Contacto", Icon: EmailOutlined },
 ]
 
-import { UIContext } from '../../../context/ui';
 
 export const MainMenu = () => {
 
-	const { sidemenuOpen, closeSideMenu } = useContext(UIContext);
+	const { sideMenuOpen, closeSideMenu } = useContext(UIContext);
 	const { pathname } = useRouter();
 	return (
 		<Drawer
 			anchor="right"
-			open={sidemenuOpen}
+			open={sideMenuOpen}
 			onClose={closeSideMenu}
 		>
 			<Grid pt={4} width={"100vw"}>

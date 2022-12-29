@@ -1,13 +1,10 @@
-import { FC, ReactElement } from 'react';
+import { FC } from 'react';
 
 import { Slide, useScrollTrigger } from '@mui/material'
+import { HideOnScrollProps } from './models';
 
-interface Props {
-	window?: () => Window;
-	children: ReactElement;
-}
 
-export const HideOnScroll: FC<Props> = ({ children, window }) => {
+export const HideOnScroll: FC<HideOnScrollProps> = ({ children, window }) => {
 	const trigger = useScrollTrigger({
 		target: window ? window() : undefined,
 	});
