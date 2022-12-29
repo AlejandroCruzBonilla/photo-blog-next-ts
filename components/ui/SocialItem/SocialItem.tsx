@@ -2,13 +2,8 @@ import { FC } from "react";
 import { Grid, Link, Icon, Typography } from "@mui/material"
 import styles from "./SocialItem.module.css"
 
-interface Props {
-  icon: string
-  link: string
-  title?: string
-}
 
-export const SocialItem: FC<Props> = ({ icon, title, link }) => {
+export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
   return (
     <Grid item>
       <Link

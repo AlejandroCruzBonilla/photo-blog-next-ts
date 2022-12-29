@@ -1,13 +1,8 @@
-import { FC, ReactElement } from "react"
+import { FC } from "react"
 import { Grid, Typography } from '@mui/material';
+import { TabContentProps } from "./model";
 
-
-interface Props {
-  children: ReactElement[] | ReactElement
-  title?: string
-}
-
-export const TabContent: FC<Props> = ({ children, title }) => {
+export const TabContent: FC<TabContentProps> = ({ children, title }) => {
   return (
     <>
       {

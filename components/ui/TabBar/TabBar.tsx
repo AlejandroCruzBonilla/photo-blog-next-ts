@@ -1,18 +1,8 @@
-import { ReactElement, JSXElementConstructor, FC, SyntheticEvent } from 'react';
+import { FC, SyntheticEvent } from 'react';
 
-import { SvgIcon, Icon, Grid, Tab, Tabs, Typography } from '@mui/material';
+import { Icon, Grid, Tab, Tabs, Typography } from '@mui/material';
+import { TabsProps } from './model';
 
-
-interface TabsProps {
-  value: number
-  tabs: Tab[]
-  handleChange: (event: SyntheticEvent, newValue: number) => void
-}
-type Tab = {
-  icon?: string | undefined,
-  label: string
-  value: number
-}
 
 export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
   return (

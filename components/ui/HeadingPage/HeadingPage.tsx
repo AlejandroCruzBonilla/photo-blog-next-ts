@@ -1,10 +1,10 @@
 import { FC } from "react"
 import { Grid, Typography } from "@mui/material"
-import { HeadingPageProps } from "./models"
-import { textAlign } from '../../../@types/models';
+import { HeadingPageProps } from "./model"
 
 export const HeadingPage: FC<HeadingPageProps> = ({
 	title,
+	variant,
 	textAlign
 }) => (
 	<Grid container my={"2%"}>
@@ -13,7 +13,7 @@ export const HeadingPage: FC<HeadingPageProps> = ({
 			xs={12}
 		>
 			<Typography
-				variant="h1"
+				variant={variant || "h1"}
 				fontSize={"3rem"}
 				textAlign={{
 					xs: textAlign?.xs || "center",

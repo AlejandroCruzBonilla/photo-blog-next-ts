@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Grid, Typography } from "@mui/material"
-import { ImageContainerProps } from "./models"
+import { ImageContainerProps } from "./model"
 import Image from "next/image"
 
 

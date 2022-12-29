@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import { Slide, useScrollTrigger } from '@mui/material'
-import { HideOnScrollProps } from './models';
+import { HideOnScrollProps } from './model';
 
 
 export const HideOnScroll: FC<HideOnScrollProps> = ({ children, window }) => {

@@ -1,14 +1,8 @@
 import { FC, ReactElement } from "react";
 import { Grid } from "@mui/material";
+import { TabPanelProps } from "./model";
 
-interface Props {
-  children: ReactElement;
-  index: number;
-  value: number;
-  className?: string;
-}
-
-export const TabPanel: FC<Props> = ({ children, value, index, className, ...other }) => {
+export const TabPanel: FC<TabPanelProps> = ({ children, value, index, className, ...other }) => {
 
 
   return (

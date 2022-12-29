@@ -1,13 +1,8 @@
 import { FC, ReactElement } from "react"
-import { Grid } from '@mui/material';
 import { TabPanel } from "../";
+import { TabsContentProps } from "./model";
 
-interface Props {
-  value: number
-  children: ReactElement[] | ReactElement
-}
-
-export const TabsContent: FC<Props> = ({ value, children }) => {
+export const TabsContent: FC<TabsContentProps> = ({ value, children }) => {
   return (
     <>
       {

@@ -2,15 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import { Grid } from '@mui/material'
 import { ImageContainer, SocialItem } from '../';
+import { FooterData } from '../../../_fakeData';
 
-const logo = {
-  src: "https://via.placeholder.com/100x100.jpeg",
-  alt: "Logo",
-  width: 100,
-  height: 100,
-}
 
 export const Footer = () => {
+  const { data: { logo, socialItems } } = FooterData
+
   return (
     <Grid
       py={4}
@@ -46,42 +43,19 @@ export const Footer = () => {
             justifyContent={"center"}
             item xs={8}
           >
-            <Grid
-              container
-              alignItems={"center"}
-              justifyContent={"center"}
-              item
-              xs={3}
-            >
-              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
-            </Grid>
-            <Grid
-              container
-              alignItems={"center"}
-              justifyContent={"center"}
-              item
-              xs={3}
-            >
-              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
-            </Grid>
-            <Grid
-              container
-              alignItems={"center"}
-              justifyContent={"center"}
-              item
-              xs={3}
-            >
-              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
-            </Grid>
-            <Grid
-              container
-              alignItems={"center"}
-              justifyContent={"center"}
-              item
-              xs={3}
-            >
-              <SocialItem {...{ link: "https:google.com", icon: "mail" }} />
-            </Grid>
+            {
+              socialItems.map(({link,icon}) => (
+                <Grid
+                  container
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  item
+                  xs={3}
+                >
+                  <SocialItem link={link} icon={icon} />
+                </Grid>
+              ))
+            }
           </Grid>
         </Grid>
       </Grid>

@@ -4,7 +4,6 @@ import { Grid, Toolbar } from '@mui/material';
 import { Navbar, MainMenu, Footer } from '../../ui';
 import { MainLayoutProps } from './model';
 
-
 export const MainLayout: FC<MainLayoutProps> = ({
 	children,
 	seo: {
