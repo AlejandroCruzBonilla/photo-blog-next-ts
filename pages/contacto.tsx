@@ -1,29 +1,12 @@
 import { GetStaticProps, NextPage } from "next";
-
 import { Avatar, Grid, Typography } from '@mui/material';
 import { MainLayout } from "../components/layouts";
+import { HeadingPage } from "../components/ui";
 import { ContactForm } from '../components/Forms';
+import { ContactProps } from "../@types";
 
 
 import { ContactData } from "../_fakeData";
-
-interface ContactProps {
-	data: {
-		title: string
-		body: string
-		image: ImageProps
-		seo: Seo
-	}
-}
-type ImageProps = {
-	src: string
-	alt: string
-}
-
-interface Seo {
-	title: string
-	description: string
-}
 
 const Contact: NextPage<ContactProps> = ({
 	data: {
@@ -35,23 +18,7 @@ const Contact: NextPage<ContactProps> = ({
 }) => {
 	return (
 		<MainLayout seo={seo}>
-			<Grid container my={"2%"}>
-				<Grid
-					item
-					xs={12}
-				>
-					<Typography
-						variant="h1"
-						fontSize={"3rem"}
-						textAlign={{
-							xs: "center",
-							// md: "start"
-						}}
-					>
-						{title}
-					</Typography>
-				</Grid>
-			</Grid>
+			<HeadingPage title={title}  />
 
 			<Grid
 				container

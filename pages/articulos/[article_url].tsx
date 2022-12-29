@@ -1,31 +1,10 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import Image from 'next/image';
-import { useRouter } from 'next/router';
 import { Grid, Typography } from '@mui/material';
 import { MainLayout } from '../../components/layouts';
+import { HeadingPage, ImageContainer } from '../../components/ui';
+import { ArticleProps } from '../../@types';
 
 import { ArticlesData } from '../../_fakeData'
-
-interface ArticleProps {
-	data: {
-		url: string
-		title: string
-		body: string
-		date?: string
-		image: ImageProps
-		seo: SeoProps
-	}
-}
-
-type ImageProps = {
-	src: string
-	alt: string
-}
-
-interface SeoProps {
-	title: string
-	description: string
-}
 
 const Article: NextPage<ArticleProps> = ({
 	data: {
@@ -41,43 +20,15 @@ const Article: NextPage<ArticleProps> = ({
 		<MainLayout
 			seo={seo}
 		>
+			<Grid container>
+				<ImageContainer
+					image={image}
+					objectFit="cover"
+				/>
+			</Grid>
+			
+			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
-			<Grid container alignItems="center" justifyContent="center">
-				<Grid item >
-					<Image
-						src={image.src}
-						alt={image.alt}
-						width={1920}
-						height={800}
-						style={{
-							width: "100%",
-							height: "100%",
-							objectFit: "none",
-							objectPosition: "center"
-						}}
-					/>
-				</Grid>
-			</Grid>
-			<Grid
-				container
-				my={"2%"}
-			>
-				<Grid
-					item
-					xs={12}
-				>
-					<Typography
-						variant="h1"
-						fontSize={"3rem"}
-						textAlign={{
-							xs: "center",
-							md: "start"
-						}}
-					>
-						{title}
-					</Typography>
-				</Grid>
-			</Grid>
 			<Grid container alignItems="center">
 				<Grid item mb={"6%"}>
 					<Typography textAlign="justify">

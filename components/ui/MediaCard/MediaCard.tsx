@@ -2,29 +2,15 @@ import { FC } from 'react';
 import { Card, CardHeader, CardActionArea, CardContent, CardMedia, Typography, Grid, Divider } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { MediaCardProps } from './model';
 
-interface Props {
-	url: string;
-	title: string
-	body?: string
-	date?: string
-	image: {
-		src: string
-		alt: string
-	}
-	xs?: number
-	sm?: number
-	md?: number
-	lg?: number
-}
-
-export const MediaCard: FC<Props> = ({
+export const MediaCard: FC<MediaCardProps> = ({
 	image,
 	title,
 	body,
 	date,
 	url,
-	...rest
+	gridResponsive
 }) => {
 
 	const router = useRouter()
@@ -39,7 +25,7 @@ export const MediaCard: FC<Props> = ({
 			onClick={onClick}
 			item
 			p={1}
-			{...rest}
+			{...gridResponsive}
 		>
 			<Card
 				variant="outlined"
@@ -62,8 +48,8 @@ export const MediaCard: FC<Props> = ({
 							<Image
 								src={image.src}
 								alt={image.alt}
-								width={1920}
-								height={1080}
+								width={image.width}
+								height={image.height}
 								style={{
 									width: "100%",
 									height: "100%",

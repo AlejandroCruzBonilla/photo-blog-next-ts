@@ -9,3 +9,5 @@ export * from './TabsContent';
 export * from './TabPanel';
 export * from './TabContent';
 export * from './MediaCard';
+export * from './HeadingPage';
+export * from './ImageContainer';

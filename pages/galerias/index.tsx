@@ -1,55 +1,17 @@
 import { SyntheticEvent, useState } from 'react';
+import { GetStaticProps, NextPage } from 'next';
 import { Grid, Typography } from '@mui/material';
 import { MainLayout } from "../../components/layouts";
-import { MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
-import { GetStaticProps, NextPage } from 'next';
+import { HeadingPage, MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
+import { GalleriesProps } from '../../@types';
 
 
 import { GalleriesData } from '../../_fakeData'
 
-
-interface GalleriesProps {
-	data: {
-		galleries: Galleries[]
-		seo: SeoProps
-	}
-}
-
-interface Galleries {
-	category: GaleryCategory
-	galleries: Gallery[]
-}
-interface Gallery {
-	data: {
-		title: string
-		body: string
-		image: ImageProps
-		images: ImageProps[]
-		url: string
-		seo: SeoProps
-	}
-}
-
-
-
-type GaleryCategory = {
-	icon: string
-	label: string
-	value: number
-}
-
-type ImageProps = {
-	src: string
-	alt: string
-}
-
-interface SeoProps {
-	title: string
-	description: string
-}
-
 const Galleries: NextPage<GalleriesProps> = ({
 	data: {
+		title,
+		body,
 		galleries,
 		seo
 	}
@@ -66,23 +28,7 @@ const Galleries: NextPage<GalleriesProps> = ({
 		<MainLayout
 			seo={seo}
 		>
-			<Grid container my={"2%"}>
-				<Grid
-					item
-					xs={12}
-				>
-					<Typography
-						variant="h1"
-						fontSize={"3rem"}
-						textAlign={{
-							xs: "center",
-							md: "start"
-						}}
-					>
-						Galerias
-					</Typography>
-				</Grid>
-			</Grid>
+			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
 			<Grid
 				container
@@ -109,9 +55,11 @@ const Galleries: NextPage<GalleriesProps> = ({
 													<MediaCard
 														key={`media-card-${index}`}
 														{...{ title, body, image, url: `/galerias/${url}` }}
-														xs={12}
-														sm={6}
-														md={4}
+														gridResponsive={{
+															xs: 12,
+															sm: 6,
+															md: 4,
+														}}
 													/>
 												)
 											}
