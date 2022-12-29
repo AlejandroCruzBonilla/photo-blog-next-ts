@@ -1,36 +1,44 @@
 import { Grid, Typography } from '@mui/material';
+import { GetStaticProps, NextPage } from 'next';
 import { MainLayout } from "../../components/layouts";
 import { MediaCard } from '../../components/ui';
 
+import { ArticlesData } from '../../_fakeData'
 
-
-export const allArticles = [
-	{
-		title: "Articulo 1",
-		body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-		image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
-		url: "articulo-1"
-	},
-	{
-		title: "Articulo 2",
-		body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-		image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
-		url: "articulo-2"
-	},
-	{
-		title: "Articulo 3",
-		body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-		image: { src: "https://via.placeholder.com/1920x1080.jpeg", alt: "Alt Text" },
-		url: "articulo-3"
-	},
-]
-
-const seo = {
-	title: "Articulos",
-	description: "Pagina de Articulos"
+interface ArticlesProps {
+	data: {
+		articles: Article[]
+		seo: SeoProps
+	}
 }
 
-const Articles = () => {
+interface Article {
+	data: {
+		url: string
+		title: string
+		body: string
+		date?: string
+		image: ImageProps
+		seo: SeoProps
+	}
+}
+
+type ImageProps = {
+	src: string
+	alt: string
+}
+
+interface SeoProps {
+	title: string
+	description: string
+}
+
+const Articles: NextPage<ArticlesProps> = ({
+	data: {
+		articles,
+		seo
+	}
+}) => {
 
 	return (
 		<MainLayout
@@ -58,7 +66,7 @@ const Articles = () => {
 			</Grid>
 			<Grid container>
 				{
-					allArticles.map(({ title, body, image, url }, index) =>
+					articles.map(({ data: { title, body, image, url } }, index) =>
 						<MediaCard
 							key={`media-card-${index}`}
 							{...{ title, body, image, url: `/articulos/${url}` }}
@@ -74,3 +82,14 @@ const Articles = () => {
 }
 
 export default Articles;
+
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+	// const { data } = await  // your fetch function here 
+	const { data } = ArticlesData;
+	return {
+		props: {
+			data
+		}
+	}
+}

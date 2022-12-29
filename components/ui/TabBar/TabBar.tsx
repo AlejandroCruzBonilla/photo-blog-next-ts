@@ -3,7 +3,7 @@ import { ReactElement, JSXElementConstructor, FC, SyntheticEvent } from 'react';
 import { SvgIcon, Icon, Grid, Tab, Tabs, Typography } from '@mui/material';
 
 
-interface Props {
+interface TabsProps {
   value: number
   tabs: Tab[]
   handleChange: (event: SyntheticEvent, newValue: number) => void
@@ -13,7 +13,8 @@ type Tab = {
   label: string
   value: number
 }
-export const TabBar: FC<Props> = ({ value, tabs, handleChange }) => {
+
+export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
   return (
     <Grid >
       <Tabs

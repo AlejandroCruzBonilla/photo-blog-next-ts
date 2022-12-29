@@ -1,38 +1,42 @@
-import { Grid, Typography } from '@mui/material';
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
+import { Grid, Typography } from '@mui/material';
 import { MainLayout } from '../../components/layouts';
 
-interface Props {
-	article: Article
-}
-interface Article {
-	url: string
-	title: string
-	body: string
-	date?: string
-	image: {
-		src: string
-		alt: string
+import { ArticlesData } from '../../_fakeData'
+
+interface ArticleProps {
+	data: {
+		url: string
+		title: string
+		body: string
+		date?: string
+		image: ImageProps
+		seo: SeoProps
 	}
 }
 
-const seo = {
-	title: "Articulo X",
-	description: "Pagina de Articulo X"
+type ImageProps = {
+	src: string
+	alt: string
 }
 
-const Articulo: NextPage<Props> = ({
-	article: {
+interface SeoProps {
+	title: string
+	description: string
+}
+
+const Article: NextPage<ArticleProps> = ({
+	data: {
 		title,
 		body,
 		date,
 		image,
+		seo
 	}
 }) => {
-	const router = useRouter();
-	// console.log(router.query);
+
 	return (
 		<MainLayout
 			seo={seo}
@@ -86,15 +90,16 @@ const Articulo: NextPage<Props> = ({
 	);
 }
 
-export default Articulo;
+export default Article;
 
-import { allArticles } from './'
 
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 
+	const { articles } = ArticlesData.data;
+
 	return {
-		paths: allArticles.map(({ url }) => ({
+		paths: articles.map(({ data: { url } }) => ({
 			params: {
 				article_url: url
 			}
@@ -109,11 +114,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	// const { data } = await  // your fetch function here 
 
-	const article = allArticles.find(({ url }) => url === article_url)
+	const { articles } = ArticlesData.data;
 
+
+	const article = articles.find(({ data: { url } }) => url === article_url)
+
+	if (!article) throw new Error(`No article with url ${article_url}`)
 	return {
 		props: {
-			article
+			data: article.data
 		}
 	}
 }

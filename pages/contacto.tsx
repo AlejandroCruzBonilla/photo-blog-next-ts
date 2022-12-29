@@ -1,15 +1,38 @@
+import { GetStaticProps, NextPage } from "next";
 
-import { MainLayout } from "../components/layouts";
 import { Avatar, Grid, Typography } from '@mui/material';
-
+import { MainLayout } from "../components/layouts";
 import { ContactForm } from '../components/Forms';
 
-const seo = {
-	title: "Contacto",
-	description: "Esta es la pagina de contacto",
+
+import { ContactData } from "../_fakeData";
+
+interface ContactProps {
+	data: {
+		title: string
+		body: string
+		image: ImageProps
+		seo: Seo
+	}
+}
+type ImageProps = {
+	src: string
+	alt: string
 }
 
-const Contacto = () => {
+interface Seo {
+	title: string
+	description: string
+}
+
+const Contact: NextPage<ContactProps> = ({
+	data: {
+		title,
+		body,
+		image,
+		seo,
+	}
+}) => {
 	return (
 		<MainLayout seo={seo}>
 			<Grid container my={"2%"}>
@@ -25,7 +48,7 @@ const Contacto = () => {
 							// md: "start"
 						}}
 					>
-						Contacto
+						{title}
 					</Typography>
 				</Grid>
 			</Grid>
@@ -57,8 +80,8 @@ const Contacto = () => {
 								lg={4}
 							>
 								<Avatar
-									src="https://via.placeholder.com/500x500.jpeg"
-									alt="Remy Sharp"
+									src={image.src}
+									alt={image.alt}
 									sx={{ width: "auto", height: "auto" }}
 								/>
 							</Grid>
@@ -80,13 +103,7 @@ const Contacto = () => {
 									paragraph
 									textAlign={"justify"}
 								>
-									Lorem ipsum dolor sit amet consectetur adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus hac tempor nascetur aptent. Quis facilisis lobortis orci laoreet hendrerit proin rutrum ullamcorper vehicula lacinia tempus mi ornare sollicitudin conubia viverra nec lobortis.
-								</Typography>
-								<Typography
-									paragraph
-									textAlign={"justify"}
-								>
-									Volutpat convallis blandit facilisis primis adipiscing elit pulvinar imperdiet mollis, fermentum habitasse nec orci ligula nisl urna sollicitudin tristique. Nostra fusce risus duis phasellus auctor congue fames, penatibus dapibus sociis id urna vulputate per inceptos, hendrerit egestas porttitor risus hac tempor nascetur aptent.
+									{body}
 								</Typography>
 							</Grid>
 						</Grid>
@@ -113,4 +130,14 @@ const Contacto = () => {
 		</MainLayout>
 	)
 }
-export default Contacto;
+export default Contact;
+
+export const getStaticProps: GetStaticProps = async (ctx) => {
+	// const { data } = await  // your fetch function here 
+	const { data } = ContactData;
+	return {
+		props: {
+			data
+		}
+	}
+}
