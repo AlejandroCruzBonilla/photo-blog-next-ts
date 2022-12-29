@@ -1,4 +1,4 @@
-import { FC, SyntheticEvent } from 'react';
+import { FC } from 'react';
 
 import { Icon, Grid, Tab, Tabs, Typography } from '@mui/material';
 import { TabsProps } from './model';

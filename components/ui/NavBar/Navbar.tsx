@@ -2,16 +2,17 @@ import { useContext } from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-import { AppBar, Grid, IconButton, Toolbar, Typography, Box, Link } from '@mui/material';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import { AppBar, Grid, IconButton, Toolbar, Typography, Link } from '@mui/material';
+import { MenuOutlined } from '@mui/icons-material';
 
 import { UIContext } from '../../../context/ui';
 import { HideOnScroll } from '../';
+import { NavBarData } from '../../../_fakeData';
 
-const siteName = "Site Name";
 
 export const Navbar = () => {
 
+	const { data: { title, logo } } = NavBarData;
 	const { openSideMenu } = useContext(UIContext);
 
 	return (
@@ -45,10 +46,10 @@ export const Navbar = () => {
 									>
 										<Grid container direction={"row"}>
 											<Image
-												src={"https://via.placeholder.com/100x100.jpeg"}
-												alt="logo"
-												width={60}
-												height={60}
+												src={logo.src}
+												alt={logo.alt}
+												width={logo.width}
+												height={logo.height}
 												priority
 											/>
 											<Typography
@@ -57,7 +58,7 @@ export const Navbar = () => {
 												color={"#fff"}
 												ml={4}
 											>
-												{siteName}
+												{title}
 											</Typography>
 										</Grid>
 									</Link>
@@ -70,7 +71,7 @@ export const Navbar = () => {
 									edge="start"
 									onClick={openSideMenu}
 								>
-									<MenuOutlinedIcon />
+									<MenuOutlined />
 								</IconButton>
 							</Grid>
 						</Grid>
@@ -78,6 +79,5 @@ export const Navbar = () => {
 				</Toolbar>
 			</AppBar>
 		</HideOnScroll>
-
 	)
 };

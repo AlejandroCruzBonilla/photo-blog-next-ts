@@ -1,4 +1,4 @@
-import { FC, ReactElement } from "react";
+import { FC } from "react";
 import { Grid } from "@mui/material";
 import { TabPanelProps } from "./model";
 
