@@ -60,7 +60,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 								? (
 									<Typography
 										variant="body1"
-										color="text.secondary"
+										// color="text.secondary"
 										overflow="hidden"
 										display="-webkit-box"
 										sx={{
@@ -85,7 +85,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 								date
 									? (
 										<Typography
-											color="text.secondary"
+											// color="text.secondary"
 											textAlign={"end"}
 											sx={{
 												display: "inline-block",

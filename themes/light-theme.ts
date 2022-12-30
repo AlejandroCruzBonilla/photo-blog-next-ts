@@ -1,21 +1,26 @@
 import { createTheme } from '@mui/material';
-import { grey, red } from '@mui/material/colors';
+import { grey, cyan } from '@mui/material/colors';
+
+
 
 export const lightTheme = createTheme({
 	palette: {
-		mode: 'light',
+		// mode: 'light',
 		background: {
-			default: grey[100]
+			default: grey[200]
 		},
-		// primary: {
-		// 	main: '#4a148c'
-		// },
-		// secondary: {
-		// 	main: '#19857b'
-		// },
-		// error: {
-		// 	main: red.A400
-		// },
+		primary: {
+			main: '#A2F7E1',
+			contrastText: 'rgba(0, 0, 0, 0.87)',
+		},
+		secondary: {
+			main: '#71ac9d',
+			contrastText: '#000',
+		},
+		secondaryBackground: {
+			main: '#121212',
+			contrastText: '#fff',
+		}
 	},
 
 	components: {

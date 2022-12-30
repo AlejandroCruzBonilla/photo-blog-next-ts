@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 import { Grid } from '@mui/material'
 import { ImageContainer, SocialItem } from '../';
 import { FooterData } from '../../../_fakeData';
@@ -12,7 +11,7 @@ export const Footer = () => {
     <Grid
       py={4}
       sx={{
-        background: "#fff"
+        backgroundColor: "secondaryBackground.main"
       }}
     >
       <Grid
@@ -44,7 +43,7 @@ export const Footer = () => {
             item xs={8}
           >
             {
-              socialItems.map(({link,icon},index) => (
+              socialItems.map(({ link, icon }, index) => (
                 <Grid
                   key={`footer-social-item-${index}`}
                   container

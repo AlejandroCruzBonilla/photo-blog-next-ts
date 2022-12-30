@@ -33,13 +33,14 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				<MainMenu />
 			</Grid>
 
-			<Grid component={"main"}
+			<Grid 
+				component={"main"}
 				container
 				justifyContent={"center"}
-				minHeight={'65vh'}
 				px={{
 					xs: 2
 				}}
+				mb={3}
 			>
 				<Grid
 					item

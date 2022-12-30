@@ -24,7 +24,9 @@ export const Navbar = () => {
 	return (
 
 		<HideOnScroll>
-			<AppBar component={"nav"}
+			<AppBar
+				component={"nav"}
+				color="primary"
 				sx={{ px: 2 }}
 			>
 				<Toolbar
@@ -48,6 +50,7 @@ export const Navbar = () => {
 								>
 									<Link
 										underline="none"
+										color="inherit"
 										sx={{ cursor: "pointer" }}
 									>
 										<Grid container direction={"row"}>
@@ -59,9 +62,7 @@ export const Navbar = () => {
 												priority
 											/>
 											<Typography
-												component='div'
 												alignSelf={"center"}
-												color={"#fff"}
 												ml={4}
 											>
 												{title}
@@ -71,17 +72,21 @@ export const Navbar = () => {
 								</NextLink>
 							</Grid>
 							<Grid item>
-								<Grid container>
+								<Grid container alignItems={"center"} height={1}>
 									<Grid item>
-										<ThemeSwitch currentTheme={currentTheme} handleChange={handleChange} />
+										<Grid container >
+											<Grid item>
+												<ThemeSwitch currentTheme={currentTheme} handleChange={handleChange} />
+											</Grid>
+											<IconButton
+												size='large'
+												edge="start"
+												onClick={openSideMenu}
+											>
+												<MenuOutlined />
+											</IconButton>
+										</Grid>
 									</Grid>
-									<IconButton
-										size='large'
-										edge="start"
-										onClick={openSideMenu}
-									>
-										<MenuOutlined />
-									</IconButton>
 								</Grid>
 							</Grid>
 						</Grid>

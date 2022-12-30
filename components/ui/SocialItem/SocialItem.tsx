@@ -11,7 +11,7 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
-        color="inherit"
+        // color="inherit"
       >
         <Grid
           container
