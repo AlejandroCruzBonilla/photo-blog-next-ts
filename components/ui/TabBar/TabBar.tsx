@@ -11,8 +11,6 @@ export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
         variant="fullWidth"
         value={value}
         onChange={handleChange}
-        // textColor="secondary"
-        // indicatorColor='secondary'
         centered
       >
         {
