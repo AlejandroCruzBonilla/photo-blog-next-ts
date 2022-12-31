@@ -2,7 +2,6 @@ import { createTheme } from '@mui/material';
 import { grey, teal } from '@mui/material/colors';
 
 
-
 export const darkTheme = createTheme({
 	palette: {
 		mode: 'dark',
@@ -11,15 +10,15 @@ export const darkTheme = createTheme({
 		},
 		font: {
 			main: teal.A100,
-			contrastText: 'rgba(0, 0, 0, 0.87)',
+			contrastText: grey[900],
 		},
 		primary: {
 			main: teal.A100,
-			contrastText: 'rgba(0, 0, 0, 0.87)',
+			contrastText: grey[900],
 		},
 		secondary: {
-			main: '#A2F7E1',
-			contrastText: '#000',
+			main: teal[100],
+			contrastText: grey[900],
 		},
 
 		navbar: {
@@ -39,15 +38,36 @@ export const darkTheme = createTheme({
 	},
 
 	components: {
-		// MuiAppBar: {
-		// 	defaultProps: {
-		// 		elevation: 0
-		// 	},
-		// 	styleOverrides: {
-		// 		root: {
-		// 			backgroundColor: '#4a148c'
-		// 		}
-		// 	}
-		// }
+		MuiCard: {
+			defaultProps: {
+				variant: "outlined"
+			},
+			styleOverrides: {
+				root: {
+					'.MuiTouchRipple-root .MuiTouchRipple-child': {
+						backgroundColor: teal[100]
+					},
+					border: "none",
+					"&:hover": {
+						borderWidth: 1,
+						borderStyle: "solid",
+						borderColor: teal[200]
+					}
+				}
+			}
+		},
+		MuiTabs: {
+			defaultProps: {
+				textColor: "secondary",
+				indicatorColor: "secondary",
+			},
+			styleOverrides: {
+				root: {
+					'.MuiTouchRipple-root .MuiTouchRipple-child': {
+						backgroundColor: teal[100]
+					},
+				}
+			}
+		}
 	}
 });

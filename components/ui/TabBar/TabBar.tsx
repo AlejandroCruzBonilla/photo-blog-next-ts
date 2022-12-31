@@ -11,8 +11,8 @@ export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
         variant="fullWidth"
         value={value}
         onChange={handleChange}
-        textColor="secondary"
-        indicatorColor='secondary'
+        // textColor="secondary"
+        // indicatorColor='secondary'
         centered
       >
         {
@@ -20,12 +20,15 @@ export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
           (
             <Tab
               key={`simple-tab-${index}`}
-              {...allProps(index)}
+              id={`simple-tab-${index}`}
               value={value}
               iconPosition="start"
               icon={
-                // <Icon baseClassName="material-icons-outlined">{icon}</Icon>
-                <Icon baseClassName="material-symbols-outlined">{icon}</Icon>
+                <Icon
+                  baseClassName="material-symbols-outlined"
+                >
+                  {icon}
+                </Icon>
               }
               label={
                 <Typography
@@ -41,11 +44,4 @@ export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
       </Tabs>
     </Grid>
   )
-}
-
-const allProps = (index: number) => {
-  return {
-    id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
-  };
 }

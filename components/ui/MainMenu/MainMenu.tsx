@@ -4,7 +4,6 @@ import NextLink from 'next/link';
 import {
 	Drawer,
 	Grid,
-	List,
 	IconButton,
 	Icon,
 	Button,
@@ -54,64 +53,59 @@ export const MainMenu = () => {
 					justifyContent="center"
 				>
 					<Grid item>
-						<List>
-							<Grid
-								container
-								direction={"column"}
-							// justifyContent={"center"}
-							>
-								{
-									menuItems.map(({ route, text, icon }, index) => (
+						<Grid
+							container
+							direction={"column"}
+						>
+							{
+								menuItems.map(({ route, text, icon }, index) => (
 
-										<NextLink
-											href={route}
-											passHref
-											legacyBehavior
-											key={`main-menu-Item-${index}`}
-										>
+									<NextLink
+										href={route}
+										passHref
+										legacyBehavior
+										key={`main-menu-Item-${index}`}
+									>
 
-											<Button
-												onClick={closeSideMenu}
-												size="large"
-
-												variant={(pathname === route) ? "contained" : "text"}
-												sx={[
-													{
-														py: 3, m: 1,
-														color: "mainMenu.contrastText",
-														justifyContent: "space-between",
-														// justifyContent: "center",
-														'&:hover': { backgroundColor: 'mainMenu.contrastText', color: "mainMenu.light" },
+										<Button
+											onClick={closeSideMenu}
+											size="large"
+											variant={(pathname === route) ? "contained" : "text"}
+											sx={[
+												{
+													py: 3, m: 1,
+													color: "mainMenu.contrastText",
+													justifyContent: "space-between",
+													// justifyContent: "center",
+													'&:hover': { backgroundColor: 'mainMenu.contrastText', color: "mainMenu.light" },
+												},
+												(pathname === route) && {
+													backgroundColor: "mainMenu.contrastText",
+													color: "mainMenu.light",
+													'&:hover': {
+														backgroundColor: 'mainMenu.dark',
+														color: "mainMenu.contrastText"
 													},
-													(pathname === route) && {
-														backgroundColor: "mainMenu.contrastText",
-														color: "mainMenu.light",
-														'&:hover': {
-															backgroundColor: 'mainMenu.dark',
-															color: "mainMenu.contrastText"
-														},
-													}
-												]}
+												}
+											]}
+										>
+											<Icon
+												baseClassName="material-symbols-outlined"
+												className={globalStyle['xx-font-size']}
 											>
-												<Icon
-													baseClassName="material-symbols-outlined"
-													className={globalStyle['xx-font-size']}
-												>
-													{icon}
-												</Icon>
-												<Typography variant="h5">{text}</Typography>
-											</Button>
-										</NextLink>
-									))
-								}
-								<Grid container justifyContent={"center"}>
-									<IconButton onClick={closeSideMenu}>
-										<ClearOutlined fontSize={'large'} />
-									</IconButton>
-								</Grid>
-
+												{icon}
+											</Icon>
+											<Typography variant="h5">{text}</Typography>
+										</Button>
+									</NextLink>
+								))
+							}
+							<Grid container justifyContent={"center"}>
+								<IconButton onClick={closeSideMenu}>
+									<ClearOutlined fontSize={'large'} />
+								</IconButton>
 							</Grid>
-						</List>
+						</Grid>
 					</Grid>
 				</Grid>
 			</Grid>
