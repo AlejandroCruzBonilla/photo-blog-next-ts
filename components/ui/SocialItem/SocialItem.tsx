@@ -11,7 +11,7 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
-        // color="inherit"
+      // color="inherit"
       >
         <Grid
           container
@@ -20,6 +20,9 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
           <Icon
             baseClassName="material-symbols-outlined"
             className={styles['social-item-xxx-font-size']}
+            sx={{
+              color: "footer.contrastText"
+            }}
           >
             {icon}
           </Icon>
@@ -29,6 +32,9 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
                 <Grid >
                   <Typography
                     textAlign={"center"}
+                    sx={{
+                      color: "footer.contrastText"
+                    }}
                   >
                     {title}
                   </Typography>

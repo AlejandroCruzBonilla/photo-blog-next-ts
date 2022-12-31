@@ -2,7 +2,7 @@ import { ChangeEvent, useContext } from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-import { AppBar, Grid, IconButton, Toolbar, Typography, Link } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar, Typography, Link, Box } from '@mui/material';
 import { MenuOutlined } from '@mui/icons-material';
 
 import { UIContext } from '../../../context/ui';
@@ -26,8 +26,13 @@ export const Navbar = () => {
 		<HideOnScroll>
 			<AppBar
 				component={"nav"}
-				color="primary"
-				sx={{ px: 2 }}
+				sx={{
+					bgcolor: 'navbar.main',
+					px: {
+						xs: 2,
+						md: 0
+					}
+				}}
 			>
 				<Toolbar
 					disableGutters
@@ -50,7 +55,7 @@ export const Navbar = () => {
 								>
 									<Link
 										underline="none"
-										color="inherit"
+										color="navbar.contrastText"
 										sx={{ cursor: "pointer" }}
 									>
 										<Grid container direction={"row"}>
@@ -82,6 +87,9 @@ export const Navbar = () => {
 												size='large'
 												edge="start"
 												onClick={openSideMenu}
+												sx={{
+													color: "navbar.contrastText"
+												}}
 											>
 												<MenuOutlined />
 											</IconButton>

@@ -2,10 +2,10 @@ export const NavBarData = {
   data: {
     title: "Site Name",
     logo: {
-      src: "https://via.placeholder.com/100x100.jpeg",
+      src: "https://via.placeholder.com/50x50.jpeg",
       alt: "Logo",
-      width: 60,
-      height: 60,
+      width: 50,
+      height: 50,
     },
   }
 }

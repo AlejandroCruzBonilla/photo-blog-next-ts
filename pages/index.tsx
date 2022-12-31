@@ -43,8 +43,10 @@ const Home: NextPage<HomeProps> = ({
 		<MainLayout seo={seo}>
 
 			<Grid>
-				<Grid item>
-					<Slider {...settingsSlider}>
+				<Grid
+					item
+				>
+					<Slider {...settingsSlider} >
 						{
 							images.map((image, index) => (
 								<Grid
@@ -52,7 +54,10 @@ const Home: NextPage<HomeProps> = ({
 									container
 									alignItems="center"
 									justifyContent="center"
-									height={"90vh"}
+									height={{
+										xs:"75vh",
+										md:"auto"
+									}}
 								>
 									<ImageContainer
 										image={image}
@@ -64,7 +69,7 @@ const Home: NextPage<HomeProps> = ({
 					</Slider>
 				</Grid>
 			</Grid>
-			<HeadingPage title={title} textAlign={{md:"left"}} />
+			<HeadingPage title={title} textAlign={{ md: "left" }} />
 		</MainLayout>
 
 	)

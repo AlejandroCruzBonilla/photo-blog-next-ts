@@ -1,20 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: false,
+  reactStrictMode: true,
   images: {
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
-    // domains:['via.placeholder.com/75x75'],
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'via.placeholder.com',
-        // port: '',
-        // pathname: '/account123/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'placeholder.pics',
-      },
+      }
     ],
   }
 }

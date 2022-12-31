@@ -4,19 +4,18 @@ import NextLink from 'next/link';
 import {
 	Drawer,
 	Grid,
-	Link,
 	List,
-	ListItem,
-	ListItemButton,
-	ListItemIcon,
-	ListItemText,
 	IconButton,
-	Icon
+	Icon,
+	Button,
+	Typography,
 } from '@mui/material';
 
 import { ClearOutlined } from '@mui/icons-material'
 import { HeadingPage } from '../HeadingPage';
 import { UIContext } from '../../../context/ui';
+import globalStyle from '../../../styles/globals.module.css'
+
 import { MenuItems } from '../../../_fakeData';
 
 
@@ -33,62 +32,84 @@ export const MainMenu = () => {
 			onClose={closeSideMenu}
 		>
 			<Grid
-				container
-				width={"100vw"}
+				sx={{
+					backgroundColor: "mainMenu.main"
+				}}
 			>
 				<HeadingPage title={title} variant="h2" />
+			</Grid>
+			<Grid
+				container
+				height={"100vh"}
+				minWidth={{
+					xs: "100vw",
+					sm: "50vw",
+				}}
+				sx={{
+					backgroundColor: "mainMenu.main"
+				}}
+			>
 				<Grid
 					container
 					justifyContent="center"
-					alignItems="center"
 				>
 					<Grid item>
 						<List>
-							<Grid container justifyContent={"center"}>
-								<Grid item>
-									{
-										menuItems.map(({ route, text, icon },index) => (
-											<Grid
-												key={`main-menu-Item-${index}`}
-												item
+							<Grid
+								container
+								direction={"column"}
+							// justifyContent={"center"}
+							>
+								{
+									menuItems.map(({ route, text, icon }, index) => (
+
+										<NextLink
+											href={route}
+											passHref
+											legacyBehavior
+											key={`main-menu-Item-${index}`}
+										>
+
+											<Button
+												onClick={closeSideMenu}
+												size="large"
+
+												variant={(pathname === route) ? "contained" : "text"}
+												sx={[
+													{
+														py: 3, m: 1,
+														color: "mainMenu.contrastText",
+														justifyContent: "space-between",
+														// justifyContent: "center",
+														'&:hover': { backgroundColor: 'mainMenu.contrastText', color: "mainMenu.light" },
+													},
+													(pathname === route) && {
+														backgroundColor: "mainMenu.contrastText",
+														color: "mainMenu.light",
+														'&:hover': {
+															backgroundColor: 'mainMenu.dark',
+															color: "mainMenu.contrastText"
+														},
+													}
+												]}
 											>
-												<ListItemButton
-													key={text}
-													disabled={pathname === route}
-													selected={pathname === route}
-													divider={pathname === route}
+												<Icon
+													baseClassName="material-symbols-outlined"
+													className={globalStyle['xx-font-size']}
 												>
-													<NextLink href={route} passHref legacyBehavior>
-														<Link onClick={closeSideMenu} underline="none" m={1} width={1}>
-															<ListItem alignItems='center' sx={{ justifyContent: "center" }}>
-																<Grid container>
-																	<Grid item >
-																		<ListItemIcon sx={{ display: "flex", justifyContent: "center" }}>
-																			<Icon
-																				baseClassName="material-symbols-outlined"
-																			// className={styles['social-item-xxx-font-size']}
-																			>
-																				{icon}
-																			</Icon>
-																		</ListItemIcon>
-																	</Grid>
-																	<Grid item>
-																		<ListItemText primary={text} />
-																	</Grid>
-																</Grid>
-															</ListItem>
-														</Link>
-													</NextLink>
-												</ListItemButton>
-											</Grid>
-										))
-									}
-									<Grid container justifyContent={"center"}>
-										<IconButton onClick={closeSideMenu}>
-											<ClearOutlined fontSize={'large'} />
-										</IconButton>
-									</Grid>
+													{icon}
+												</Icon>
+												<Typography variant="h5">{text}</Typography>
+											</Button>
+										</NextLink>
+									))
+								}
+								<Grid container justifyContent={"center"}>
+									<IconButton onClick={closeSideMenu}>
+										<ClearOutlined fontSize={'large'} />
+									</IconButton>
 								</Grid>
+
 							</Grid>
 						</List>
 					</Grid>

@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material';
-import { grey, cyan } from '@mui/material/colors';
+import { grey, teal } from '@mui/material/colors';
 
 
 
@@ -9,18 +9,33 @@ export const lightTheme = createTheme({
 		background: {
 			default: grey[200]
 		},
+		font: {
+			main: teal.A100,
+			contrastText: 'rgba(0, 0, 0, 0.87)',
+		},
 		primary: {
-			main: '#A2F7E1',
+			main: teal.A100,
 			contrastText: 'rgba(0, 0, 0, 0.87)',
 		},
 		secondary: {
 			main: '#71ac9d',
 			contrastText: '#000',
 		},
-		secondaryBackground: {
+
+		navbar: {
+			main: teal.A100,
+			contrastText: grey[900],
+		},
+		footer: {
 			main: '#121212',
-			contrastText: '#fff',
-		}
+			contrastText: teal.A100,
+		},
+		mainMenu: {
+			main: grey[200],
+			light: grey[200],
+			dark: grey[800],
+			contrastText: teal[300],
+		},
 	},
 
 	components: {

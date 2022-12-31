@@ -11,7 +11,7 @@ export const Footer = () => {
     <Grid
       py={4}
       sx={{
-        backgroundColor: "secondaryBackground.main"
+        bgcolor: "footer.main"
       }}
     >
       <Grid
