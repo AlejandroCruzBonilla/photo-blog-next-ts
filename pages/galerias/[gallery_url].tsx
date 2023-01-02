@@ -25,7 +25,7 @@ const Gallery: NextPage<GalleryProps> = ({
 			<Grid container>
 				<ImageContainer
 					image={image}
-					objectFit="none"
+					objectFit="cover"
 				/>
 			</Grid>
 
@@ -51,7 +51,7 @@ const Gallery: NextPage<GalleryProps> = ({
 							<ImageContainer
 								key={`gallery-image-${index}`}
 								image={image}
-								objectFit="none"
+								objectFit="cover"
 							/>
 						))
 					}

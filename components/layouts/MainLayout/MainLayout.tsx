@@ -17,6 +17,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<title>{`Site Name - ${title}`}</title>
 				<meta name="description" content={description} />
+				{/* <script src="https://www.google.com/recaptcha/api.js" async defer/> */}
 			</Head>
 
 			<Grid component={"header"} >
