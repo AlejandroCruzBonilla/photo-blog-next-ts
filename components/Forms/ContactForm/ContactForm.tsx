@@ -81,12 +81,15 @@ export const ContactForm = () => {
       const response = await summitFetch()
       setLoading(false)
       setOpenModal(true)
+      setTokenReCaptcha(null);
       // recaptchaRef?.current?.reset()
     } catch (e) {
       setLoading(false)
       setOpenModal(true)
+      setTokenReCaptcha(null);
       // recaptchaRef?.current?.reset()
     }
+    return false;
   }
 
   const summitFetch = () => {
