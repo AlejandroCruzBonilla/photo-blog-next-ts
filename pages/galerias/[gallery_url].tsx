@@ -1,5 +1,4 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import Image from 'next/image';
 import { Grid, Typography } from '@mui/material';
 import { MainLayout } from '../../components/layouts';
 import { HeadingPage, ImageContainer } from '../../components/ui';
@@ -25,7 +24,6 @@ const Gallery: NextPage<GalleryProps> = ({
 			<Grid container>
 				<ImageContainer
 					image={image}
-					objectFit="cover"
 				/>
 			</Grid>
 

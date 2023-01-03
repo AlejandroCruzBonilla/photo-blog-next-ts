@@ -1,10 +1,10 @@
 export const FooterData = {
   data: {
     logo: {
-      src: "https://via.placeholder.com/100x100.jpeg",
+      src: "/logo-test.png",
       alt: "Logo",
-      width: 100,
-      height: 100,
+      width: 50,
+      height: 50,
     },
     socialItems: [
       { link: "https://google.com", icon: "mail" },

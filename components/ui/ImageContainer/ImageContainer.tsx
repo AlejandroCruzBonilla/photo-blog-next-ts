@@ -4,22 +4,17 @@ import { ImageContainerProps } from "./model"
 import Image from "next/image"
 
 
-
 export const ImageContainer: FC<ImageContainerProps> = ({
 	image,
-	objectFit = "fill",
+	objectFit = "cover",
 
 }) => (
 	<Grid
 		container
 		alignItems="center"
 		justifyContent="center"
-		height={"100%"}
 	>
-		<Grid
-			item
-			height={"100%"}
-		>
+		<Grid>
 			<Image
 				src={image.src}
 				alt={image.alt}

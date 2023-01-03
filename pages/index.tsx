@@ -1,5 +1,4 @@
 import { GetStaticProps, NextPage } from 'next'
-import Image from 'next/image'
 import { Grid, Typography } from '@mui/material';
 import Slider from "react-slick";
 

@@ -3,11 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
-    formats: ['image/avif', 'image/webp'],
+    // formats: ['image/avif', 'image/webp'],
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'via.placeholder.com',
+        hostname: 'ncb-storage.s3.amazonaws.com/*',
       }
     ],
   }

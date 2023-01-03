@@ -17,12 +17,16 @@ export const Footer = () => {
       <Grid
         container
         height={2 / 6}
+        justifyContent="center"
+        alignItems="center"
         mb={{
           xs: 4,
           md: 8
         }}
       >
-        <ImageContainer image={logo} />
+        <Grid width={"100px"} >
+          <ImageContainer image={logo} />
+        </Grid>
       </Grid>
       <Grid
         container
