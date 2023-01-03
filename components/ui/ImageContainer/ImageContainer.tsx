@@ -6,23 +6,39 @@ import Image from "next/image"
 
 export const ImageContainer: FC<ImageContainerProps> = ({
 	image,
-	objectFit = "cover",
+	objectFit = "contain",
+	placeholder = "empty",
+	priority = false,
 
 }) => (
 	<Grid
 		container
-		alignItems="center"
-		justifyContent="center"
+		justifyContent={"center"}
 	>
-		<Grid>
+		<Grid
+			// width={"100vw"}
+			// height={{
+			// 	xs: "60vw",
+			// 	sm:	"70vw",
+			// 	md: "50vw",
+			// }}
+			width={"100%"}
+			height={image.height}
+			maxHeight={{
+				xs: "60vw",
+				sm: "70vw",
+				md: "50vw",
+			}}
+			position="relative"
+		>
 			<Image
 				src={image.src}
 				alt={image.alt}
-				width={image.width}
-				height={image.height}
+				placeholder={placeholder}
+				blurDataURL={image.base64 ? image.base64 : ''}
+				priority={priority}
+				fill
 				style={{
-					width: "100%",
-					height: "100%",
 					objectFit: objectFit,
 					objectPosition: "center"
 				}}

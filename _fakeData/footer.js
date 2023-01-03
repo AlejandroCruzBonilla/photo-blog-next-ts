@@ -3,8 +3,8 @@ export const FooterData = {
     logo: {
       src: "/logo-test.png",
       alt: "Logo",
-      width: 50,
-      height: 50,
+      width: 80,
+      height: 80,
     },
     socialItems: [
       { link: "https://google.com", icon: "mail" },

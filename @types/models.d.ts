@@ -51,8 +51,8 @@ export interface GalleryProps {
     title: string
     body: string
     date?: string
-    image: Image
-    images: Image[]
+    image: ImageProps
+    images: ImageProps[]
     seo: SeoProps
   }
 }
@@ -86,7 +86,9 @@ export interface ImageProps {
   src: string
   alt: string
   width: number
-  height: number
+  height: number,
+  base64?: string
+  type?: string
 }
 
 export interface SeoProps {
