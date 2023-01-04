@@ -6,7 +6,6 @@ import { HeadingPage, ImageContainer } from '../../components/ui';
 import { GalleryProps, ImageProps } from '../../@types';
 
 import { GalleriesData } from '../../_fakeData'
-import Image from 'next/image';
 
 
 const Gallery: NextPage<GalleryProps> = ({
@@ -33,7 +32,7 @@ const Gallery: NextPage<GalleryProps> = ({
 					maxHeight={{
 						xs: "50vw",
 						sm: "70vw",
-						md: "50vw",
+						md: "36vw",
 					}}
 
 				/>
@@ -50,25 +49,28 @@ const Gallery: NextPage<GalleryProps> = ({
 				</Grid>
 			</Grid>
 
-			<Grid container>
+			<Grid container my={2}>
 				{
 					images.map((image, index) => (
 						<Grid
-							container
 							key={`gallery-image-${index}`}
-							my={1}
+							item
+							p={1}
+							xs={12}
+							sm={6}
 						>
+
 							<ImageContainer
 								image={image}
 								objectFit="cover"
 								placeholder="blur"
 								maxHeight={{
 									xs: "50vw",
-									sm: "70vw",
-									md: "50vw",
+									md: "30vw",
 								}}
 							/>
 						</Grid>
+
 					))
 				}
 			</Grid>

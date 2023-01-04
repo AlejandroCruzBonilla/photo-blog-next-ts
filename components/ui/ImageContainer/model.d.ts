@@ -7,4 +7,3 @@ export interface ImageContainerProps {
   priority?: boolean
   maxHeight?: MaxHeight
 }
-

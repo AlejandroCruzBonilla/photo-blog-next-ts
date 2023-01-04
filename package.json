@@ -23,6 +23,7 @@
     "react-animations": "^1.0.0",
     "react-dom": "18.2.0",
     "react-google-recaptcha": "^2.1.0",
+    "react-grid-gallery": "^1.0.0",
     "react-intersection-observer": "^9.4.1",
     "react-recaptcha": "^2.3.10",
     "react-slick": "^0.29.0",
