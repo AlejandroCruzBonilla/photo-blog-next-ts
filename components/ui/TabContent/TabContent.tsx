@@ -5,35 +5,21 @@ import { TabContentProps } from "./model";
 export const TabContent: FC<TabContentProps> = ({ children, title }) => {
   return (
     <>
-      {
-        title
-          ? (
-            <Grid
-              container
-              py={2}
-              my={2}
-              display={{
-                sm: "none"
-              }}
-            >
-              <Grid
-                item
-                xs={12}
-              >
-                <Typography
-                  variant="h3"
-                  fontSize={"2rem"}
-                  textAlign={{
-                    xs: "center",
-                  }}
-                >
-                  {title}
-                </Typography>
-              </Grid>
-            </Grid>
-          )
-          : null
-      }
+      <Grid
+        container
+        justifyContent={"center"}
+        my={2}
+        display={{
+          sm: "none"
+        }}>
+
+        <Typography
+          variant="h3"
+          fontSize={"2rem"}
+        >
+          {title}
+        </Typography>
+      </Grid>
       <Grid container>
         {children}
       </Grid>

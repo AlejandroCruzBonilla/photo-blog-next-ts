@@ -24,12 +24,20 @@ const Gallery: NextPage<GalleryProps> = ({
 			seo={seo}
 		>
 			<Grid container>
+
 				<ImageContainer
 					image={image}
 					objectFit="cover"
 					placeholder="blur"
 					priority
+					maxHeight={{
+						xs: "50vw",
+						sm: "70vw",
+						md: "50vw",
+					}}
+
 				/>
+
 			</Grid>
 
 			<HeadingPage title={title} textAlign={{ md: "left" }} />
@@ -54,6 +62,11 @@ const Gallery: NextPage<GalleryProps> = ({
 								image={image}
 								objectFit="cover"
 								placeholder="blur"
+								maxHeight={{
+									xs: "50vw",
+									sm: "70vw",
+									md: "50vw",
+								}}
 							/>
 						</Grid>
 					))
@@ -103,11 +116,11 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 		const imagesPromises: any = []
 
-		imagesPromises.push(getPlaiceholder(image.src))
+		imagesPromises.push(getPlaiceholder(image.src));
 
-		images.forEach(({ src }) => { imagesPromises.push(getPlaiceholder(src)) })
+		images.forEach(({ src }) => { imagesPromises.push(getPlaiceholder(src)) });
 
-		const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises)
+		const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);
 
 		gallery.data.image = {
 			base64,

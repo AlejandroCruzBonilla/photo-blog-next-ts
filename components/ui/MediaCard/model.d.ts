@@ -6,6 +6,7 @@ export interface MediaCardProps {
   date?: string
   image: ImageProps
   gridResponsive?:GridResponsive
+  maxHeight?: MaxHeight
 }
 
 type GridResponsive = {

@@ -9,27 +9,23 @@ export const ImageContainer: FC<ImageContainerProps> = ({
 	objectFit = "contain",
 	placeholder = "empty",
 	priority = false,
+	maxHeight=image.height
 
 }) => (
 	<Grid
 		container
 		justifyContent={"center"}
+
 	>
 		<Grid
-			// width={"100vw"}
-			// height={{
-			// 	xs: "60vw",
-			// 	sm:	"70vw",
-			// 	md: "50vw",
-			// }}
-			width={"100%"}
-			height={image.height}
-			maxHeight={{
-				xs: "60vw",
-				sm: "70vw",
-				md: "50vw",
-			}}
+			container
+			alignItems={"center"}
+			justifyItems={"center"}
 			position="relative"
+			width={"100%"}
+			// width={image.width}
+			height={image.height}
+			maxHeight={maxHeight}
 		>
 			<Image
 				src={image.src}

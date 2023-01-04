@@ -1,10 +1,10 @@
 import { GetStaticProps, NextPage } from 'next'
 import { Grid, Typography } from '@mui/material';
 import Slider from "react-slick";
-
+import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../components/layouts/MainLayout/MainLayout';
 import { HeadingPage, ImageContainer } from '../components/ui';
-import { HomeProps } from '../@types';
+import { HomeProps, ImageProps } from '../@types';
 
 import { HomeData } from '../_fakeData'
 
@@ -54,13 +54,18 @@ const Home: NextPage<HomeProps> = ({
 									alignItems="center"
 									justifyContent="center"
 									height={{
-										xs:"75vh",
-										md:"auto"
+										xs: "75vh",
+										md: "auto"
 									}}
 								>
 									<ImageContainer
 										image={image}
 										objectFit="cover"
+										placeholder="blur"
+										maxHeight={{
+											xs: "70vh",
+											xl: "85vh"
+										}}
 									/>
 								</Grid>
 							))
@@ -81,6 +86,33 @@ export default Home
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 	const { data } = HomeData;
+	const { data: { image, images } } = HomeData
+	const imagesPromises: any = []
+
+	imagesPromises.push(getPlaiceholder(image.src));
+
+	images.forEach(({ src }) => {
+		imagesPromises.push(getPlaiceholder(src));
+	})
+
+	const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);
+
+	data.image = {
+		base64,
+		alt: image.alt,
+		...img
+	} as ImageProps
+
+	data.images = restImages.map(({ base64, img }, index) => {
+		const alt = images[index].alt
+		return (
+			{
+				base64,
+				alt,
+				...img
+			} as ImageProps)
+	})
+
 	return {
 		props: {
 			data

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import NextLink from 'next/link';
 
-import { Card, CardHeader, CardActionArea, CardContent, CardMedia, Typography, Grid, Divider } from '@mui/material';
+import { Card, CardActionArea, CardContent, Typography, Grid, Divider } from '@mui/material';
 import { ImageContainer } from '../';
 import { MediaCardProps } from './model';
 
@@ -11,10 +11,9 @@ export const MediaCard: FC<MediaCardProps> = ({
 	body,
 	date,
 	url,
-	gridResponsive
+	gridResponsive,
+	maxHeight = image.width,
 }) => {
-
-
 	return (
 
 		<Grid
@@ -40,10 +39,14 @@ export const MediaCard: FC<MediaCardProps> = ({
 								height="auto"
 							/> 
 						*/}
+
 						<ImageContainer
 							image={image}
 							objectFit="cover"
+							placeholder="blur"
+							maxHeight={maxHeight}
 						/>
+
 						<CardContent>
 							<Typography
 								gutterBottom

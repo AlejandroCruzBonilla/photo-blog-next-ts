@@ -7,7 +7,7 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'ncb-storage.s3.amazonaws.com/*',
+        hostname: 'ncb-storage.s3.amazonaws.com/**',
       }
     ],
   }

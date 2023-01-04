@@ -1,8 +1,9 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { Grid, Typography } from '@mui/material';
+import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../../components/layouts';
 import { HeadingPage, ImageContainer } from '../../components/ui';
-import { ArticleProps } from '../../@types';
+import { ArticleProps, ImageProps } from '../../@types';
 
 import { ArticlesData } from '../../_fakeData'
 
@@ -15,7 +16,6 @@ const Article: NextPage<ArticleProps> = ({
 		seo
 	}
 }) => {
-
 	return (
 		<MainLayout
 			seo={seo}
@@ -24,9 +24,15 @@ const Article: NextPage<ArticleProps> = ({
 				<ImageContainer
 					image={image}
 					objectFit="cover"
+					placeholder="blur"
+					maxHeight={{
+						xs: "50vw",
+						sm: "70vw",
+						md: "50vw",
+					}}
 				/>
 			</Grid>
-			
+
 			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
 			<Grid container alignItems="center">
@@ -71,6 +77,15 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 	const article = articles.find(({ data: { url } }) => url === article_url)
 
 	if (!article) throw new Error(`No article with url ${article_url}`)
+	const { data: { image } } = article
+	const { base64, img } = await getPlaiceholder(image.src)
+
+	article.data.image = {
+		alt: image.alt,
+		base64,
+		...img
+	} as ImageProps
+
 	return {
 		props: {
 			data: article.data
