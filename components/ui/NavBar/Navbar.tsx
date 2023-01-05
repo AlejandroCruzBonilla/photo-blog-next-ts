@@ -24,13 +24,13 @@ export const Navbar = () => {
 	return (
 
 		<HideOnScroll>
+
 			<AppBar
 				component={"nav"}
 				sx={{
 					bgcolor: 'navbar.main',
 					px: {
-						xs: 2,
-						md: 0
+						xs: 2
 					}
 				}}
 			>
@@ -48,7 +48,7 @@ export const Navbar = () => {
 							xs={12}
 							md={10}
 						>
-							<Grid item>
+							<Grid item >
 								<NextLink
 									href="/"
 									legacyBehavior
@@ -76,7 +76,7 @@ export const Navbar = () => {
 									</Link>
 								</NextLink>
 							</Grid>
-							<Grid item>
+							<Grid item >
 								<Grid container alignItems={"center"} height={1}>
 									<Grid item>
 										<Grid container >
@@ -101,6 +101,7 @@ export const Navbar = () => {
 					</Grid>
 				</Toolbar>
 			</AppBar>
+
 		</HideOnScroll>
 	)
 };
