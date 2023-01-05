@@ -56,7 +56,34 @@ export const ArticlesData = {
           url: "articulo-6",
           seo: { title: "Articulo 6", description: "Articulo 6 description" }
         }
-      }
+      },
+      {
+        data: {
+          title: "Articulo 7",
+          body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
+          image: { src: "https://ncb-storage.s3.amazonaws.com/articles/a6.jpg", alt: "Alt Text", width: 2101, height: 1400 },
+          url: "articulo-7",
+          seo: { title: "Articulo 7", description: "Articulo 7 description" }
+        }
+      },
+      {
+        data: {
+          title: "Articulo 8",
+          body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
+          image: { src: "https://ncb-storage.s3.amazonaws.com/articles/a6.jpg", alt: "Alt Text", width: 2101, height: 1400 },
+          url: "articulo-8",
+          seo: { title: "Articulo 8", description: "Articulo 8 description" }
+        }
+      },
+      {
+        data: {
+          title: "Articulo 9",
+          body: "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
+          image: { src: "https://ncb-storage.s3.amazonaws.com/articles/a6.jpg", alt: "Alt Text", width: 2101, height: 1400 },
+          url: "articulo-9",
+          seo: { title: "Articulo 9", description: "Articulo 9 description" }
+        }
+      },
     ],
     seo: {
       title: "Articulos",

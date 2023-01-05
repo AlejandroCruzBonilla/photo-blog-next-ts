@@ -7,6 +7,7 @@ import { HeadingPage, ImageContainer } from '../../components/ui';
 import { GalleryProps, ImageProps } from '../../@types';
 
 import { GalleriesData } from '../../_fakeData'
+import { MasonryPhotoswipeGallery } from '../../components/ui/MasonryPhotoswipeGallery/MasonryPhotoswipeGallery';
 
 
 const Gallery: NextPage<GalleryProps> = ({
@@ -53,7 +54,7 @@ const Gallery: NextPage<GalleryProps> = ({
 
 
 			<Box my={2}>
-				<Masonry
+				{/* <Masonry
 					spacing={1}
 					columns={{
 						xs: 1,
@@ -75,7 +76,11 @@ const Gallery: NextPage<GalleryProps> = ({
 							/>
 						))
 					}
-				</Masonry>
+				</Masonry> */}
+				<MasonryPhotoswipeGallery
+					galleryID='masonry-photoswipe-gallery'
+					images={images}
+				/>
 			</Box>
 		</MainLayout>
 	);

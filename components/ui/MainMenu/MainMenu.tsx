@@ -8,6 +8,12 @@ import {
 	Icon,
 	Button,
 	Typography,
+	ListItemButton,
+	ListItem,
+	colors,
+	List,
+	ListItemText,
+	Box,
 } from '@mui/material';
 
 import { ClearOutlined } from '@mui/icons-material'
@@ -16,6 +22,7 @@ import { UIContext } from '../../../context/ui';
 import globalStyle from '../../../styles/globals.module.css'
 
 import { MenuItems } from '../../../_fakeData';
+import { Divider } from '@mui/material';
 
 
 export const MainMenu = () => {
@@ -52,61 +59,62 @@ export const MainMenu = () => {
 					container
 					justifyContent="center"
 				>
-					<Grid item>
-						<Grid
-							container
-							direction={"column"}
-						>
-							{
-								menuItems.map(({ route, text, icon }, index) => (
-
-									<NextLink
-										href={route}
-										passHref
-										legacyBehavior
-										key={`main-menu-Item-${index}`}
-									>
-
-										<Button
+					<List>
+						{
+							menuItems.map(({ route, text, icon }, index) => (
+								<NextLink
+									href={route}
+									key={`main-menu-Item-${index}`}
+									// passHref
+									legacyBehavior
+								>
+									<Box my={1}>
+										<ListItemButton
 											onClick={closeSideMenu}
-											size="large"
-											variant={(pathname === route) ? "contained" : "text"}
-											sx={[
-												{
-													py: 3, m: 1,
-													color: "mainMenu.contrastText",
-													justifyContent: "space-between",
-													// justifyContent: "center",
-													'&:hover': { backgroundColor: 'mainMenu.contrastText', color: "mainMenu.light" },
-												},
-												(pathname === route) && {
-													backgroundColor: "mainMenu.contrastText",
-													color: "mainMenu.light",
-													'&:hover': {
-														backgroundColor: 'mainMenu.dark',
-														color: "mainMenu.contrastText"
-													},
-												}
-											]}
+											sx={{
+
+												'&:hover': { color: "mainMenu.contrastText", backgroundColor: "unset" }
+											}}
 										>
 											<Icon
 												baseClassName="material-symbols-outlined"
 												className={globalStyle['xx-font-size']}
+												sx={{
+													mx: 1
+												}}
 											>
 												{icon}
 											</Icon>
-											<Typography variant="h5">{text}</Typography>
-										</Button>
-									</NextLink>
-								))
-							}
-							<Grid container justifyContent={"center"}>
-								<IconButton onClick={closeSideMenu}>
-									<ClearOutlined fontSize={'large'} />
-								</IconButton>
-							</Grid>
+											<Typography
+												className={globalStyle['xx-font-size']}
+											>
+												{text}
+											</Typography>
+										</ListItemButton>
+										{
+											(pathname === route) && (
+												<Divider
+													variant="inset"
+													sx={[
+														{
+															borderBottomWidth: 2,
+															borderColor: "mainMenu.contrastText",
+														}
+													]}
+												/>
+											)
+										}
+									</Box>
+								</NextLink>
+							))
+						}
+						<Grid container justifyContent={"center"}>
+							<IconButton onClick={closeSideMenu}>
+								<ClearOutlined fontSize={'large'} />
+							</IconButton>
 						</Grid>
-					</Grid>
+					</List>
+
 				</Grid>
 			</Grid>
 

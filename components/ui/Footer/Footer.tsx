@@ -25,6 +25,7 @@ export const Footer = () => {
         <Divider
           sx={{
             borderColor: "footer.contrastText",
+            borderBottomWidth:2,
             my: 2
           }}
         />
@@ -45,9 +46,11 @@ export const Footer = () => {
           >
             {
               socialItems.map(({ link, icon }, index) => (
-                <Box mx={1}>
+                <Box
+                  key={`footer-social-item-${index}`}
+                  mx={1}
+                >
                   <SocialItem
-                    key={`footer-social-item-${index}`}
                     link={link}
                     icon={icon}
                   />
