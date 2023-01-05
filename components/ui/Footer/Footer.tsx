@@ -1,8 +1,7 @@
 import React from 'react'
-import { Grid } from '@mui/material'
+import { Box, Divider, Grid, Typography } from '@mui/material';
 import { ImageContainer, SocialItem } from '../';
 import { FooterData } from '../../../_fakeData';
-import Image from 'next/image';
 
 
 export const Footer = () => {
@@ -10,68 +9,72 @@ export const Footer = () => {
 
   return (
     <Grid
-      py={4}
-      sx={{
-        bgcolor: "footer.main"
+      component={"footer"}
+      container
+      justifyContent={"center"}
+      alignItems={"center"}
+      px={{
+        xs: 2
       }}
     >
       <Grid
-        container
-        height={2 / 6}
-        justifyContent="center"
-        alignItems="center"
-        mb={{
-          xs: 4,
-          md: 8
-        }}
+        item
+        xs={12}
+        md={10}
       >
+        <Divider
+          sx={{
+            borderColor: "footer.contrastText",
+            my: 2
+          }}
+        />
         <Grid
           container
-          justifyContent={"center"}
-        >
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width}
-            height={logo.height}
-          />
-        </Grid>
-      </Grid>
-      <Grid
-        container
-        height={4 / 6}
-        mb={{
-          xs: 4,
-          md: 8
-        }}
-      >
-        <Grid
-          container
-          justifyContent={"center"}
+          item
+          my={3}
         >
           <Grid
             container
-            alignItems={"center"}
-            justifyContent={"center"}
-            item xs={8}
+            item
+            xs={12}
+            md={6}
+            justifyContent={{
+              xs: "center",
+              md: "start"
+            }}
           >
             {
               socialItems.map(({ link, icon }, index) => (
-                <Grid
-                  key={`footer-social-item-${index}`}
-                  container
-                  alignItems={"center"}
-                  justifyContent={"center"}
-                  item
-                  xs={3}
-                >
-                  <SocialItem link={link} icon={icon} />
-                </Grid>
+                <Box mx={1}>
+                  <SocialItem
+                    key={`footer-social-item-${index}`}
+                    link={link}
+                    icon={icon}
+                  />
+                </Box>
               ))
             }
+          </Grid>
+          <Grid
+            container
+            item
+            xs={12}
+            md={6}
+            justifyContent={{
+              xs: 'center',
+              md: "end"
+            }}
+            my={2}
+          >
+            <Typography>
+              © 2023 Images por Nayeli Cruz Bonilla
+            </Typography>
           </Grid>
         </Grid>
       </Grid>
     </Grid>
+
+
+
   )
 }

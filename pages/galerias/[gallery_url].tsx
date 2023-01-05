@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
-import { Grid, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
+import Masonry from '@mui/lab/Masonry';
 import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../../components/layouts';
 import { HeadingPage, ImageContainer } from '../../components/ui';
@@ -41,7 +42,7 @@ const Gallery: NextPage<GalleryProps> = ({
 
 			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
-			<Grid container alignItems="center">
+			<Grid container alignItems="center" my={4}>
 				<Grid item >
 					<Typography textAlign="justify">
 						{body}
@@ -49,33 +50,33 @@ const Gallery: NextPage<GalleryProps> = ({
 				</Grid>
 			</Grid>
 
-			<Grid container my={2}>
-				{
-					images.map((image, index) => (
-						<Grid
-							key={`gallery-image-${index}`}
-							item
-							p={1}
-							xs={12}
-							sm={6}
-						>
 
+
+			<Box my={2}>
+				<Masonry
+					spacing={1}
+					columns={{
+						xs: 1,
+						sm: 2,
+					}}
+				>
+					{
+						images.map((image, index) => (
 							<ImageContainer
+								key={`index-gallery${index}`}
 								image={image}
 								objectFit="cover"
 								placeholder="blur"
 								maxHeight={{
 									xs: "50vw",
-									md: "30vw",
+									sm: `${index % 2 ? "50vw" : "40vw"}`,
+									lg: `${index % 2 ? "40vw" : "35vw"}`,
 								}}
 							/>
-						</Grid>
-
-					))
-				}
-			</Grid>
-
-
+						))
+					}
+				</Masonry>
+			</Box>
 		</MainLayout>
 	);
 }

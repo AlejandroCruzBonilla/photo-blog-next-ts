@@ -34,7 +34,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				<MainMenu />
 			</Grid>
 
-			<Grid 
+			<Grid
 				component={"main"}
 				container
 				justifyContent={"center"}
@@ -52,9 +52,9 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				</Grid>
 			</Grid>
 
-			<Grid component={"footer"} >
-				<Footer />
-			</Grid>
+
+			<Footer />
+
 
 
 		</>

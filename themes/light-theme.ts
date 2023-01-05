@@ -27,7 +27,7 @@ export const lightTheme = createTheme({
 		},
 		footer: {
 			main: '#121212',
-			contrastText: teal.A100,
+			contrastText: teal[300],
 		},
 		mainMenu: {
 			main: grey[200],
