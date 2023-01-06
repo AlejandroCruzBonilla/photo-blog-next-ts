@@ -78,6 +78,7 @@ const Home: NextPage<HomeProps> = ({
 							image={image}
 							objectFit="cover"
 							placeholder="blur"
+							priority
 							maxHeight={{
 								xs: "50vh",
 								sm: "60vh",
