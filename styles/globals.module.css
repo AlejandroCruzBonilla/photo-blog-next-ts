@@ -1,6 +1,6 @@
 .xx-font-size{
-  font-size: xx-large;
+  font-size: xx-large !important;
 }
 .xxx-font-size{
-  font-size: xxx-large;
+  font-size: xxx-large !important;
 }

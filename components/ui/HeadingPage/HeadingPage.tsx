@@ -5,7 +5,9 @@ import { HeadingPageProps } from "./model"
 export const HeadingPage: FC<HeadingPageProps> = ({
 	title,
 	variant,
-	textAlign
+	textAlign,
+	fontSize = "3rem",
+	fontWeight = "300"
 }) => (
 	<Grid container my={"2%"}>
 		<Grid
@@ -14,11 +16,12 @@ export const HeadingPage: FC<HeadingPageProps> = ({
 		>
 			<Typography
 				variant={variant || "h1"}
-				fontSize={"3rem"}
+				fontSize={fontSize}
 				textAlign={{
 					xs: textAlign?.xs || "center",
 					md: textAlign?.md || "center"
 				}}
+				fontWeight={fontWeight}
 			>
 				{title}
 			</Typography>
