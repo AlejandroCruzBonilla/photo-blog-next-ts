@@ -3,9 +3,10 @@ import { Grid, Typography } from '@mui/material';
 import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../components/layouts/MainLayout/MainLayout';
 import { HeadingPage, ImageContainer } from '../components/ui';
+import { imagekitIoLoader } from '../utils/customImageLoader';
 import { HomeProps, ImageProps } from '../@types';
 
-import { HomeData } from '../_fakeData'
+import HomeData from '../_fakeData/home.json'
 import Link from 'next/link';
 
 // import styles from '../styles/Home.module.css'
@@ -214,10 +215,22 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 	const { data: { image, images } } = HomeData
 	const imagesPromises: any = []
 
-	imagesPromises.push(getPlaiceholder(image.src));
+	imagesPromises.push(getPlaiceholder(
+		imagekitIoLoader({
+			src: image.src,
+			width: 900,
+			quality: 50
+		})
+	));
 
-	images.forEach(({ src }) => {
-		imagesPromises.push(getPlaiceholder(src));
+	images.forEach(({ src, width }) => {
+		imagesPromises.push(getPlaiceholder(
+			imagekitIoLoader({
+				src: src,
+				width: 900,
+				quality: 50
+			})
+		));
 	})
 
 	const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);

@@ -6,7 +6,7 @@ import { ContactForm } from '../components/Forms';
 import { ContactProps } from "../@types";
 
 
-import { ContactData } from "../_fakeData";
+import ContactData from "../_fakeData/contact.json";
 
 const Contact: NextPage<ContactProps> = ({
 	data: {
@@ -18,7 +18,7 @@ const Contact: NextPage<ContactProps> = ({
 }) => {
 	return (
 		<MainLayout seo={seo}>
-			<HeadingPage title={title}  />
+			<HeadingPage title={title} />
 
 			<Grid
 				container
@@ -67,10 +67,13 @@ const Contact: NextPage<ContactProps> = ({
 						>
 							<Grid item >
 								<Typography
+									component={"div"}
 									paragraph
 									textAlign={"justify"}
 								>
-									{body}
+									{
+										<p dangerouslySetInnerHTML={{ __html: body.replaceAll("\n", "<br/>") }}></p>
+									}
 								</Typography>
 							</Grid>
 						</Grid>

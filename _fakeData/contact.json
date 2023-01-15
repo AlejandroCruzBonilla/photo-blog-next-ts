@@ -1,0 +1,11 @@
+{
+  "data": {
+    "title": "Contact Page",
+    "body": "Cursó la Licenciatura en Psicología en la Universidad Nacional Autónoma de México. Inició su formación fotográfica en el FARO de Oriente y cursó el Seminario de Producción Fotográfica del Centro de la Imagen. Ha participado en diversas exposiciones colectivas en México. Fue ganadora del segundo lugar en el concurso latinoamericano \"Fotógrafas LATAM\" y forma parte del catálogo \"LAF8 Latin American Photography\" de la asociación norteamericana American Illustration and Photography.\n\n Fue ganadora del 3er lugar en la categoría \"Cuidadores\" del POY LATAM 2021.  Su trabajo ha sido exhibido en Colombia, Paris, Leipzig, y Nueva York y se ha publicado en diversos medios impresos y electrónicos. Actualmente colabora para el Diario El País",
+    "image": { "src": "/bio.webp", "alt": "Alt Text", "with": 500, "height": 500 },
+    "seo": {
+      "title": "Contact",
+      "description": "Página de contacto"
+    }
+  }
+}

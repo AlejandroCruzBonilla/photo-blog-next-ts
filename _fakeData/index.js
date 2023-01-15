@@ -1,7 +1,3 @@
-export * from './home'
-export * from './articles'
-export * from './galleries'
-export * from './contact'
 export * from './menu'
 export * from './footer'
 export * from './navBar'

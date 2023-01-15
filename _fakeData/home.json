@@ -1,0 +1,54 @@
+{
+  "data": {
+    "title": "Nayeli Cruz Bonilla",
+    "body": "Body Page",
+    "image": {
+      "src": "galleries/DJI_0354.jpg",
+      "alt": "Alt Text",
+      "width": 1500,
+      "height": 1000
+    },
+    "images": [
+      {
+        "src": "galleries/DJI_0354.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "galleries/MATAPALO_HONDURAS06.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "galleries/MATAPALO_HONDURAS31.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "galleries/NCB_TAPACHULA45.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "galleries/NCB00614.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      },
+      {
+        "src": "galleries/NCB01090.jpg",
+        "alt": "Alt Text",
+        "width": 1920,
+        "height": 1080
+      }
+    ],
+    "seo": {
+      "title": "Home",
+      "description": "Pagina principal"
+    }
+  }
+}
