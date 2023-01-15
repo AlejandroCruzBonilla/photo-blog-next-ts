@@ -6,16 +6,15 @@ import Image from "next/image"
 
 export const ImageContainer: FC<ImageContainerProps> = ({
 	image,
+	// customLoader,
 	objectFit = "contain",
 	placeholder = "empty",
 	priority = false,
-	maxHeight=image.height
-
+	maxHeight = image.height
 }) => (
 	<Grid
 		container
 		justifyContent={"center"}
-
 	>
 		<Grid
 			container
@@ -23,7 +22,6 @@ export const ImageContainer: FC<ImageContainerProps> = ({
 			justifyItems={"center"}
 			position="relative"
 			width={"100%"}
-			// width={image.width}
 			height={image.height}
 			maxHeight={maxHeight}
 		>
@@ -34,6 +32,7 @@ export const ImageContainer: FC<ImageContainerProps> = ({
 				blurDataURL={image.base64 ? image.base64 : ''}
 				priority={priority}
 				fill
+				// loader={customLoader}
 				style={{
 					objectFit: objectFit,
 					objectPosition: "center"

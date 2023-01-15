@@ -7,6 +7,7 @@ import { MediaCardProps } from './model';
 
 export const MediaCard: FC<MediaCardProps> = ({
 	image,
+	// customLoader,
 	title,
 	body,
 	date,
@@ -44,6 +45,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 							image={image}
 							objectFit="cover"
 							placeholder="blur"
+							// customLoader={customLoader}
 							maxHeight={maxHeight}
 						/>
 

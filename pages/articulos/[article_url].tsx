@@ -3,9 +3,10 @@ import { Grid, Typography } from '@mui/material';
 import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../../components/layouts';
 import { HeadingPage, ImageContainer } from '../../components/ui';
+import { imagekitIoLoader } from '../../utils/customImageLoader';
 import { ArticleProps, ImageProps } from '../../@types';
 
-import { ArticlesData } from '../../_fakeData'
+import ArticlesData from '../../_fakeData/articles.json'
 
 const Article: NextPage<ArticleProps> = ({
 	data: {
@@ -53,7 +54,8 @@ export default Article;
 export const getStaticPaths: GetStaticPaths = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 
-	const { articles } = ArticlesData.data;
+	const { data } = ArticlesData;
+	const { articles } = data;
 
 	return {
 		paths: articles.map(({ data: { url } }) => ({
@@ -71,24 +73,40 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	// const { data } = await  // your fetch function here 
 
-	const { articles } = ArticlesData.data;
+	const { data } = ArticlesData;
+	const { articles } = data;
 
 
 	const article = articles.find(({ data: { url } }) => url === article_url)
 
 	if (!article) throw new Error(`No article with url ${article_url}`)
 	const { data: { image } } = article
-	const { base64, img } = await getPlaiceholder(image.src)
 
-	article.data.image = {
-		alt: image.alt,
-		base64,
-		...img
-	} as ImageProps
+
+	// console.log("IMAGELOADER", imagekitIoLoader({
+	// 	src: image.src,
+	// 	width: image.width,
+	// 	quality: 50
+	// }))
+
+	const { base64, img } = await getPlaiceholder(imagekitIoLoader({
+		src: image.src,
+		width: image.width,
+		quality: 50
+	}))
+
+	const optimizeArticleData = {
+		...article.data,
+		image: {
+			alt: image.alt,
+			base64,
+			...img
+		}
+	}
 
 	return {
 		props: {
-			data: article.data
+			data: optimizeArticleData
 		}
 	}
 }

@@ -1,12 +1,12 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 import { Box, Grid, Typography } from '@mui/material';
-import Masonry from '@mui/lab/Masonry';
 import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from '../../components/layouts';
 import { HeadingPage, ImageContainer } from '../../components/ui';
+import { imagekitIoLoader } from '../../utils/customImageLoader';
 import { GalleryProps, ImageProps } from '../../@types';
 
-import { GalleriesData } from '../../_fakeData'
+import GalleriesData from '../../_fakeData/galleries.json'
 import { MasonryPhotoswipeGallery } from '../../components/ui/MasonryPhotoswipeGallery/MasonryPhotoswipeGallery';
 
 
@@ -24,7 +24,7 @@ const Gallery: NextPage<GalleryProps> = ({
 		<MainLayout
 			seo={seo}
 		>
-			<Grid container>
+			{/* <Grid container>
 
 				<ImageContainer
 					image={image}
@@ -39,7 +39,7 @@ const Gallery: NextPage<GalleryProps> = ({
 
 				/>
 
-			</Grid>
+			</Grid> */}
 
 			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
@@ -54,29 +54,6 @@ const Gallery: NextPage<GalleryProps> = ({
 
 
 			<Box my={2}>
-				{/* <Masonry
-					spacing={1}
-					columns={{
-						xs: 1,
-						sm: 2,
-					}}
-				>
-					{
-						images.map((image, index) => (
-							<ImageContainer
-								key={`index-gallery${index}`}
-								image={image}
-								objectFit="cover"
-								placeholder="blur"
-								maxHeight={{
-									xs: "50vw",
-									sm: `${index % 2 ? "50vw" : "40vw"}`,
-									lg: `${index % 2 ? "40vw" : "35vw"}`,
-								}}
-							/>
-						))
-					}
-				</Masonry> */}
 				<MasonryPhotoswipeGallery
 					galleryID='masonry-photoswipe-gallery'
 					images={images}
@@ -118,39 +95,56 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 		const { data: {
 			image,
-			images
+			images,
+			...restProps
 		} } = gallery
 
 
 		const imagesPromises: any = []
+		
+		imagesPromises.push(getPlaiceholder(
+			imagekitIoLoader({
+				src: image.src,
+				width: image.width,
+				quality: 50
+			})
+		));
 
-		imagesPromises.push(getPlaiceholder(image.src));
-
-		images.forEach(({ src }) => { imagesPromises.push(getPlaiceholder(src)) });
+		images.forEach(({ src, width }) => {
+			imagesPromises.push(getPlaiceholder(
+				imagekitIoLoader({
+					src,
+					width,
+					quality: 50
+				})
+			))
+		});
 
 		const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);
 
-		gallery.data.image = {
-			base64,
-			alt: image.alt,
-			...img
-		} as ImageProps
-
-		gallery.data.images = restImages.map(({ base64, img }, index) => {
-			const alt = images[index].alt
-			return (
-				{
+		const props = {
+			data: {
+				...restProps,
+				image: {
 					base64,
-					alt,
+					alt: image.alt,
 					...img
-				} as ImageProps)
-		})
-		return {
-			props: {
-				data: gallery.data
+				},
+				images: restImages.map(({ base64, img }, index) => {
+					const alt = images[index].alt
+					return (
+						{
+							base64,
+							alt,
+							...img
+						} as ImageProps)
+				})
 			}
 		}
+		return {
+			props
+		}
 	} catch (e) {
-		throw new Error(`Error ${gallery_url} ${e}`);
+		throw new Error(`Error: ${gallery_url} ${e}`);
 	}
 }

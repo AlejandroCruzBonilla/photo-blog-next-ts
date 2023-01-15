@@ -8,6 +8,10 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'ncb-storage.s3.amazonaws.com/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'ik.imagekit.io/**',
       }
     ],
   }

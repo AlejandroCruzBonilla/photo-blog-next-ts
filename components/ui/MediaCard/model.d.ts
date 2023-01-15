@@ -5,6 +5,7 @@ export interface MediaCardProps {
   body?: string
   date?: string
   image: ImageProps
+  // customLoader?: (p: CustomImageLoaderProps) => string
   gridResponsive?:GridResponsive
   maxHeight?: MaxHeight
 }
@@ -14,4 +15,10 @@ type GridResponsive = {
   sm?: number
   md?: number
   lg?: number
+}
+
+type CustomImageLoaderProps = {
+  src: string
+  width: number
+  quality?: number
 }

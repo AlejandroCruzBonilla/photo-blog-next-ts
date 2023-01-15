@@ -4,10 +4,11 @@ import { Grid, Typography } from '@mui/material';
 import { getPlaiceholder } from "plaiceholder";
 import { MainLayout } from "../../components/layouts";
 import { HeadingPage, MediaCard, TabBar, TabContent, TabsContent } from '../../components/ui';
+import { imagekitIoLoader } from '../../utils/customImageLoader';
 import { GalleriesProps } from '../../@types';
 
 
-import { GalleriesData } from '../../_fakeData'
+import GalleriesData from '../../_fakeData/galleries.json'
 
 const Galleries: NextPage<GalleriesProps> = ({
 	data: {
@@ -85,32 +86,50 @@ export default Galleries;
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 	const { data } = GalleriesData;
-	const { galleries } = data;
+
+	const { galleries, ...rest } = data;
 
 	const imagesPromises: any = []
 
 	galleries.forEach(({ galleries }) => {
 		galleries.forEach(({ data: { image } }) => {
-			imagesPromises.push(getPlaiceholder(image.src));
+			imagesPromises.push(getPlaiceholder(
+				imagekitIoLoader({
+					src: image.src,
+					width: 600,
+					quality: 30
+				})
+			));
 		})
 	})
 
 	const mainImages = await Promise.all(imagesPromises);
 
-	galleries.forEach(({ galleries }, i_index) => {
-		galleries.forEach(({ data: { image } }, j_index) => {
-			const { base64, img } = mainImages.shift()
-			galleries[j_index].data.image = {
-				alt: image.alt,
-				base64,
-				...img
-			}
-		})
+	const newGalleries = galleries.map(({ galleries, ...rest }, i_index) => {
+		return {
+			...rest,
+			galleries: galleries.map(({ data: { image: { alt }, ...rest } }, j_index) => {
+				const { base64, img } = mainImages.shift()
+				return {
+					data: {
+						...rest,
+						image: {
+							alt,
+							base64,
+							...img
+						}
+					}
+				}
+			})
+		}
 	})
 
 	return {
-		props: {
-			data
+		props:{
+			data: {
+				...rest,
+				galleries: newGalleries
+			}
 		}
 	}
 }
