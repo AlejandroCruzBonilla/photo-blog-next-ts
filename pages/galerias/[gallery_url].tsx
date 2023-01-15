@@ -24,23 +24,6 @@ const Gallery: NextPage<GalleryProps> = ({
 		<MainLayout
 			seo={seo}
 		>
-			{/* <Grid container>
-
-				<ImageContainer
-					image={image}
-					objectFit="cover"
-					placeholder="blur"
-					priority
-					maxHeight={{
-						xs: "50vw",
-						sm: "70vw",
-						md: "36vw",
-					}}
-
-				/>
-
-			</Grid> */}
-
 			<HeadingPage title={title} textAlign={{ md: "left" }} />
 
 			<Grid container alignItems="center" my={4}>
@@ -50,8 +33,6 @@ const Gallery: NextPage<GalleryProps> = ({
 					</Typography>
 				</Grid>
 			</Grid>
-
-
 
 			<Box my={2}>
 				<MasonryPhotoswipeGallery

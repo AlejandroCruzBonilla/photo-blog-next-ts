@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Box } from '@mui/material';
+import { Box, Grid } from '@mui/material';
 import { Masonry } from '@mui/lab';
 import PhotoSwipeLightbox from 'photoswipe/lightbox';
 import 'photoswipe/style.css';
@@ -25,41 +25,107 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
   }, []);
 
   return (
-    <Box className="pswp-gallery" id={galleryID}>
-      <Masonry
-        spacing={1}
-        columns={{
-          xs: 1,
-          sm: 2,
+    <>
+      {/* <Box className="pswp-gallery" id={galleryID}>
+        <Masonry
+          spacing={1}
+          columns={{
+            xs: 1,
+            sm: 2,
+          }}
+        >
+          {
+            images.map((image, index) => (
+              <a
+                // href={image.largeURL}
+                href={image.src}
+                data-pswp-width={image.width}
+                data-pswp-height={image.height}
+                key={galleryID + '-' + index}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImageContainer
+                  key={`index-gallery${index}`}
+                  image={image}
+                  objectFit="cover"
+                  placeholder="blur"
+                  maxHeight={{
+                    xs: "50vw",
+                    sm: `${index % 2 ? "50vw" : "40vw"}`,
+                    lg: `${index % 2 ? "40vw" : "35vw"}`,
+                  }}
+                />
+              </a>
+            ))
+          }
+        </Masonry>
+      </Box> */}
+      <Grid
+        container
+        className="pswp-gallery"
+        id={galleryID}
+        height={
+          {
+            xs: "auto",
+            sm: "calc(67vw * 2)",
+            lg: "calc(57vw * 2)"
+          }
+        }
+        sx={{
+          flexFlow: "column wrap",
+          width: "100%",
+          maxWidth: "100%",
         }}
       >
+
         {
           images.map((image, index) => (
-            <a
-              // href={image.largeURL}
-              href={image.src}
-              data-pswp-width={image.width}
-              data-pswp-height={image.height}
+            <Grid
               key={galleryID + '-' + index}
-              target="_blank"
-              rel="noreferrer"
+              width={{
+                xs: "100%",
+                sm: "50%"
+              }}
+              sx={{
+                order: `${index + 1}`,
+                p: "4px",
+              }}
             >
-              <ImageContainer
-                key={`index-gallery${index}`}
-                image={image}
-                objectFit="cover"
-                placeholder="blur"
-                maxHeight={{
-                  xs: "50vw",
-                  sm: `${index % 2 ? "50vw" : "40vw"}`,
-                  lg: `${index % 2 ? "40vw" : "35vw"}`,
-                }}
-              />
-            </a>
+              <a
+                // href={image.largeURL}
+                href={image.src}
+                data-pswp-width={image.width}
+                data-pswp-height={image.height}
+                // key={galleryID + '-' + index}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ImageContainer
+                  key={`index-gallery${index}`}
+                  image={image}
+                  objectFit="cover"
+                  placeholder="blur"
+                  maxHeight={{
+                    xs: "50vw",
+                    sm: `${index % 2 ? "50vw" : "40vw"}`,
+                    lg: `${index % 2 ? "40vw" : "35vw"}`,
+                  }}
+                />
+              </a>
+            </Grid>
+
           ))
         }
-      </Masonry>
-    </Box>
+        <Box component={"span"} sx={{
+          flexBasis: "100%",
+          width: 0,
+          margin: 0,
+          content: "''",
+          padding: 0
+        }}> </Box>
+      </Grid>
+    </>
   );
 }
 
