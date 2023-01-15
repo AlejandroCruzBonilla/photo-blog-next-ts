@@ -17,6 +17,7 @@
     "@mui/material": "^5.11.1",
     "@next/font": "13.1.0",
     "animate.css": "^4.1.1",
+    "material-symbols": "^0.4.2",
     "next": "13.1.0",
     "next-image-export-optimizer": "^1.1.2",
     "photoswipe": "^5.3.4",
