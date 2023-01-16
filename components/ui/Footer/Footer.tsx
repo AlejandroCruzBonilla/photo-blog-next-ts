@@ -1,11 +1,11 @@
 import React from 'react'
 import { Box, Divider, Grid, Typography } from '@mui/material';
-import { ImageContainer, SocialItem } from '../';
-import { FooterData } from '../../../_fakeData';
+import { SocialItem } from '../';
+import FooterData from '../../../_fakeData/footer.json';
 
 
 export const Footer = () => {
-  const { data: { logo, socialItems } } = FooterData
+  const { data: { socialItems } } = FooterData
 
   return (
     <Grid
@@ -25,7 +25,7 @@ export const Footer = () => {
         <Divider
           sx={{
             borderColor: "footer.contrastText",
-            borderBottomWidth:2,
+            borderBottomWidth: 2,
             my: 2
           }}
         />

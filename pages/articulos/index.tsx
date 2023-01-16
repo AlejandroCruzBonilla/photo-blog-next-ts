@@ -29,6 +29,7 @@ const Articles: NextPage<ArticlesProps> = ({
 							key={`media-card-${index}`}
 							{...{ title, body, image, url: `/articulos/${url}` }}
 							// customLoader={imagekitIoLoader}
+							priority={(index<=2)}
 							gridResponsive={{
 								xs: 12,
 								sm: 6,

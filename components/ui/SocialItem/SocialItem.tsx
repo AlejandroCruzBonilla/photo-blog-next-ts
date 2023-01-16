@@ -1,9 +1,28 @@
 import { FC } from "react";
-import { Grid, Link, Icon, Typography } from "@mui/material"
-import styles from "./SocialItem.module.css"
+import { Grid, Link, Typography } from "@mui/material"
+// import { EmailOutlined } from '@mui/icons-material';
+import { InstagramIcon, TwitterIcon,MailIcon } from '../icons';
+import globalStyle from '../../../styles/globals.module.css'
 
 
 export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
+
+  const setIcon = (icon: string) => {
+    switch (icon) {
+      case 'twitter':
+        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
+          className={globalStyle['xx-font-size']}
+        />
+      case 'instagram':
+        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
+          className={globalStyle['xx-font-size']}
+        />
+      case 'mail':
+        return <MailIcon viewBox="0 0 43 43" sx={{ mx: 1, color: "footer.contrastText" }}
+          className={globalStyle['xx-font-size']}
+        />
+    }
+  }
   return (
     <Grid item>
       <Link
@@ -11,13 +30,12 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
-      // color="inherit"
       >
         <Grid
           container
           direction={"column"}
         >
-          <Icon
+          {/* <Icon
             baseClassName="material-symbols-outlined"
             className={styles['social-item-xxx-font-size']}
             sx={{
@@ -25,7 +43,14 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
             }}
           >
             {icon}
-          </Icon>
+          </Icon> */}
+
+          <Grid>
+            {
+              setIcon(icon)
+            }
+          </Grid>
+
           {
             title
               ? (

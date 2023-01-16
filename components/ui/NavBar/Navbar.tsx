@@ -2,7 +2,7 @@ import { ChangeEvent, useContext } from 'react';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-import { AppBar, Grid, IconButton, Toolbar, Typography, Link, Box } from '@mui/material';
+import { AppBar, Grid, IconButton, Toolbar, Typography, Link } from '@mui/material';
 import { MenuOutlined } from '@mui/icons-material';
 
 import { UIContext } from '../../../context/ui';

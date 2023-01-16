@@ -13,6 +13,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 	date,
 	url,
 	gridResponsive,
+	priority=false,
 	maxHeight = image.width,
 }) => {
 	return (
@@ -47,6 +48,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 							placeholder="blur"
 							// customLoader={customLoader}
 							maxHeight={maxHeight}
+							priority={priority}
 						/>
 
 						<CardContent>

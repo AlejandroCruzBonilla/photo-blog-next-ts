@@ -103,6 +103,7 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
               >
                 <ImageContainer
                   key={`index-gallery${index}`}
+                  priority={(index<=1)}
                   image={image}
                   objectFit="cover"
                   placeholder="blur"

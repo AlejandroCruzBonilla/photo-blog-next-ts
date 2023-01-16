@@ -58,7 +58,7 @@ const Home: NextPage<HomeProps> = ({
 							</Typography>
 							<Typography
 								variant='h2'
-								fontWeight={600}
+								fontWeight={700}
 								fontSize={{
 									xs: '2.5rem',
 									md: '3.2rem',
@@ -134,7 +134,7 @@ const Home: NextPage<HomeProps> = ({
 						>
 							<Typography
 								variant='h2'
-								fontWeight={600}
+								fontWeight={700}
 							>
 								Galerías
 							</Typography>
@@ -168,7 +168,7 @@ const Home: NextPage<HomeProps> = ({
 							>
 								<Typography
 									variant='h2'
-									fontWeight={600}
+									fontWeight={700}
 									textAlign={{
 										xs: 'left',
 									}}
@@ -212,7 +212,7 @@ export default Home
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 	const { data } = HomeData;
-	const { data: { image, images } } = HomeData
+	const { image, images, ...rest } = data
 	const imagesPromises: any = []
 
 	imagesPromises.push(getPlaiceholder(
@@ -235,25 +235,27 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 
 	const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);
 
-	data.image = {
-		base64,
-		alt: image.alt,
-		...img
-	} as ImageProps
-
-	data.images = restImages.map(({ base64, img }, index) => {
-		const alt = images[index].alt
-		return (
-			{
+	const props = {
+		data: {
+			...rest,
+			image: {
 				base64,
-				alt,
+				alt: image.alt,
 				...img
-			} as ImageProps)
-	})
+			},
+			images: restImages.map(({ base64, img }, index) => {
+				const alt = images[index].alt
+				return (
+					{
+						base64,
+						alt,
+						...img
+					})
+			})
+		}
+	}
 
 	return {
-		props: {
-			data
-		}
+		props
 	}
 }

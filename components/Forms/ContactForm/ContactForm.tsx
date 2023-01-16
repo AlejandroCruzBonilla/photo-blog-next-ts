@@ -1,16 +1,13 @@
 
-import { ChangeEvent, createRef, FormEvent, FormEventHandler, useEffect, useRef, useState } from 'react';
+import { ChangeEvent, createRef, FormEvent, FormEventHandler, useEffect, useState } from 'react';
 import { Box, Grid, Modal, TextField, Typography } from "@mui/material";
-import FormControl, { useFormControl } from '@mui/material/FormControl';
+
 import ReCAPTCHA from "react-google-recaptcha";
 // import ReCAPTCHA from "react-recaptcha";
 import { LoadingButton } from '@mui/lab';
 
 export const ContactForm = () => {
 
-  // const nameRef = useRef();
-  // const emailRef = useRef();
-  // const messageRef = useRef();
   const recaptchaRef = createRef<ReCAPTCHA & HTMLDivElement>();
 
   const [loading, setLoading] = useState(true);

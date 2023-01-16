@@ -6,28 +6,48 @@ import {
 	Grid,
 	IconButton,
 	Icon,
-	Button,
 	Typography,
 	ListItemButton,
-	ListItem,
-	colors,
 	List,
-	ListItemText,
 	Box,
 } from '@mui/material';
 
-import { ClearOutlined } from '@mui/icons-material'
 import { HeadingPage } from '../HeadingPage';
 import { UIContext } from '../../../context/ui';
+import { Divider } from '@mui/material';
+import {
+	ClearOutlined,
+	RoofingOutlined,
+	PhotoCameraOutlined,
+	ArticleOutlined,
+	EmailOutlined,
+} from '@mui/icons-material';
 import globalStyle from '../../../styles/globals.module.css'
 
-import { MenuItems } from '../../../_fakeData';
-import { Divider } from '@mui/material';
+import MenuItems from '../../../_fakeData/menu.json';
 
 
 export const MainMenu = () => {
 	const { data: { title, menuItems } } = MenuItems
 
+
+	const icons = menuItems.map(({ icon }) => {
+
+	})
+	// console.log(icons);
+
+	const setIcon = (icon: string) => {
+		switch (icon) {
+			case 'RoofingOutlined':
+				return <RoofingOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+			case 'PhotoCameraOutlined':
+				return <PhotoCameraOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+			case 'ArticleOutlined':
+				return <ArticleOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+			case 'EmailOutlined':
+				return <EmailOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+		}
+	}
 
 	const { sideMenuOpen, closeSideMenu } = useContext(UIContext);
 	const { pathname } = useRouter();
@@ -65,7 +85,6 @@ export const MainMenu = () => {
 								<NextLink
 									href={route}
 									key={`main-menu-Item-${index}`}
-									// passHref
 									legacyBehavior
 								>
 									<Box my={1}>
@@ -76,7 +95,7 @@ export const MainMenu = () => {
 												'&:hover': { color: "mainMenu.contrastText", backgroundColor: "unset" }
 											}}
 										>
-											<Icon
+											{/* <Icon
 												baseClassName="material-symbols-outlined"
 												className={globalStyle['xx-font-size']}
 												sx={{
@@ -84,7 +103,11 @@ export const MainMenu = () => {
 												}}
 											>
 												{icon}
-											</Icon>
+											</Icon> */}
+											{
+												setIcon(icon)
+											}
+
 											<Typography
 												className={globalStyle['xx-font-size']}
 											>

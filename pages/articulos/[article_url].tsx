@@ -26,6 +26,7 @@ const Article: NextPage<ArticleProps> = ({
 					image={image}
 					objectFit="cover"
 					placeholder="blur"
+					priority
 					maxHeight={{
 						xs: "50vw",
 						sm: "70vw",
@@ -81,13 +82,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 	if (!article) throw new Error(`No article with url ${article_url}`)
 	const { data: { image } } = article
-
-
-	// console.log("IMAGELOADER", imagekitIoLoader({
-	// 	src: image.src,
-	// 	width: image.width,
-	// 	quality: 50
-	// }))
 
 	const { base64, img } = await getPlaiceholder(imagekitIoLoader({
 		src: image.src,

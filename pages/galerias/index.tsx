@@ -56,6 +56,7 @@ const Galleries: NextPage<GalleriesProps> = ({
 											<MediaCard
 												key={`media-card-${index}`}
 												{...{ title, body, image, url: `/galerias/${url}` }}
+												priority={(index<=2)}
 												gridResponsive={{
 													xs: 12,
 													sm: 6,
