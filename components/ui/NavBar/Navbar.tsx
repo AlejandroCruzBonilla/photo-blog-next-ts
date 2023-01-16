@@ -51,6 +51,7 @@ export const Navbar = () => {
 							<Grid item >
 								<NextLink
 									href="/"
+									passHref
 									legacyBehavior
 								>
 									<Link
