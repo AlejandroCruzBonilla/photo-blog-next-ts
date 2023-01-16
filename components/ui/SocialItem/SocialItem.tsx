@@ -10,11 +10,11 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
   const setIcon = (icon: string) => {
     switch (icon) {
       case 'twitter':
-        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
+        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
           className={globalStyle['xx-font-size']}
         />
       case 'instagram':
-        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
+        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
           className={globalStyle['xx-font-size']}
         />
       case 'mail':
