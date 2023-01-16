@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Grid, Link, Typography } from "@mui/material"
 // import { EmailOutlined } from '@mui/icons-material';
-import { InstagramIcon, TwitterIcon,MailIcon } from '../icons';
+import { InstagramIcon, TwitterIcon, MailIcon } from '../icons';
 import globalStyle from '../../../styles/globals.module.css'
 
 
@@ -10,11 +10,11 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
   const setIcon = (icon: string) => {
     switch (icon) {
       case 'twitter':
-        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
+        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
           className={globalStyle['xx-font-size']}
         />
       case 'instagram':
-        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
+        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
           className={globalStyle['xx-font-size']}
         />
       case 'mail':
