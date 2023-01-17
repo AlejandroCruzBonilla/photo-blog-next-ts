@@ -51,8 +51,8 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 
 
-export const ThemeSwitch:FC<ThemeSwitchProps> = ({currentTheme,handleChange}) => {
+export const ThemeSwitch: FC<ThemeSwitchProps> = ({ currentTheme, handleChange }) => {
   return (
-    <MaterialUISwitch aria-label='Cambio a tema oscuro o tema claro' sx={{ m: 1 }} onChange={handleChange} checked={currentTheme==="darkTheme"}/>
+    <MaterialUISwitch inputProps={{ 'aria-label': 'Cambio de thema claro u oscuro', role: 'switch' }} sx={{ m: 1 }} onChange={handleChange} checked={currentTheme === "darkTheme"} />
   );
 }

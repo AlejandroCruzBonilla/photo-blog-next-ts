@@ -10,15 +10,15 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
   const setIcon = (icon: string) => {
     switch (icon) {
       case 'twitter':
-        return <TwitterIcon aria-label="Enlace a Twitter" viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
+        return <TwitterIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText", fontWeight: 900 }}
           className={globalStyle['xx-font-size']}
         />
       case 'instagram':
-        return <InstagramIcon aria-label="Enlace a Instagram" viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
+        return <InstagramIcon viewBox="0 0 50 50" sx={{ mx: 1, color: "footer.contrastText" }}
           className={globalStyle['xx-font-size']}
         />
       case 'mail':
-        return <MailIcon aria-label="Enlace a Correo Electronico" viewBox="0 0 43 43" sx={{ mx: 1, color: "footer.contrastText" }}
+        return <MailIcon viewBox="0 0 43 43" sx={{ mx: 1, color: "footer.contrastText" }}
           className={globalStyle['xx-font-size']}
         />
     }
@@ -30,6 +30,7 @@ export const SocialItem: FC<SocialItemProps> = ({ icon, title, link }) => {
         target="_blank"
         rel="noopener noreferrer"
         underline="none"
+        aria-label={link}
       >
         <Grid
           container
