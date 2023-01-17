@@ -85,6 +85,7 @@ export const Navbar = () => {
 												<ThemeSwitch currentTheme={currentTheme} handleChange={handleChange} />
 											</Grid>
 											<IconButton
+												aria-label="Menu de Navega PhotoCameraOutlined"
 												size='large'
 												edge="start"
 												onClick={openSideMenu}
