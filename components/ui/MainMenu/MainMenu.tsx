@@ -10,6 +10,7 @@ import {
 	ListItemButton,
 	List,
 	Box,
+	Link,
 } from '@mui/material';
 
 import { HeadingPage } from '../HeadingPage';
@@ -39,13 +40,13 @@ export const MainMenu = () => {
 	const setIcon = (icon: string) => {
 		switch (icon) {
 			case 'RoofingOutlined':
-				return <RoofingOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+				return <RoofingOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 			case 'PhotoCameraOutlined':
-				return <PhotoCameraOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+				return <PhotoCameraOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 			case 'ArticleOutlined':
-				return <ArticleOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+				return <ArticleOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 			case 'EmailOutlined':
-				return <EmailOutlined sx={{mx:1}} className={globalStyle['xx-font-size']}/>
+				return <EmailOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 		}
 	}
 
@@ -85,13 +86,13 @@ export const MainMenu = () => {
 								<NextLink
 									href={route}
 									key={`main-menu-Item-${index}`}
+									passHref
 									legacyBehavior
 								>
-									<Box my={1}>
+									<Link my={1} sx={{ color: "mainMenu.dark", textDecoration: "none" }}>
 										<ListItemButton
 											onClick={closeSideMenu}
 											sx={{
-
 												'&:hover': { color: "mainMenu.contrastText", backgroundColor: "unset" }
 											}}
 										>
@@ -127,7 +128,7 @@ export const MainMenu = () => {
 												/>
 											)
 										}
-									</Box>
+									</Link>
 								</NextLink>
 							))
 						}
