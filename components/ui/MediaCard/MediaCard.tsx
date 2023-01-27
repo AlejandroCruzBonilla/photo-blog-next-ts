@@ -13,7 +13,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 	date,
 	url,
 	gridResponsive,
-	priority=false,
+	priority = false,
 	maxHeight = image.width,
 }) => {
 	return (
@@ -56,6 +56,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 								gutterBottom
 								variant="h5"
 								component="div"
+								minHeight={"66px"}
 							>
 								{title}
 							</Typography>
@@ -63,16 +64,16 @@ export const MediaCard: FC<MediaCardProps> = ({
 								body
 									? (
 										<Typography
-											variant="body1"
+											// variant="body1"
+											component={"div"}
 											overflow="hidden"
 											display="-webkit-box"
 											sx={{
 												WebkitLineClamp: 3,
 												WebkitBoxOrient: " vertical",
 											}}
-										>
-											{body}
-										</Typography>
+											dangerouslySetInnerHTML={{ __html: body}}
+										/>
 									)
 									: null
 							}

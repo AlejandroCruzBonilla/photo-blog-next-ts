@@ -29,12 +29,12 @@ export const TabBar: FC<TabsProps> = ({ value, tabs, handleChange }) => {
       onChange={handleChange}
     >
       {
-        tabs.map(({ label, value, icon }, index) =>
+        tabs.map(({ label, icon }, index) =>
         (
           <Tab
             key={`simple-tab-${index}`}
             id={`simple-tab-${index}`}
-            value={value}
+            value={index}
             iconPosition="start"
             // icon={
             //   <Icon

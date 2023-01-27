@@ -5,712 +5,727 @@
     "galleries": [
       {
         "category": {
-          "icon": "work",
-          "label": "Portafolio",
-          "value": 0
-        },
-        "galleries": [
-          {
-            "data": {
-              "title": "Galeria 1",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/_A9A4347.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/1618874851_078450_1618875272_noticia_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1622312858_609753_1622315356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640552356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640555096_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640555655_394774_1640558582_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-1",
-              "seo": {
-                "title": "Galeria 1",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 2",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/DJI_0146.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/DJI_0354.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC53.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC9.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC48.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/DJI_0354.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-2",
-              "seo": {
-                "title": "Galeria 2",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 3",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/image00016.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/image00035.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS24.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS31.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-3",
-              "seo": {
-                "title": "Galeria 3",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 4",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/_A9A4347.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/1618874851_078450_1618875272_noticia_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1622312858_609753_1622315356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640552356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640555096_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640555655_394774_1640558582_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-4",
-              "seo": {
-                "title": "Galeria 4",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 5",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/DJI_0146.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/DJI_0354.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC53.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC9.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC48.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-5",
-              "seo": {
-                "title": "Galeria 5",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 6",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/image00016.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/image00035.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS24.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS31.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-6",
-              "seo": {
-                "title": "Galeria 6",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 7",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/_A9A4347.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/1618874851_078450_1618875272_noticia_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1622312858_609753_1622315356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640552356_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640546442_873467_1640555096_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1640555655_394774_1640558582_album_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-7",
-              "seo": {
-                "title": "Galeria 7",
-                "description": "Pagina de Galerias"
-              }
-            }
-          },
-          {
-            "data": {
-              "title": "Galeria 8",
-              "body": "Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit. Lorem ipsum dolor sit amet consectetur adipiscing elit turpis, auctor leo ligula non facilisis sollicitudin fermentum fusce, vitae parturient magnis viverra erat proin suscipit.",
-              "image": {
-                "src": "galleries/DJI_0146.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/DJI_0354.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC53.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC9.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC48.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-8",
-              "seo": {
-                "title": "Galeria 8",
-                "description": "Pagina de Galerias"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "category": {
           "icon": "newspaper",
-          "label": "Periodismo",
-          "value": 1
+          "label": "Fotoperiodismo"
         },
         "galleries": [
           {
             "data": {
-              "title": "Galeria 9",
-              "body": "Soy una Galeria",
+              "title": "AMPUTADOS DE LA BESTIA",
+              "body": "<p>Huyeron de sus países por la violencia y la miseria. Arriesgaron su vida sobre el lomo del tren que lleva indocumentados desde México con destino a EE UU, en un viaje en el que perdieron un miembro y las esperanzas. Ahora intentan rehacer su vida apoyados en prótesis.</p><p>A la violencia que sufren los migrantes a su paso por México, muchas veces generada por organizaciones criminales, se suma el incremento de las detenciones por la política migratoria del Gobierno de México y un uso excesivo de la fuerza por parte de las autoridades. Esta es su segunda oportunidad.</p>",
               "image": {
-                "src": "galleries/MXQNSEIZIZAKXDGU3B6FRKYBSQ.jpg",
-                "alt": "Alt Text",
+                "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA01.jpg",
+                "alt": "NC_AMPUTADOS_DE_LA_BESTIA01",
                 "width": 1500,
                 "height": 1000
               },
               "images": [
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA01.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA01",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA45.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA02.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA02",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB00312.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA03.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA03",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB00403.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA04.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA04",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/MATAPALO_HONDURAS06.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA05.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA06.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA07.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA08.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA09.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/amputados_de_la_bestia/web/NC_AMPUTADOS_DE_LA_BESTIA10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/amputados_de_la_bestia/high/NC_AMPUTADOS_DE_LA_BESTIA10.jpg",
+                  "alt": "NC_AMPUTADOS_DE_LA_BESTIA10",
                   "width": 1500,
                   "height": 1000
                 }
               ],
-              "url": "galeria-9",
+              "url": "amputados-de-la-bestia",
               "seo": {
-                "title": "Galeria 9",
-                "description": "Pagina de Galerias"
+                "title": "Amputados de la bestia",
+                "description": "Amputados de la bestia"
               }
             }
           },
           {
             "data": {
-              "title": "Galeria 10",
-              "body": "Soy una Galeria",
+              "title": "EL HAMBRE EN GUATEMALA",
+              "body": "<p>De los 660 millones de personas que viven en Latinoamérica, más de 60 millones pasan hambre. Otros 220 millones no sabe si va a comer mañana. América Latina produce comida: lleva 500 años dedicada a producir comida –y algunos minerales. En América Latina viven unos 660 millones de personas; según los últimos recuentos, más de 60 millones pasan hambre. Uno de cada diez latinoamericanos no come suficiente.</p><p>El Calvario está en el departamento de San Marcos, una de las regiones más golpeadas por el hambre en Guatemala. El país cuenta con las tasas de desnutrición infantil más altas de América Latina y el Programa Mundial de Alimentos (PMA) ha alertado de que el 50% de las familias no tienen acceso a una dieta equilibrada. Las estadísticas en rojo se repiten en todos los informes que preparan organismo internacionales, entre ellos el Banco Mundial, que fija a Guatemala como la nación con “la cuarta tasa más alta de desnutrición crónica en el mundo, con poblaciones indígenas y rurales desproporcionadamente afectadas”. El mismo informe revela que la desnutrición crónica infantil (que retrasa el crecimiento de los menores) en Guatemala afecta al 47% de todos los niños de menos de cinco años, al 58% de los niños indígenas y al 66% de los más pobres.</p>",
               "image": {
-                "src": "galleries/NCB00614.jpg",
-                "alt": "Alt Text",
+                "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA01.jpg",
+                "alt": "NC_EL_HAMBRE_EN_GUATEMALA01",
                 "width": 1500,
                 "height": 1000
               },
               "images": [
                 {
-                  "src": "galleries/NCB00653.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA01.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA01",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB00666.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA02.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA02",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB00667.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA03.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA03",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB01090.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA04.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA04",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA05.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA06.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA07.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA08.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA09.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/el_hambre_en_guatemala/web/NC_EL_HAMBRE_EN_GUATEMALA10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/el_hambre_en_guatemala/high/NC_EL_HAMBRE_EN_GUATEMALA10.jpg",
+                  "alt": "NC_EL_HAMBRE_EN_GUATEMALA10",
                   "width": 1500,
                   "height": 1000
                 }
               ],
-              "url": "galeria-10",
+              "url": "el-hambre-en-guatemala",
               "seo": {
-                "title": "Galeria 10",
-                "description": "Pagina de Galerias"
+                "title": "El hambre en guatemala",
+                "description": "El hambre en guatemala"
               }
             }
           },
           {
             "data": {
-              "title": "Galeria 11",
-              "body": "Soy una Galeria",
+              "title": "ELECCIONES EN AYUTLA",
+              "body": "<p>De los 660 millones de personas que viven en Latinoamérica, más de 60 millones pasan hambre. Otros 220 millones no sabe si va a comer mañana. América Latina produce comida: lleva 500 años dedicada a producir comida –y algunos minerales. En América Latina viven unos 660 millones de personas; según los últimos recuentos, más de 60 millones pasan hambre. Uno de cada diez latinoamericanos no come suficiente.</p><p>El Calvario está en el departamento de San Marcos, una de las regiones más golpeadas por el hambre en Guatemala. El país cuenta con las tasas de desnutrición infantil más altas de América Latina y el Programa Mundial de Alimentos (PMA) ha alertado de que el 50% de las familias no tienen acceso a una dieta equilibrada. Las estadísticas en rojo se repiten en todos los informes que preparan organismo internacionales, entre ellos el Banco Mundial, que fija a Guatemala como la nación con “la cuarta tasa más alta de desnutrición crónica en el mundo, con poblaciones indígenas y rurales desproporcionadamente afectadas”. El mismo informe revela que la desnutrición crónica infantil (que retrasa el crecimiento de los menores) en Guatemala afecta al 47% de todos los niños de menos de cinco años, al 58% de los niños indígenas y al 66% de los más pobres.</p>",
               "image": {
-                "src": "galleries/MATAPALO_HONDURAS24.jpg",
-                "alt": "Alt Text",
+                "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA01.jpg",
+                "alt": "NC_ELECCIONES_EN_AYUTLA01",
                 "width": 1500,
                 "height": 1000
               },
               "images": [
                 {
-                  "src": "galleries/NCB01243.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA01.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA01",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB02277.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA02.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA02",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB06099.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA03.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA03",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/SEPTIEMBRE_11.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA04.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA04",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA05.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA06.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA07.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA08.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA09.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA10.jpg",
+                  "alt": "NC_ELECCIONES_EN_AYUTLA10",
                   "width": 1500,
                   "height": 1000
                 }
               ],
-              "url": "galeria-11",
+              "url": "elecciones-en-ayutla",
               "seo": {
-                "title": "Galeria 11",
-                "description": "Pagina de Galerias"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "category": {
-          "icon": "contacts",
-          "label": "Proyectos personales",
-          "value": 2
-        },
-        "galleries": [
-          {
-            "data": {
-              "title": "Galeria 12",
-              "body": "Soy una Galeria",
-              "image": {
-                "src": "galleries/NCB01090.jpg",
-                "alt": "Alt Text",
-                "width": 1500,
-                "height": 1000
-              },
-              "images": [
-                {
-                  "src": "galleries/UXZGD74TJZO4FNNUEGVC4PKJAQ.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/UYHB3AXIA5OJTLBGQH2Z7HWTQM.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/_A9A4347.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/1618874851_078450_1618875272_noticia_normal.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                },
-                {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
-                  "width": 1500,
-                  "height": 1000
-                }
-              ],
-              "url": "galeria-12",
-              "seo": {
-                "title": "Galeria 12",
-                "description": "Pagina de Galerias"
+                "title": "Elecciones en ayutla",
+                "description": "Elecciones en ayutla"
               }
             }
           },
           {
             "data": {
-              "title": "Galeria 13",
-              "body": "Soy una Galeria",
+              "title": "FEMINICIDIOS EN JUAREZ",
+              "body": "<p>En la ciudad fronteriza han asesinado a más de 2.300 mujeres en tres décadas y cientos están desaparecidas. La entrada de nuevas fuerzas del crimen organizado y la transición de las Administraciones tras las elecciones de junio recrudecen ahora un escenario en el que campa la violencia y la impunidad.</p><p>2.376 mujeres han sido asesinadas, 282 están desaparecidas. Juárez se ha quedado marcada por las cruces cavadas y las cruces pintadas, por sus paredes y postes y árboles llenos de fotos de chicas sonrientes en búsqueda. En una ciudad de 1,5 millones de habitantes, en los primeros días de enero mataron a 11 mujeres: calcinadas, descuartizadas, de un disparo en el rostro. Es el horror frente a la lucha de las familias y de las organizaciones feministas que acusan al Estado de ser incapaz de lograr justicia.<br></p>",
               "image": {
-                "src": "galleries/1640546442_873467_1640552356_album_normal.jpg",
-                "alt": "Alt Text",
+                "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ01.jpg",
+                "alt": "NC_MUERTAS_DE_JUÁREZ01",
                 "width": 1500,
                 "height": 1000
               },
               "images": [
                 {
-                  "src": "galleries/1640555655_394774_1640558582_album_normal.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ01.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ01",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB00666.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ02.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ02",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ03.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ03",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/UYHB3AXIA5OJTLBGQH2Z7HWTQM.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ04.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ04",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ05.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ06.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ07.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ08.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ09.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/juarez_feminicida/web/NC_MUERTAS_DE_JUÁREZ10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/juarez_feminicida/high/NC_MUERTAS_DE_JUÁREZ10.jpg",
+                  "alt": "NC_MUERTAS_DE_JUÁREZ10",
                   "width": 1500,
                   "height": 1000
                 }
               ],
-              "url": "galeria-13",
+              "url": "feminicidios-en-juarez",
               "seo": {
-                "title": "Galeria 13",
-                "description": "Pagina de Galerias"
+                "title": "Feminicidios en juarez",
+                "description": "Feminicidios en juarez"
               }
             }
           },
           {
             "data": {
-              "title": "Galeria 14",
-              "body": "Soy una Galeria",
+              "title": "LA FRAGIL SALUD EN LA SIERRA DE GUERRERO",
+              "body": "<p>Las comunidades confinadas por los grupos armados y la falta de servicios no han registrado muertes por covid pese a carecer de atención sanitaria. En el municipio de Petatlán y en el adyacente de Coyuca de Catalán, donde se encuentran las comunidades que visita Médicos Sin Fronteras, hay actualmente activos 20 y 24 casos de coronavirus, respectivamente. El número podría ser mayor si los contagios no están siendo registrados por la falta de servicio sanitario. A las dificultades técnicas se le suman las supersticiones de la población, víctimas de las noticias falsas que les llegan por WhatsApp. Muchos creen que el virus lo inyecta el Gobierno para diezmar a los pensionistas, que los médicos lo contagian a propósito o que en los hospitales se enfermarán de más gravedad. Además, para evitar encontrarse con grupos armados, evaden acudir al hospital pese a las consecuencias.</p><p>La lucha por los territorios para controlar la producción de madera, aguacate o marihuana mantiene las rutas de acceso a los pueblos vigiladas y controladas a punta de fusil AK-47. “Aquí no llegan ni los docentes ni los sacerdotes por el hostigamiento”, asegura Violante. Esa violencia disuade a los propios vecinos de salir de las fronteras de sus comunidades, ya que atravesar zonas dominadas por el grupo contrario al que reina en su comunidad es un riesgo mortal. Al haber un tráfico casi nulo de personas, las probabilidades de que el virus entre en la vecindad caen en picado. El difícil acceso por las carreteras también juega a favor de la comunidad para prevenir los contagios. Los cientos de kilómetros de terracería que hay que atravesar suponen varias horas de viaje en vehículos especializados, solo accesibles para unos pocos.</p>",
               "image": {
-                "src": "galleries/MATAPALO_HONDURAS31.jpg",
-                "alt": "Alt Text",
+                "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01.jpg",
+                "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01",
                 "width": 1500,
                 "height": 1000
               },
               "images": [
                 {
-                  "src": "galleries/ESPECIAL_GUATEMALA_NC9.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO01",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/1640546442_873467_1640552356_album_normal.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO02.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO02",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/1622312858_609753_1622315356_album_normal.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO03.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO03",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB01243.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO04.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO04",
                   "width": 1500,
                   "height": 1000
                 },
                 {
-                  "src": "galleries/NCB_TAPACHULA42.jpg",
-                  "alt": "Alt Text",
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO05.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO06.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO07.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO08.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO09.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/web/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/la_fragil_salud_en_la_sierra_de_guerrero/high/NC_SALUD_EN_LA_SIERRA_DE_GUERRERO10.jpg",
+                  "alt": "NC_SALUD_EN_LA_SIERRA_DE_GUERRERO10",
                   "width": 1500,
                   "height": 1000
                 }
               ],
-              "url": "galeria-14",
+              "url": "la-fragil-salud-en-la-sierra-de-guerrero",
               "seo": {
-                "title": "Galeria 14",
-                "description": "Pagina de Galerias"
+                "title": "La fragil salud en la sierra de guerrero",
+                "description": "La fragil salud en la sierra de guerrero"
+              }
+            }
+          },
+          {
+            "data": {
+              "title": "MIGRACION EN MÉXICO",
+              "body": "<p>Las comunidades confinadas por los grupos armados y la falta de servicios no han registrado muertes por covid pese a carecer de atención sanitaria. En el municipio de Petatlán y en el adyacente de Coyuca de Catalán, donde se encuentran las comunidades que visita Médicos Sin Fronteras, hay actualmente activos 20 y 24 casos de coronavirus, respectivamente. El número podría ser mayor si los contagios no están siendo registrados por la falta de servicio sanitario. A las dificultades técnicas se le suman las supersticiones de la población, víctimas de las noticias falsas que les llegan por WhatsApp. Muchos creen que el virus lo inyecta el Gobierno para diezmar a los pensionistas, que los médicos lo contagian a propósito o que en los hospitales se enfermarán de más gravedad. Además, para evitar encontrarse con grupos armados, evaden acudir al hospital pese a las consecuencias.</p><p>La lucha por los territorios para controlar la producción de madera, aguacate o marihuana mantiene las rutas de acceso a los pueblos vigiladas y controladas a punta de fusil AK-47. “Aquí no llegan ni los docentes ni los sacerdotes por el hostigamiento”, asegura Violante. Esa violencia disuade a los propios vecinos de salir de las fronteras de sus comunidades, ya que atravesar zonas dominadas por el grupo contrario al que reina en su comunidad es un riesgo mortal. Al haber un tráfico casi nulo de personas, las probabilidades de que el virus entre en la vecindad caen en picado. El difícil acceso por las carreteras también juega a favor de la comunidad para prevenir los contagios. Los cientos de kilómetros de terracería que hay que atravesar suponen varias horas de viaje en vehículos especializados, solo accesibles para unos pocos.</p>",
+              "image": {
+                "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO01.jpg",
+                "alt": "NC_MIGRANTES_EN_MEXICO01",
+                "width": 1500,
+                "height": 1000
+              },
+              "images": [
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO01.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO01",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO02.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO02",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO03.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO03",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO04.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO04",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO05.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO06.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO07.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO08.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO09.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO10.jpg",
+                  "alt": "NC_MIGRANTES_EN_MEXICO10",
+                  "width": 1500,
+                  "height": 1000
+                }
+              ],
+              "url": "migracion-en-mexico",
+              "seo": {
+                "title": "Migracion en méxico",
+                "description": "Migracion en méxico"
+              }
+            }
+          },
+          {
+            "data": {
+              "title": "NORMAL RURAL DE TAMAZULAPAM",
+              "body": "<p>Enormes murales reivindicativos decoran la escuela rural Vanguardia, un espacio de jardines muy cuidados donde se suceden los salones académicos, el comedor, los dormitorios, una panadería, las salas de danza, los despachos y una enorme cubierta. Las escuelas rurales nacieron en los años veinte, al tiempo que se impulsaba la reforma agraria y se ponía la mirada en el desarrollo de las comunidades indígenas y campesinas. Formar maestros que dinamizaran su entorno fue una aspiración de muchos países por aquel entonces. En México se parieron laicas y vinculadas al proceso revolucionario que se vivía en el país, muy politizado.</p><p>Con el correr de las décadas, estos centros fueron perdiendo presupuesto y en los años cuarenta, gobiernos conservadores las desposeyeron de algunos rasgos originales, como la coeducación, razón por la cual existen aún escuelas solo para hombres o solo para mujeres, como la de Tamazulápam.</p>",
+              "image": {
+                "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA01.jpg",
+                "alt": "NC_NORMALISTAS_OAXACA01",
+                "width": 1500,
+                "height": 1000
+              },
+              "images": [
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA01.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA01",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA02.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA02",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA03.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA03",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA04.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA04",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA05.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA06.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA07.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA08.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA09.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/web/NC_NORMALISTAS_OAXACA10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/normal_rural_de_tamazulapan/high/NC_NORMALISTAS_OAXACA10.jpg",
+                  "alt": "NC_NORMALISTAS_OAXACA10",
+                  "width": 1500,
+                  "height": 1000
+                }
+              ],
+              "url": "normal-rural-de-tamazulapam",
+              "seo": {
+                "title": "Normal rural de tamazulapam",
+                "description": "Normal rural de tamazulapam"
+              }
+            }
+          },
+          {
+            "data": {
+              "title": "PROTESTAS FEMINISTAS",
+              "body": "<p>Una marea feminista se manifiesta en México para lanzar un grito de hartazgo en un país desmembrado por la violencia machista. Desde comienzos de año han desparecido 357 mujeres, más de cinco cada día, y pese a ello apenas 75 de los casi 300 casos denunciados en enero se investigan como feminicidios.</p>",
+              "image": {
+                "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS01.jpg",
+                "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS01.jpg",
+                "alt": "NC_PROTESTAS_FEMINISTAS01",
+                "width": 1500,
+                "height": 1000
+              },
+              "images": [
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS01.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS01.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS01",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS02.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS02.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS02",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS03.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS03.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS03",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS04.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS04.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS04",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS05.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS05.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS05",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS06.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS06.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS06",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS07.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS07.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS07",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS08.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS08.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS08",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS09.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS09.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS09",
+                  "width": 1500,
+                  "height": 1000
+                },
+                {
+                  "src": "galleries/fotoperiodismo/protestas_feministas/web/NC_PROTESTAS_FEMINISTAS10.jpg",
+                  "srcHigh": "galleries/fotoperiodismo/protestas_feministas/high/NC_PROTESTAS_FEMINISTAS10.jpg",
+                  "alt": "NC_PROTESTAS_FEMINISTAS10",
+                  "width": 1500,
+                  "height": 1000
+                }
+              ],
+              "url": "protestas-feministas",
+              "seo": {
+                "title": "protestas feministas",
+                "description": "protestas feministas"
               }
             }
           }

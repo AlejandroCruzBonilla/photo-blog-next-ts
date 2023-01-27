@@ -28,9 +28,7 @@ const Gallery: NextPage<GalleryProps> = ({
 
 			<Grid container alignItems="center" my={4}>
 				<Grid item >
-					<Typography textAlign="justify">
-						{body}
-					</Typography>
+					<Typography component={"div"} textAlign="justify" dangerouslySetInnerHTML={{ __html: body}} />
 				</Grid>
 			</Grid>
 
@@ -113,10 +111,12 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 				},
 				images: restImages.map(({ base64, img }, index) => {
 					const alt = images[index].alt
+					const srcHigh = images[index].srcHigh
 					return (
 						{
 							base64,
 							alt,
+							srcHigh,
 							...img
 						} as ImageProps)
 				})

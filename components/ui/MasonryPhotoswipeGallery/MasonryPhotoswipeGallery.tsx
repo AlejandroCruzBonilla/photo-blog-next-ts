@@ -26,7 +26,7 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
 
   return (
     <>
-      {/* <Box className="pswp-gallery" id={galleryID}>
+      <Box className="pswp-gallery" id={galleryID}>
         <Masonry
           spacing={1}
           columns={{
@@ -37,8 +37,7 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
           {
             images.map((image, index) => (
               <a
-                // href={image.largeURL}
-                href={image.src}
+                href={`https://ik.imagekit.io/ncbphotography/${image.srcHigh}`}
                 data-pswp-width={image.width}
                 data-pswp-height={image.height}
                 key={galleryID + '-' + index}
@@ -60,8 +59,8 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
             ))
           }
         </Masonry>
-      </Box> */}
-      <Grid
+      </Box>
+      {/* <Grid
         container
         className="pswp-gallery"
         id={galleryID}
@@ -93,8 +92,7 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
               }}
             >
               <a
-                // href={image.largeURL}
-                href={image.src}
+                href={`https://ik.imagekit.io/ncbphotography/${image.srcHigh}`}
                 data-pswp-width={image.width}
                 data-pswp-height={image.height}
                 // key={galleryID + '-' + index}
@@ -125,32 +123,7 @@ export const MasonryPhotoswipeGallery: FC<MasonryPhotoswipeGalleryProps> = ({
           content: "''",
           padding: 0
         }}> </Box>
-      </Grid>
+      </Grid> */}
     </>
   );
 }
-
-
-{/* <Masonry
-spacing={1}
-columns={{
-  xs: 1,
-  sm: 2,
-}}
->
-{
-  images.map((image, index) => (
-    <ImageContainer
-      key={`index-gallery${index}`}
-      image={image}
-      objectFit="cover"
-      placeholder="blur"
-      maxHeight={{
-        xs: "50vw",
-        sm: `${index % 2 ? "50vw" : "40vw"}`,
-        lg: `${index % 2 ? "40vw" : "35vw"}`,
-      }}
-    />
-  ))
-}
-</Masonry> */}

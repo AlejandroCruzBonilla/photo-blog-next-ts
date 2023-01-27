@@ -8,5 +8,4 @@ export interface TabsProps {
 type Tab = {
   icon?: string | undefined,
   label: string
-  value: number
 }

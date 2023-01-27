@@ -79,11 +79,11 @@ export interface Galleries {
 export interface GalleryCategory {
   icon: string
   label: string
-  value: number
 }
 
 export interface ImageProps {
   src: string
+  srcHigh?: string
   alt: string
   width: number
   height: number
