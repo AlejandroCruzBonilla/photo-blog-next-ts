@@ -6,6 +6,7 @@ export interface MediaCardProps {
   date?: string
   image: ImageProps
   priority?: boolean;
+  target?: "_blank"|"_self"|"_parent"|"_top"
   // customLoader?: (p: CustomImageLoaderProps) => string
   gridResponsive?:GridResponsive
   maxHeight?: MaxHeight

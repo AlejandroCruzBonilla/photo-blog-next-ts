@@ -15,7 +15,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
 		<>
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
-				<title>{`Nayeli Cruz Bonilla - ${title}`}</title>
+				<title>{`Nayeli Cruz - ${title}`}</title>
 				<meta name="description" content={description} />
 			</Head>
 

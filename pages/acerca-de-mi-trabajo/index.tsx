@@ -29,6 +29,7 @@ const AboutMyWork: NextPage<AboutMyWorkProps> = ({
 							key={`media-card-${index}`}
 							{...{ title, body, image, url }}
 							priority={(index<=2)}
+							target="_blank"
 							gridResponsive={{
 								xs: 12,
 								sm: 6,

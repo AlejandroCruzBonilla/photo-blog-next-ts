@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import NextLink from 'next/link';
 
-import { Card, CardActionArea, CardContent, Typography, Grid, Divider } from '@mui/material';
+import { Card, CardActionArea, CardContent, Typography, Grid, Divider, Link } from '@mui/material';
 import { ImageContainer } from '../';
 import { MediaCardProps } from './model';
 
@@ -13,6 +13,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 	date,
 	url,
 	gridResponsive,
+	target = "_self",
 	priority = false,
 	maxHeight = image.width,
 }) => {
@@ -27,11 +28,13 @@ export const MediaCard: FC<MediaCardProps> = ({
 				<NextLink
 					href={url}
 					passHref
+					target={target}
 					legacyBehavior
 				>
-					<CardActionArea
-						LinkComponent={"a"}
-						focusRipple
+					<Link
+						target={target}
+						color="inherit"
+						sx={{ textDecoration: "none" }}
 					>
 						<ImageContainer
 							image={image}
@@ -91,7 +94,7 @@ export const MediaCard: FC<MediaCardProps> = ({
 								}
 							</Grid>
 						</CardContent>
-					</CardActionArea>
+					</Link>
 				</NextLink>
 
 
