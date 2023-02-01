@@ -86,6 +86,9 @@ const Home: NextPage<HomeProps> = ({
 								objectFit="cover"
 								placeholder="blur"
 								priority={(index = 0) ? true : false}
+								maxHeight={{
+									xs: "100vw",
+								}}
 							/>
 						))
 					}
@@ -126,7 +129,7 @@ const Home: NextPage<HomeProps> = ({
 									maxHeight={{
 										xs: "50vw",
 										sm: `${index % 2 ? "50vw" : "40vw"}`,
-										// lg: `${index % 2 ? "40vw" : "35vw"}`,
+										lg: `${index % 2 ? "20vw" : "30vw"}`,
 									}}
 								/>
 							</NextLink>
@@ -163,8 +166,8 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 		linkImagesPromises.push(getPlaiceholder(
 			imagekitIoLoader({
 				src: src,
-				width: 1000,
-				quality: 70
+				width: 700,
+				quality: 80
 			})
 		));
 	});
