@@ -22,6 +22,7 @@ import {
 	PhotoCameraOutlined,
 	ArticleOutlined,
 	EmailOutlined,
+	WorkOutlineOutlined,
 } from '@mui/icons-material';
 import globalStyle from '../../../styles/globals.module.css'
 
@@ -47,6 +48,8 @@ export const MainMenu = () => {
 				return <ArticleOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 			case 'EmailOutlined':
 				return <EmailOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
+			case 'WorkOutlineOutlined':
+				return <WorkOutlineOutlined sx={{ mx: 1 }} className={globalStyle['xx-font-size']} />
 		}
 	}
 

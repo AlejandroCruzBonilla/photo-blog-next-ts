@@ -1,13 +1,15 @@
 import { GetStaticProps, NextPage } from 'next'
-import { Grid, Typography } from '@mui/material';
-import { getPlaiceholder } from "plaiceholder";
+import NextLink from 'next/link';
 import { MainLayout } from '../components/layouts/MainLayout/MainLayout';
-import { HeadingPage, ImageContainer } from '../components/ui';
+import { Grid, Typography } from '@mui/material';
+import { Masonry } from '@mui/lab';
+import Slider from "react-slick";
+import { ImageContainer } from '../components/ui';
 import { imagekitIoLoader } from '../utils/customImageLoader';
-import { HomeProps, ImageProps } from '../@types';
+import { getPlaiceholder } from "plaiceholder";
+import { HomeProps } from '../@types';
 
 import HomeData from '../_fakeData/home.json'
-import Link from 'next/link';
 
 // import styles from '../styles/Home.module.css'
 // import { Inter } from '@next/font/google'
@@ -17,9 +19,10 @@ import Link from 'next/link';
 const Home: NextPage<HomeProps> = ({
 	data: {
 		title,
+		subtitle,
 		body,
-		image,
 		images,
+		links,
 		seo
 	}
 }) => {
@@ -27,140 +30,79 @@ const Home: NextPage<HomeProps> = ({
 	return (
 
 		<MainLayout seo={seo}>
-			<Grid item>
 
-				<Grid
-					container
-					mb={{
-						xs: 2
-					}}
-				>
-					<Grid
-						container
-						alignItems="center"
-						item
-						xs={12}
-						sm={6}
-					>
-						<Grid item>
-							<Typography
-								variant='h1'
-								textAlign={{
-									xs: 'left',
-								}}
-								fontSize={{
-									lg: '8rem',
-								}}
-							>
-								Nayeli <br />
-								Cruz  <br />
-								Bonilla
-							</Typography>
-							<Typography
-								variant='h2'
-								fontWeight={700}
-								fontSize={{
-									xs: '2.5rem',
-									md: '3.2rem',
-									lg: '4.2rem',
-									xl: '5.2rem',
-								}}
-							>
-								Fotoperiodismo
-							</Typography>
-						</Grid>
-					</Grid>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-					>
-						<ImageContainer
-							image={image}
-							objectFit="cover"
-							placeholder="blur"
-							priority
-							maxHeight={{
-								xs: "50vh",
-								sm: "60vh",
+			<Grid
+				container
+				mb={{
+					xs: 2
+				}}
+			>
+				<Grid container >
+					<Grid item>
+						<Typography
+							variant='h1'
+							textAlign={{
+								xs: 'left',
 							}}
-						/>
+							fontSize={{
+								lg: '8rem',
+							}}
+						>
+							{title}
+						</Typography>
+						<Typography
+							variant='h2'
+							fontWeight={700}
+							fontSize={{
+								xs: '2.5rem',
+								md: '3.2rem',
+								lg: '4.2rem',
+								xl: '5.2rem',
+							}}
+						>
+							{subtitle}
+						</Typography>
 					</Grid>
 				</Grid>
+			</Grid>
 
-				<Grid
-					container
-					direction={{
-						xs: "column-reverse",
-						sm: "row"
-					}}
-					mb={{
-						xs: 2
-					}}
+			<Grid
+				mb={{
+					xs: 8
+				}}
+			>
+				<Slider
+					dots={false}
+					arrows={false}
+					infinite={true}
+					autoplay={true}
+					speed={800}
 				>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-					>
-						<Link
-							href={'/galerias'}
-						>
+					{
+						images.map((image, index) => (
 							<ImageContainer
-								image={images[5]}
+								key={`main-slide-${index}`}
+								image={image}
 								objectFit="cover"
 								placeholder="blur"
-								maxHeight={{
-									xs: "50vh",
-									sm: "60vh",
-								}}
+								priority={(index = 0) ? true : false}
 							/>
-						</Link>
-					</Grid>
-					<Grid
-						container
-						justifyContent={"center"}
-						alignItems={"center"}
-						item
-						xs={12}
-						sm={6}
-					>
-						<Link
-							href={'/galerias'}
-							style={{
-								textDecoration: "none",
-								color: "unset"
-							}}
-						>
-							<Typography
-								variant='h2'
-								fontWeight={700}
-							>
-								Galerías
-							</Typography>
-						</Link>
-
-					</Grid>
-				</Grid>
-
-				<Grid
-					container
-					mb={{
-						xs: 2
-					}}
-				>
-					<Grid
-						container
-						justifyContent={"center"}
-						alignItems="center"
-						item
-						xs={12}
-						sm={6}
-
-					>
-						<Grid item>
-							<Link
-								href={'/articulos'}
+						))
+					}
+				</Slider>
+			</Grid>
+			<Masonry
+				// spacing={4}
+				columns={{
+					xs: 1,
+					sm: 2,
+				}}
+			>
+				{
+					links.map(({ title, image, url }, index) => (
+						<Grid key={`home-link-${index}`}>
+							<NextLink
+								href={url}
 								style={{
 									textDecoration: "none",
 									color: "unset"
@@ -169,37 +111,30 @@ const Home: NextPage<HomeProps> = ({
 								<Typography
 									variant='h2'
 									fontWeight={700}
-									textAlign={{
-										xs: 'left',
-									}}
+									textAlign="center"
 								>
-									Artículos
+									{title}
 								</Typography>
-							</Link>
+							</NextLink>
+							<NextLink
+								href={url}
+							>
+								<ImageContainer
+									image={image}
+									objectFit="cover"
+									placeholder="blur"
+									maxHeight={{
+										xs: "50vw",
+										sm: `${index % 2 ? "50vw" : "40vw"}`,
+										// lg: `${index % 2 ? "40vw" : "35vw"}`,
+									}}
+								/>
+							</NextLink>
 						</Grid>
-					</Grid>
-					<Grid
-						item
-						xs={12}
-						sm={6}
-					>
-						<Link
-							href={'/articulos'}
-						>
-							<ImageContainer
-								image={images[4]}
-								objectFit="cover"
-								placeholder="blur"
-								maxHeight={{
-									xs: "50vh",
-									sm: "60vh",
-								}}
-							/>
-						</Link>
-					</Grid>
-				</Grid>
+					))
+				}
+			</Masonry>
 
-			</Grid>
 		</MainLayout>
 
 	)
@@ -207,43 +142,40 @@ const Home: NextPage<HomeProps> = ({
 
 export default Home
 
-
-
 export const getStaticProps: GetStaticProps = async (ctx) => {
 	// const { data } = await  // your fetch function here 
 	const { data } = HomeData;
-	const { image, images, ...rest } = data
+	const { images, links, ...rest } = data
 	const imagesPromises: any = []
-
-	imagesPromises.push(getPlaiceholder(
-		imagekitIoLoader({
-			src: image.src,
-			width: 900,
-			quality: 50
-		})
-	));
+	const linkImagesPromises: any = []
 
 	images.forEach(({ src, width }) => {
 		imagesPromises.push(getPlaiceholder(
 			imagekitIoLoader({
 				src: src,
-				width: 900,
-				quality: 50
+				width: 1000,
+				quality: 100
 			})
 		));
-	})
+	});
 
-	const [{ base64, img }, ...restImages] = await Promise.all(imagesPromises);
+	links.forEach(({ image: { src } }) => {
+		linkImagesPromises.push(getPlaiceholder(
+			imagekitIoLoader({
+				src: src,
+				width: 1000,
+				quality: 70
+			})
+		));
+	});
+
+	const Images = await Promise.all(imagesPromises);
+	const LinkImages = await Promise.all(linkImagesPromises);
 
 	const props = {
 		data: {
 			...rest,
-			image: {
-				base64,
-				alt: image.alt,
-				...img
-			},
-			images: restImages.map(({ base64, img }, index) => {
+			images: Images.map(({ base64, img }, index) => {
 				const alt = images[index].alt
 				return (
 					{
@@ -251,6 +183,19 @@ export const getStaticProps: GetStaticProps = async (ctx) => {
 						alt,
 						...img
 					})
+			}),
+			links: LinkImages.map(({ base64, img }, index) => {
+				const { image, ...rest } = links[index]
+				return (
+					{
+						...rest,
+						image: {
+							base64,
+							...img,
+							alt: image.alt
+						}
+					}
+				)
 			})
 		}
 	}

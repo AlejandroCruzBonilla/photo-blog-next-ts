@@ -9,12 +9,17 @@
       },
       {
         "route": "/galerias",
-        "text": "Galerias",
+        "text": "Galerías",
         "icon": "PhotoCameraOutlined"
       },
       {
+        "route": "/acerca-de-mi-trabajo",
+        "text": "Mi Trabajo",
+        "icon": "WorkOutlineOutlined"
+      },
+      {
         "route": "/articulos",
-        "text": "Articulos",
+        "text": "Artículos",
         "icon": "ArticleOutlined"
       },
       {

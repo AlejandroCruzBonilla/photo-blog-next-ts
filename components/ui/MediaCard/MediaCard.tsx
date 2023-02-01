@@ -33,24 +33,13 @@ export const MediaCard: FC<MediaCardProps> = ({
 						LinkComponent={"a"}
 						focusRipple
 					>
-						{/* 
-							<CardMedia
-								component="img"
-								image={image.src}
-								alt={image.alt}
-								height="auto"
-							/> 
-						*/}
-
 						<ImageContainer
 							image={image}
 							objectFit="cover"
 							placeholder="blur"
-							// customLoader={customLoader}
 							maxHeight={maxHeight}
 							priority={priority}
 						/>
-
 						<CardContent>
 							<Typography
 								gutterBottom
@@ -64,15 +53,15 @@ export const MediaCard: FC<MediaCardProps> = ({
 								body
 									? (
 										<Typography
-											// variant="body1"
 											component={"div"}
 											overflow="hidden"
 											display="-webkit-box"
+											minHeight={"90px"}
 											sx={{
 												WebkitLineClamp: 3,
 												WebkitBoxOrient: " vertical",
 											}}
-											dangerouslySetInnerHTML={{ __html: body}}
+											dangerouslySetInnerHTML={{ __html: body }}
 										/>
 									)
 									: null

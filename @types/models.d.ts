@@ -4,10 +4,19 @@
 export interface HomeProps {
   data: {
     title: string
+    subtitle: string
     body: string
-    image: ImageProps
     images: ImageProps[]
+    links:HomeLinksProps[]
     seo: SeoProps
+  }
+}
+
+export interface HomeLinkProps {
+  data: {
+    title: string
+    image: ImageProps
+    url: string
   }
 }
 
@@ -15,7 +24,7 @@ export interface HomeProps {
 export interface ArticlesProps {
   data: {
     title: string
-    body: string
+    body?: string
     articles: ArticleProps[]
     seo: SeoProps
   }
@@ -37,7 +46,7 @@ export interface ArticleProps {
 export interface GalleriesProps {
   data: {
     title: string
-    body: string
+    body?: string
     galleries: Galleries[]
     seo: SeoProps
   }
@@ -67,6 +76,27 @@ export interface ContactProps {
   }
 }
 
+/*  AboutMyWork Page  */
+export interface AboutMyWorkProps {
+  data: {
+    title: string
+    body?: string
+    mentions: MentionsProps[]
+    seo: SeoProps
+  }
+}
+
+/* mentions */
+
+export interface MentionsProps {
+  data: {
+    url: string
+    title: string
+    body: string
+    date?: string
+    image: ImageProps
+  }
+}
 
 
 /*  Common  */

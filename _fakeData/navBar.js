@@ -1,9 +1,9 @@
 export const NavBarData = {
   "data": {
-    "title": "Site Name",
+    "title": "Nayeli Cruz Bonilla",
     "logo": {
-      "src": "/logo-test.png",
-      "alt": "Logo",
+      "src": "/logo.png",
+      "alt": "Nayeli Cruz Bonilla",
       "width": 50,
       "height": 50,
     },

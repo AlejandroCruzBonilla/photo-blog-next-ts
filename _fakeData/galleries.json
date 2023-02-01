@@ -1,7 +1,7 @@
 {
   "data": {
-    "title": "Galleries Page",
-    "body": "Galleries Page Body",
+    "title": "Galerías",
+    "body": "",
     "galleries": [
       {
         "category": {
@@ -192,7 +192,7 @@
           {
             "data": {
               "title": "ELECCIONES EN AYUTLA",
-              "body": "<p>De los 660 millones de personas que viven en Latinoamérica, más de 60 millones pasan hambre. Otros 220 millones no sabe si va a comer mañana. América Latina produce comida: lleva 500 años dedicada a producir comida –y algunos minerales. En América Latina viven unos 660 millones de personas; según los últimos recuentos, más de 60 millones pasan hambre. Uno de cada diez latinoamericanos no come suficiente.</p><p>El Calvario está en el departamento de San Marcos, una de las regiones más golpeadas por el hambre en Guatemala. El país cuenta con las tasas de desnutrición infantil más altas de América Latina y el Programa Mundial de Alimentos (PMA) ha alertado de que el 50% de las familias no tienen acceso a una dieta equilibrada. Las estadísticas en rojo se repiten en todos los informes que preparan organismo internacionales, entre ellos el Banco Mundial, que fija a Guatemala como la nación con “la cuarta tasa más alta de desnutrición crónica en el mundo, con poblaciones indígenas y rurales desproporcionadamente afectadas”. El mismo informe revela que la desnutrición crónica infantil (que retrasa el crecimiento de los menores) en Guatemala afecta al 47% de todos los niños de menos de cinco años, al 58% de los niños indígenas y al 66% de los más pobres.</p>",
+              "body": "<p>Hace tres años, los vecinos de este combativo pueblo de Guerrero cambiaron de régimen. Ya no hay alcalde ni regidores, sino un consejo comunitario. Este domingo eligen a sus nuevos representantes</p><p>Era la culminación de un largo proceso de desilusión con el Estado. O el feliz encontronazo con un camino propio y definitivo. Enclavado en la sierra sur de Guerrero, el municipio ha discutido por décadas sobre sí mismo, siempre con la idea de que los gobiernos estatal y federal les ignorarían. Eso en el mejor de los casos, porque si algo distingue la relación de Ayutla con el Estado es la violencia. Muchos vecinos recuerdan sin dificultad la matanza de El Charco, una operación contrainsurgente del Ejército que acabó con 11 muertos en 1998; o la violación y tortura cometidas por militares contra una vecina, Inés Fernández, en 2002; o el hostigamiento del Gobierno estatal contra los primeros grupos de autodefensas en 2013 y 2014, que llevaron a algunos de sus integrantes a la cárcel durante años.</p>",
               "image": {
                 "src": "galleries/fotoperiodismo/elecciones_en_ayutla/web/NC_ELECCIONES_EN_AYUTLA01.jpg",
                 "srcHigh": "galleries/fotoperiodismo/elecciones_en_ayutla/high/NC_ELECCIONES_EN_AYUTLA01.jpg",
@@ -462,7 +462,7 @@
           {
             "data": {
               "title": "MIGRACION EN MÉXICO",
-              "body": "<p>Las comunidades confinadas por los grupos armados y la falta de servicios no han registrado muertes por covid pese a carecer de atención sanitaria. En el municipio de Petatlán y en el adyacente de Coyuca de Catalán, donde se encuentran las comunidades que visita Médicos Sin Fronteras, hay actualmente activos 20 y 24 casos de coronavirus, respectivamente. El número podría ser mayor si los contagios no están siendo registrados por la falta de servicio sanitario. A las dificultades técnicas se le suman las supersticiones de la población, víctimas de las noticias falsas que les llegan por WhatsApp. Muchos creen que el virus lo inyecta el Gobierno para diezmar a los pensionistas, que los médicos lo contagian a propósito o que en los hospitales se enfermarán de más gravedad. Además, para evitar encontrarse con grupos armados, evaden acudir al hospital pese a las consecuencias.</p><p>La lucha por los territorios para controlar la producción de madera, aguacate o marihuana mantiene las rutas de acceso a los pueblos vigiladas y controladas a punta de fusil AK-47. “Aquí no llegan ni los docentes ni los sacerdotes por el hostigamiento”, asegura Violante. Esa violencia disuade a los propios vecinos de salir de las fronteras de sus comunidades, ya que atravesar zonas dominadas por el grupo contrario al que reina en su comunidad es un riesgo mortal. Al haber un tráfico casi nulo de personas, las probabilidades de que el virus entre en la vecindad caen en picado. El difícil acceso por las carreteras también juega a favor de la comunidad para prevenir los contagios. Los cientos de kilómetros de terracería que hay que atravesar suponen varias horas de viaje en vehículos especializados, solo accesibles para unos pocos.</p>",
+              "body": "<p>Miles de migrantes centroamericanos, sudamericanos y del Caribe se han visto obligados a dejar el país más pobre de América Latina y migrar. Muchos se han quedado atrapados en México, camino a Estados Unidos. La última crisis migratoria de la región, cruzada de sur a norte por migrantes, tiene su rostro. La mayoría se ha quedado atrapada en México, camino de Estados Unidos. El caos y la incertidumbre se extiende también por el sur de México, donde se acumulan miles de migrantes deportados.</p>",
               "image": {
                 "src": "galleries/fotoperiodismo/migración_en_mexico/web/NC_MIGRANTES_EN_MEXICO01.jpg",
                 "srcHigh": "galleries/fotoperiodismo/migración_en_mexico/high/NC_MIGRANTES_EN_MEXICO01.jpg",

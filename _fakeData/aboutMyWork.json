@@ -1,0 +1,103 @@
+{
+  "data": {
+    "title": "Acerca de mi Trabajo",
+    "body": "",
+    "mentions": [
+      {
+        "data": {
+          "title": "Distintas latitudes",
+          "body": "<p>Distintas Latitudes conversó con la autora del retrato, Nayeli Cruz, quien nos relató todo acerca de su trabajo “Viaje sagrado”, y también nos explicó de qué manera se complementan la psicología y la fotografía a la hora de cubrir historias como la de Tania.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/distintas_latitudes/DISTINTAS_LATITUDES.jpg",
+            "alt": "Distintas latitudes",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://distintaslatitudes.net/entrevistas/nayeli-cruz-fotografa"
+        }
+      },
+      {
+        "data": {
+          "title": "Fototazo",
+          "body": "<p>Esta publicación es la primera de una serie que explora el trabajo de cinco fotógrafos callejeros mexicanos emergentes. La serie incluirá trabajos de Nayeli Cruz Bonilla, Fermín Guzmán Martínez, Jair Cabrera Torres, Irving Cabrera Torres y Alfredo Moreno. Mark Powell y Tom Griggs han comisariado y editado este proyecto para exponer a estos jóvenes fotógrafos. Los cinco comenzaron sus carreras como estudiantes de Powell's en El Faro de Oriente en Iztapalapa, Ciudad de México.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/fototazo/FOTOTAZO.jpg",
+            "alt": "Fototazo",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "http://www.fototazo.com/2011/05/emerging-mexican-street-photographers-i.html"
+        }
+      },
+      {
+        "data": {
+          "title": "In public",
+          "body": "<p>iN-PUBLiC se creó en 2000 para proporcionar un hogar a los fotógrafos callejeros. Nuestro objetivo es promover la fotografía de calle y seguir explorando sus posibilidades. Somos un colectivo no comercial. Todos los fotógrafos que aparecen aquí han sido invitados al grupo porque tienen la capacidad de ver lo inusual en lo cotidiano y capturar el momento.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/in_public/IN_PUBLIC.jpg",
+            "alt": "In public",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://in-public.com/interview-with-nayeli-cruz/"
+        }
+      },
+      {
+        "data": {
+          "title": "Luz viajera",
+          "body": "<p>La fotografía, como medio de producción de imágenes, no es inmune a esos saltos, y pocos son los fotógrafos que hoy en día se detienen a contemplar las invisibilidades de la calle.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/luz_viajera/LUZ_VIAJERA.jpg",
+            "alt": "Luz viajera",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://www.luzviajera.com/single-post/la-sombra-r%C3%A1pida-y-la-sombra-lenta"
+        }
+      },
+      {
+        "data": {
+          "title": "Pics",
+          "body": "<p>La Plataforma de Imágenes Contemporáneas (PICS) del Centro de la Imagen impulsa y difunde el panorama de la fotografía emergente producida desde México, con el objetivo de vincular y reconocer a sus agentes y espacios en activo. A través de un directorio de autoras(es), la revista digital Fluido, y exposiciones en distintos formatos, PICS busca amplificar y compartir lo que la comunidad entiende por imagen en el presente.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/pics/PICS.jpg",
+            "alt": "Pics",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://pics-ci.com.mx/profile/Nayeli_Cruz_Bonilla.php"
+        }
+      },
+      {
+        "data": {
+          "title": "Poy latam",
+          "body": "<p>El POY Latam celebra la excelencia en el periodismo visual en Iberoamérica.</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/poy_latam/POY_LATAM.jpg",
+            "alt": "Poy latam",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://fotos.poylatam.org/gallery/Nayeli-Cruz-3er-premio-CS-2021/G0000KrIPDDVTtRQ"
+        }
+      },
+      {
+        "data": {
+          "title": "Ruido",
+          "body": "<p>En el tercer capítulo de Ruido entrevistamos a Nayeli Cruz Bonilla, la joven fotoperiodista habla de la Ciudad de México atenta a las implicaciones éticas de su trabajo</p>",
+          "image": {
+            "src": "sobre_mi_trabajo/ruido/RUIDO.jpg",
+            "alt": "Ruido",
+            "width": 1000,
+            "height": 667
+          },
+          "url": "https://lamericalatina.net/2020/07/29/ruido-3-nayeli-cruz-bonilla-e-le-strade-di-citta-del-messico/"
+        }
+      }
+    ],
+    "seo": {
+      "title": "Sobre mi trabajo",
+      "description": "Publicaciones de mi trabajo"
+    }
+  }
+}

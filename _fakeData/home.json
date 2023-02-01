@@ -1,54 +1,73 @@
 {
   "data": {
     "title": "Nayeli Cruz Bonilla",
-    "body": "Body Page",
-    "image": {
-      "src": "galleries/DJI_0354.jpg",
-      "alt": "Alt Text",
-      "width": 1500,
-      "height": 1000
-    },
+    "subtitle": "Fotoperiodismo",
+    "body": "",
     "images": [
       {
-        "src": "galleries/DJI_0354.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "src": "home/slider/Nayeli_Cruz_Bonilla_2.jpg",
+        "alt": "Nayeli_Cruz_Bonilla_2",
+        "width": 1500,
+        "height": 1000
       },
       {
-        "src": "galleries/MATAPALO_HONDURAS06.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "src": "home/slider/NC_EL_HAMBRE_EN_GUATEMALA02.jpg",
+        "alt": "NC_EL_HAMBRE_EN_GUATEMALA02",
+        "width": 1500,
+        "height": 1000
       },
       {
-        "src": "galleries/MATAPALO_HONDURAS31.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "src": "home/slider/NC_MIGRANTES_EN_MEXICO10.jpg",
+        "alt": "NC_MIGRANTES_EN_MEXICO10",
+        "width": 1500,
+        "height": 1000
+      }
+    ],
+    "links": [
+      {
+        "title": "Galerías",
+        "image": {
+          "src": "home/galerias/NC_ELECCIONES_EN_AYUTLA.jpg",
+          "alt": "Galerías",
+          "width": 1500,
+          "height": 1000
+        },
+        "url": "/galerias"
       },
       {
-        "src": "galleries/NCB_TAPACHULA45.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "title": "Mi trabajo",
+        "image": {
+          "src": "home/acerca_de_mi_trabajo/nayeli-cruz-3.jpg",
+          "alt": "Acerca de mi trabajo",
+          "width": 1500,
+          "height": 1000
+        },
+        "url": "/acerca-de-mi-trabajo"
       },
       {
-        "src": "galleries/NCB00614.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "title": "Artículos",
+        "image": {
+          "src": "home/articulos/NC_PROTESTAS_FEMINISTAS05.jpg",
+          "alt": "Artículos",
+          "width": 1500,
+          "height": 1000
+        },
+        "url": "/articulos"
       },
       {
-        "src": "galleries/NCB01090.jpg",
-        "alt": "Alt Text",
-        "width": 1920,
-        "height": 1080
+        "title": "Contacto",
+        "image": {
+          "src": "home/contacto/NC_ELECCIONES_EN_AYUTLA01.jpg",
+          "alt": "Contacto",
+          "width": 1500,
+          "height": 1000
+        },
+        "url": "/contacto"
       }
     ],
     "seo": {
-      "title": "Home",
-      "description": "Pagina principal"
+      "title": "Nayeli Cruz Bonilla Fotoperiodismo",
+      "description": "Nayeli Cruz Bonilla Fotoperiodismo"
     }
   }
 }
