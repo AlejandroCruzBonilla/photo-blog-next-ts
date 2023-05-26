@@ -18,6 +18,11 @@
         "icon": "WorkOutlineOutlined"
       },
       {
+        "route": "/articulos",
+        "text": "Artículos",
+        "icon": "ArticleOutlined"
+      },
+      {
         "route": "/contacto",
         "text": "Contacto",
         "icon": "EmailOutlined"

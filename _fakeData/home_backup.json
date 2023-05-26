@@ -45,6 +45,16 @@
         "url": "/acerca-de-mi-trabajo"
       },
       {
+        "title": "Artículos",
+        "image": {
+          "src": "home/articulos/NC_PROTESTAS_FEMINISTAS05.jpg",
+          "alt": "Artículos",
+          "width": 1500,
+          "height": 1000
+        },
+        "url": "/articulos"
+      },
+      {
         "title": "Contacto",
         "image": {
           "src": "home/contacto/NC_ELECCIONES_EN_AYUTLA01.jpg",
