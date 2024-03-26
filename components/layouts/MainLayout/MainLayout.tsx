@@ -19,7 +19,7 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				<meta name="description" content={description} />
 				<meta property="og:title" content={`Nayeli Cruz - ${title}`}/>
 				<meta property="og:description" content={description}/>
-				<meta property="og:image" content="/Nayeli-Cruz-portada.jpg"/>
+				<meta property="og:image" content="https://photo-blog-next-ts.vercel.app/Nayeli-Cruz-portada.jpg"/>
 			</Head>
 
 			<Grid component={"header"} >
