@@ -17,6 +17,9 @@ export const MainLayout: FC<MainLayoutProps> = ({
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 				<title>{`Nayeli Cruz - ${title}`}</title>
 				<meta name="description" content={description} />
+				<meta property="og:title" content={`Nayeli Cruz - ${title}`}/>
+				<meta property="og:description" content={description}/>
+				<meta property="og:image" content="/Nayeli-Cruz-portada.jpg"/>
 			</Head>
 
 			<Grid component={"header"} >
